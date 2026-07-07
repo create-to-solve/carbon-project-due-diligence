@@ -45,6 +45,7 @@ from core.project_manager import (
     load_project_registry,
 )
 from domain.project_9199 import PROJECT_9199_FACTS
+from domain.risk_flags import claim_topics_for_flag, expected_document_is_held
 from domain.rule_router import run_checks_for_project
 from domain.rules_cdm import run_all_checks
 from scripts.run_ingestion import ingest_paths
@@ -167,7 +168,7 @@ def main() -> None:
     with tabs[3]:
         _facts_tab(project_id, paths, facts, evidence_cards, documents, chunks, citations, citation_index, chunk_index)
     with tabs[4]:
-        _findings_tab(project_id, project_record, findings, evidence_cards, documents, dispositions, narratives)
+        _findings_tab(project_id, project_record, findings, evidence_cards, documents, dispositions, narratives, facts, proposals)
     with tabs[5]:
         _memo_tab(project_id, paths, facts, evidence_cards, findings, audit_events, citation_index, chunk_index)
     with tabs[6]:
@@ -212,6 +213,28 @@ def _compute_findings(project_id, project_record, facts, documents):
     if not facts and not documents and project_id != DEFAULT_PROJECT_ID:
         return []
     return run_checks_for_project(merged, methodology_type)
+
+
+def _findings_provisional(facts) -> bool:
+    """Findings are provisional until at least one fact is confirmed.
+
+    With zero confirmed facts the deterministic rules report every fact as
+    'missing' — even facts the AI has already extracted into pending proposals.
+    Those results must not be presented as diligence conclusions.
+    """
+    return not facts
+
+
+def _pipeline_step_state(pipeline_ran: bool, facts_confirmed: bool) -> str:
+    """Workflow state for the 'Pipeline run' step: done / provisional / todo.
+
+    A run completed before any fact was confirmed is 'provisional', not 'done'.
+    """
+    if pipeline_ran and not facts_confirmed:
+        return "provisional"
+    if pipeline_ran:
+        return "done"
+    return "todo"
 
 
 def _inject_css() -> None:
@@ -281,7 +304,7 @@ def _sidebar(registry, project_record, facts, registry_records, documents, findi
     project_id = current
     paths = ProjectPaths(project_id, base_dir=ROOT)
     state = _load_pipeline_state(project_id)
-    live_counts = _live_counts(project_id, paths, registry_records, facts, findings, state)
+    live_counts = _live_counts(project_id, paths, registry_records, facts, findings, state, documents)
     proposals_pending = _count_pending_proposals(paths)
 
     with st.sidebar:
@@ -345,7 +368,7 @@ def _load_pipeline_state(project_id: str) -> dict:
         return {}
 
 
-def _live_counts(project_id, paths, registry_records, facts, findings, state) -> dict:
+def _live_counts(project_id, paths, registry_records, facts, findings, state, documents=None) -> dict:
     document_count = sum(
         1 for record in registry_records
         if record.get("project_id") == project_id
@@ -357,9 +380,10 @@ def _live_counts(project_id, paths, registry_records, facts, findings, state) ->
     critical_count = sum(1 for finding in findings if finding.severity == "Critical")
     if findings_count and not critical_count:
         critical_count = state.get("critical_count", 0)
-    missing_docs = _expected_documents_not_held(findings, [
-        # rebuild ParsedDocument-like objects from registry records for token check
-    ])
+    missing_docs = [
+        row for row in _expected_documents_status(findings, documents or [])
+        if row["status"] == "NOT HELD"
+    ]
     return {
         "document_count": document_count,
         "facts_count": facts_count,
@@ -389,41 +413,41 @@ def _render_workflow_progress(live_counts: dict, findings) -> None:
         record.get("disposition") and record.get("disposition") != "Awaiting review"
         for record in dispositions.values()
     )
+    facts_confirmed = live_counts["facts_count"] > 0
+    pipeline_ran = bool(live_counts.get("last_run_at"))
+    documents_held = live_counts["document_count"] > 0
+    memo_done = paths.memo.exists()
+    # The pipeline may have run before any fact was confirmed. Report that state
+    # honestly as provisional rather than as a completed, trustworthy step.
+    pipeline_state = _pipeline_step_state(pipeline_ran, facts_confirmed)
+    if pipeline_state == "provisional":
+        pipeline_icon = "⚠️"
+        pipeline_hint = "Provisional — with no confirmed facts the rules report everything as missing"
+    elif pipeline_state == "done":
+        pipeline_icon = "✅"
+        pipeline_hint = None
+    else:
+        pipeline_icon = "⬜"
+        pipeline_hint = "Run after confirming facts"
     steps = [
-        (
-            live_counts["document_count"] > 0,
-            "Documents uploaded",
-            "Upload in Documents tab",
-        ),
-        (
-            live_counts["facts_count"] > 0,
-            "Facts confirmed",
-            "Confirm proposals in AI Proposals tab",
-        ),
-        (
-            bool(live_counts.get("last_run_at")),
-            "Pipeline run",
-            "Run after confirming facts",
-        ),
-        (
-            reviewed,
-            "Findings reviewed",
-            "Set dispositions in Findings tab",
-        ),
-        (
-            paths.memo.exists(),
-            "Memo downloaded",
-            "Generate in Memo tab",
-        ),
+        ("✅" if documents_held else "⬜", "Documents uploaded",
+         None if documents_held else "Upload in Documents tab"),
+        ("✅" if facts_confirmed else "⬜", "Facts confirmed",
+         None if facts_confirmed else "Confirm proposals in AI Proposals tab"),
+        (pipeline_icon, "Pipeline run", pipeline_hint),
+        ("✅" if reviewed else "⬜", "Findings reviewed",
+         None if reviewed else "Set dispositions in Findings tab"),
+        ("✅" if memo_done else "⬜", "Memo downloaded",
+         None if memo_done else "Generate in Memo tab"),
     ]
-    for done, label, hint in steps:
-        icon = "✅" if done else "⬜"
+    for icon, label, hint in steps:
         st.markdown(f"{icon} {label}")
-        if not done:
+        if hint:
             st.markdown(
                 f"<span class='small-muted' style='margin-left:1.6rem'>{html.escape(hint)}</span>",
                 unsafe_allow_html=True,
             )
+    st.caption("Findings become meaningful only after facts are confirmed from proposals.")
 
 
 def _render_new_project_form() -> None:
@@ -602,11 +626,15 @@ def _documents_tab(project_id, paths, registry_records, documents, chunks, findi
                 hide_index=True,
             )
 
-    st.subheader("Expected But Not Held")
-    st.markdown(_source_label("[GAPS \u2014 documents not held]"), unsafe_allow_html=True)
-    missing = _expected_documents_not_held(findings, documents)
-    st.dataframe(missing, width="stretch", hide_index=True)
-    st.caption("These documents were identified as required by the screening rules but are not currently in the system.")
+    st.subheader("Expected Documents")
+    st.markdown(_source_label("[DOCUMENT EXISTENCE \u2014 not evidence content]"), unsafe_allow_html=True)
+    expected = _expected_documents_status(findings, documents)
+    st.dataframe(expected, width="stretch", hide_index=True)
+    st.caption(
+        "Documents the screening rules expect, with whether one of that kind is held. "
+        "HELD means the document exists in the system \u2014 it does NOT mean the related "
+        "finding is resolved. Findings are cleared by confirming facts, not by holding documents."
+    )
 
     st.subheader("Add a Document to the Evidence Base")
     upload = st.file_uploader("Upload PDF files", type=["pdf"], accept_multiple_files=False)
@@ -978,10 +1006,37 @@ def _format_iso_timestamp(value: str) -> str:
         return str(value)
 
 
-def _findings_tab(project_id, project_record, findings, evidence_cards, documents, dispositions, narratives) -> None:
+def _findings_tab(project_id, project_record, findings, evidence_cards, documents, dispositions, narratives, facts, proposals) -> None:
     st.header("Findings")
     methodology_type = (project_record or {}).get("methodology_type", "cdm_ar")
     rule_set_label = "CDM A/R" if methodology_type == "cdm_ar" else "Generic"
+
+    pending_proposals = [p for p in (proposals or []) if p.get("status") == "pending"]
+
+    # Zero confirmed facts: the rules would fire "missing X" for everything, which
+    # misleads a reviewer who has proposals naming those very facts. Show a state
+    # instead of presenting provisional findings as diligence conclusions.
+    if _findings_provisional(facts):
+        if pending_proposals:
+            st.warning(
+                f"No confirmed facts yet. This project has {len(pending_proposals)} "
+                "AI proposal(s) awaiting your review. Findings are generated from "
+                "confirmed facts — confirm proposals in the **AI Proposals** tab first, "
+                "then return here."
+            )
+        else:
+            st.info(
+                "No confirmed facts yet, and no AI proposals are pending. Upload documents "
+                "and run AI extraction in the **Documents** and **AI Proposals** tabs, "
+                "confirm the facts, then findings will appear here."
+            )
+        st.caption(
+            "Findings shown before any fact is confirmed would report everything as "
+            "'missing' — even facts the AI has already extracted. They are withheld here "
+            "to avoid a misleading result. Go to the **AI Proposals** tab to review and confirm."
+        )
+        return
+
     if not findings:
         st.info(
             "No findings yet. Facts must be confirmed before the rule engine can run.\n\n"
@@ -1021,7 +1076,12 @@ def _findings_tab(project_id, project_record, findings, evidence_cards, document
     )
 
     cards_by_id = {card.card_id: card for card in evidence_cards}
-    held_types = _held_document_tokens(documents)
+    held_types = _held_document_types(documents)
+    pending_topic_counts: dict[str, int] = {}
+    for proposal in pending_proposals:
+        topic = (proposal.get("ai_extracted") or {}).get("claim_topic")
+        if topic:
+            pending_topic_counts[topic] = pending_topic_counts.get(topic, 0) + 1
     api_key_set = bool(get_api_key())
     for finding in findings:
         latest = dispositions.get(finding.finding_id, {})
@@ -1039,10 +1099,21 @@ def _findings_tab(project_id, project_record, findings, evidence_cards, document
             st.write("**What this means:**")
             st.write(finding.description)
             st.write(f"**What's missing:** {finding.evidence_gap}")
+            unconfirmed = sum(
+                pending_topic_counts.get(topic, 0)
+                for topic in claim_topics_for_flag(finding.flag_code)
+            )
+            if unconfirmed:
+                st.markdown(
+                    f"<span class='small-muted'>Note: {unconfirmed} unconfirmed proposal(s) "
+                    "may address this — review in AI Proposals tab.</span>",
+                    unsafe_allow_html=True,
+                )
             st.write("**Documents needed:**")
             for required in finding.required_documents:
-                status = "held" if required in held_types else "not held"
-                color = "#16803c" if status == "held" else "#b42318"
+                held = expected_document_is_held(required, held_types)
+                status = "HELD (contents not verified)" if held else "NOT HELD"
+                color = "#16803c" if held else "#b42318"
                 st.markdown(f"- {required.replace('_', ' ')} {_badge(status, color)}", unsafe_allow_html=True)
             st.write("**Supporting evidence cards:**")
             for card_id in finding.evidence_card_ids:
@@ -1342,32 +1413,34 @@ def _load_dispositions_cached(project_id: str) -> dict[str, dict[str, Any]]:
     return latest
 
 
-def _expected_documents_not_held(findings, documents) -> list[dict[str, str]]:
-    held = _held_document_tokens(documents)
+def _held_document_types(documents) -> set[str]:
+    return {document.document_type for document in documents}
+
+
+def _expected_documents_status(findings, documents) -> list[dict[str, str]]:
+    """All expected documents with an honest held/not-held status.
+
+    'Held' proves a document of that kind exists; it never resolves a finding,
+    which is driven by confirmed facts (see EXPECTED_TO_HELD_TYPE docstring).
+    """
+    held_types = _held_document_types(documents)
     rows = []
     seen = set()
     for finding in findings:
         for doc in finding.required_documents:
-            if doc in held or doc in seen:
+            if doc in seen:
                 continue
             seen.add(doc)
+            held = expected_document_is_held(doc, held_types)
             rows.append(
                 {
-                    "document_type": doc,
+                    "document": doc.replace("_", " "),
+                    "status": "HELD (contents not verified)" if held else "NOT HELD",
                     "why expected": finding.evidence_gap,
-                    "which finding it would resolve": finding.flag_code,
+                    "related finding": finding.flag_code,
                 }
             )
     return rows
-
-
-def _held_document_tokens(documents) -> set[str]:
-    held = {document.document_type for document in documents}
-    if "monitoring_report" in held:
-        held.add("second_monitoring_report")
-    if "validation_report" in held:
-        held.add("validation_report")
-    return held
 
 
 def _top_chunk_matches(terms: list[str], chunks: list[DocumentChunk], document_id: str) -> list[dict[str, Any]]:

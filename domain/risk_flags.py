@@ -123,3 +123,55 @@ RISK_FLAGS = {
         "evidence_required": ["PDD or registry entry confirming host country"],
     },
 }
+
+
+# Maps each finding flag to the AI-proposal claim_topic(s) that, once confirmed,
+# would supply the evidence the finding is asking for. Used to tell a reviewer
+# "an unconfirmed proposal may address this" — it never auto-resolves a finding.
+FLAG_CLAIM_TOPICS: dict[str, list[str]] = {
+    "AR_ADD_001": ["additionality", "additionality_demonstration"],
+    "AR_BASE_001": ["baseline_methodology"],
+    "AR_MON_001": ["monitoring", "monitoring_coverage_period_2"],
+    "AR_VAL_001": ["validator", "project_identity"],
+    "AR_REG_001": ["registration", "crediting_period"],
+    "AR_DEREG_001": ["deregistration", "project_status"],
+    "AR_ISS_GAP_001": ["issuance", "issuance_completeness", "monitoring_coverage_period_2"],
+    "AR_PERM_001": ["permanence", "permanence_risk"],
+    "GEN_METH_001": ["baseline_methodology"],
+    "GEN_VAL_001": ["validator", "project_identity"],
+    "GEN_ADD_001": ["additionality", "additionality_demonstration"],
+    "GEN_MON_001": ["monitoring", "monitoring_coverage_period_2"],
+    "GEN_CRED_001": ["crediting_period"],
+    "GEN_REG_001": ["registration", "crediting_period"],
+    "GEN_TITLE_001": ["project_identity"],
+    "GEN_COUNTRY_001": ["project_identity"],
+}
+
+
+def claim_topics_for_flag(flag_code: str) -> list[str]:
+    """Claim topics whose confirmed facts would address the given finding flag."""
+    return FLAG_CLAIM_TOPICS.get(flag_code, [])
+
+
+# Maps an expected-document identifier (as named in a finding's required_documents)
+# to the held document_type(s) that satisfy "a document of this kind exists".
+# Holding a document proves EXISTENCE only, never that its CONTENT resolves a
+# finding — findings are driven by confirmed facts, not by document presence.
+# Identifiers with no uploadable type (deregistration_notice,
+# permanence_risk_assessment, registration_record, verification_report_period_2,
+# voluntary_cancellation_records) are intentionally left unmapped so they remain
+# genuine gaps.
+EXPECTED_TO_HELD_TYPE: dict[str, list[str]] = {
+    "registered_pdd": ["pdd"],
+    "validation_report": ["validation_report"],
+    "monitoring_report": ["monitoring_report"],
+    "second_monitoring_report": ["monitoring_report"],
+}
+
+
+def expected_document_is_held(expected_id: str, held_types: set[str]) -> bool:
+    """True when a held document_type satisfies the expected-document identifier.
+
+    Existence only — this must never be used to close or downgrade a finding.
+    """
+    return any(held in held_types for held in EXPECTED_TO_HELD_TYPE.get(expected_id, []))
