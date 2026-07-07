@@ -1,0 +1,15 @@
+{
+  "document_id": "doc-project-test-vcs-001-178ce81a",
+  "document_type": "unknown",
+  "file_type": "txt",
+  "page_count": 0,
+  "parse_status": "success",
+  "parse_warnings": [],
+  "parsed_at": "2026-06-29T04:55:09.580056+00:00",
+  "parser_name": "text_heuristic",
+  "parser_version": "1.0",
+  "project_id": "project_test_vcs_001",
+  "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project_test_vcs_001\\vcs_methodology_placeholder.txt",
+  "source_url": "",
+  "title": "Vcs Methodology Placeholder"
+}

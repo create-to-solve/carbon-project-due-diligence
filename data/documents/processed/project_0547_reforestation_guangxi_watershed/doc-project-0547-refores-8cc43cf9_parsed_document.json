@@ -1,0 +1,15 @@
+{
+  "document_id": "doc-project-0547-refores-8cc43cf9",
+  "document_type": "pdd",
+  "file_type": "pdf",
+  "page_count": 105,
+  "parse_status": "success",
+  "parse_warnings": [],
+  "parsed_at": "2026-07-07T10:03:33.692968+00:00",
+  "parser_name": "pdfplumber",
+  "parser_version": "1.0",
+  "project_id": "project_0547_reforestation_guangxi_watershed",
+  "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project_0547_reforestation_guangxi_watershed\\PDD-final.pdf",
+  "source_url": "",
+  "title": "Pdd Final"
+}

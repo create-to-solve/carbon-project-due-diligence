@@ -1,0 +1,15 @@
+{
+  "document_id": "doc-project0001-8997cc20",
+  "document_type": "pdd",
+  "file_type": "pdf",
+  "page_count": 92,
+  "parse_status": "success",
+  "parse_warnings": [],
+  "parsed_at": "2026-06-29T05:53:57.806898+00:00",
+  "parser_name": "pdfplumber",
+  "parser_version": "1.0",
+  "project_id": "project0001",
+  "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf",
+  "source_url": "",
+  "title": "Gflpdd2"
+}

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Environments / secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Editor / temp backups
+*.tmp
+*.tmp.*
+
+# Generated project data
+data/documents/processed/*.json
+data/outputs/audit_logs/*.jsonl
+data/outputs/memos/*.md
+data/outputs/case_memory/*.json

@@ -1,0 +1,243 @@
+[
+  {
+    "citation_ids": [
+      "cit-doc-9199-val-023"
+    ],
+    "confidence": 1.0,
+    "extracted_at": "2026-06-28T00:00:00+00:00",
+    "extraction_method": "manual_curation",
+    "fact_id": "fact-9199-001",
+    "label": "Baseline methodology reference",
+    "matched_terms": [
+      "ar-am0004",
+      "baseline methodology"
+    ],
+    "notes": "Curated from registry-aligned validation materials for methodology screening.",
+    "search_terms": [
+      "AR-AM0004",
+      "baseline methodology",
+      "reforestation methodology"
+    ],
+    "source_document_id": "doc-9199-val",
+    "unit": null,
+    "value": "AR-AM0004 ver. 4"
+  },
+  {
+    "citation_ids": [
+      "cit-doc-9199-val-029"
+    ],
+    "confidence": 1.0,
+    "extracted_at": "2026-06-28T00:00:00+00:00",
+    "extraction_method": "manual_curation",
+    "fact_id": "fact-9199-002",
+    "label": "Additionality approach",
+    "matched_terms": [
+      "barrier analysis",
+      "additionality"
+    ],
+    "notes": "Manually curated as the additionality demonstration approach.",
+    "search_terms": [
+      "barrier analysis",
+      "additionality",
+      "investment barrier",
+      "common practice"
+    ],
+    "source_document_id": "doc-9199-val",
+    "unit": null,
+    "value": "barrier_analysis"
+  },
+  {
+    "citation_ids": [
+      "cit-doc-9199-mon2-001"
+    ],
+    "confidence": 1.0,
+    "extracted_at": "2026-06-28T00:00:00+00:00",
+    "extraction_method": "manual_curation",
+    "fact_id": "fact-9199-003",
+    "label": "Annual emission reductions claimed",
+    "matched_terms": [
+      "emission reductions"
+    ],
+    "notes": "Structured registry figure carried into due diligence facts.",
+    "search_terms": [
+      "256,109",
+      "256109",
+      "metric tonnes CO2",
+      "emission reductions"
+    ],
+    "source_document_id": "doc-9199-val",
+    "unit": "tCO2e/year",
+    "value": 256109
+  },
+  {
+    "citation_ids": [
+      "cit-doc-9199-mon2-018"
+    ],
+    "confidence": 1.0,
+    "extracted_at": "2026-06-28T00:00:00+00:00",
+    "extraction_method": "manual_curation",
+    "fact_id": "fact-9199-004",
+    "label": "Crediting period start and end dates",
+    "matched_terms": [
+      "crediting period"
+    ],
+    "notes": "Crediting period dates from structured project record.",
+    "search_terms": [
+      "02 Jun 2005",
+      "2005-06-02",
+      "01 Jun 2025",
+      "crediting period"
+    ],
+    "source_document_id": "doc-9199-val",
+    "unit": null,
+    "value": "2005-06-02 to 2025-06-01"
+  },
+  {
+    "citation_ids": [
+      "cit-doc-9199-val-002"
+    ],
+    "confidence": 1.0,
+    "extracted_at": "2026-06-28T00:00:00+00:00",
+    "extraction_method": "manual_curation",
+    "fact_id": "fact-9199-005",
+    "label": "Validator identity",
+    "matched_terms": [
+      "dnv",
+      "det norske veritas"
+    ],
+    "notes": "Validator identity used for validation rule screening.",
+    "search_terms": [
+      "DNV",
+      "DNV-CUK",
+      "Det Norske Veritas",
+      "validation body"
+    ],
+    "source_document_id": "doc-9199-val",
+    "unit": null,
+    "value": "DNV-CUK"
+  },
+  {
+    "citation_ids": [
+      "cit-doc-9199-mon2-059"
+    ],
+    "confidence": 1.0,
+    "extracted_at": "2026-06-28T00:00:00+00:00",
+    "extraction_method": "manual_curation",
+    "fact_id": "fact-9199-006",
+    "label": "First monitoring period issuance volume",
+    "matched_terms": [
+      "first crediting period"
+    ],
+    "notes": "First issuance volume carried for issuance completeness context.",
+    "search_terms": [
+      "908,264",
+      "908264",
+      "CERs issued",
+      "first crediting period"
+    ],
+    "source_document_id": "doc-9199-mon2",
+    "unit": "CERs",
+    "value": 908264
+  },
+  {
+    "citation_ids": [
+      "cit-doc-9199-mon2-001"
+    ],
+    "confidence": 1.0,
+    "extracted_at": "2026-06-28T00:00:00+00:00",
+    "extraction_method": "manual_curation",
+    "fact_id": "fact-9199-007",
+    "label": "Second monitoring period issuance status",
+    "matched_terms": [
+      "2013",
+      "2020"
+    ],
+    "notes": "Material to issuance gap screening for the 2013-2020 period.",
+    "search_terms": [
+      "374,589",
+      "374589",
+      "awaiting issuance",
+      "second crediting period",
+      "2013",
+      "2020"
+    ],
+    "source_document_id": "doc-9199-mon2",
+    "unit": null,
+    "value": "awaiting_issuance_request"
+  },
+  {
+    "citation_ids": [
+      "cit-doc-9199-mon2-001"
+    ],
+    "confidence": 1.0,
+    "extracted_at": "2026-06-28T00:00:00+00:00",
+    "extraction_method": "manual_curation",
+    "fact_id": "fact-9199-008",
+    "label": "Deregistration date and implication",
+    "notes": "Deregistration treated as a material due diligence event.",
+    "search_terms": [
+      "deregistration",
+      "deregistered",
+      "10 March 2022",
+      "2022-03-10"
+    ],
+    "source_document_id": "doc-9199-mon2",
+    "unit": null,
+    "value": "2022-03-10; project status change requires verification of credit status and recovery pathway."
+  },
+  {
+    "citation_ids": [
+      "cit-doc-9199-val-031"
+    ],
+    "confidence": 1.0,
+    "extracted_at": "2026-06-28T00:00:00+00:00",
+    "extraction_method": "manual_curation",
+    "fact_id": "fact-9199-009",
+    "label": "Host party approval status",
+    "matched_terms": [
+      "letter of approval",
+      "colombia",
+      "designated national authority",
+      "dna"
+    ],
+    "notes": "Host party approval status captured for reviewer question triage.",
+    "search_terms": [
+      "letter of approval",
+      "host party approval",
+      "Colombia",
+      "designated national authority",
+      "DNA"
+    ],
+    "source_document_id": "doc-9199-val",
+    "unit": null,
+    "value": true
+  },
+  {
+    "citation_ids": [
+      "cit-doc-9199-val-048"
+    ],
+    "confidence": 1.0,
+    "extracted_at": "2026-06-28T00:00:00+00:00",
+    "extraction_method": "manual_curation",
+    "fact_id": "fact-9199-010",
+    "label": "Permanence risk treatment",
+    "matched_terms": [
+      "permanence",
+      "non-permanence",
+      "tcer",
+      "lcer"
+    ],
+    "notes": "Permanence risk treatment marked present for deterministic rule screening.",
+    "search_terms": [
+      "permanence",
+      "non-permanence",
+      "buffer",
+      "reversal risk",
+      "tCER",
+      "lCER"
+    ],
+    "source_document_id": "doc-9199-val",
+    "unit": null,
+    "value": true
+  }
+]

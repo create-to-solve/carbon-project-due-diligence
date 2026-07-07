@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carbon Market Due Diligence — project_test_vcs_001 Review Pack</title>
+<style>
+:root {
+  --ink: #18212f;
+  --muted: #647084;
+  --line: #d8dee8;
+  --panel: #ffffff;
+  --page: #f4f6f8;
+  --header: #111827;
+  --critical: #b42318;
+  --critical-soft: #fff1f0;
+  --green: #16803c;
+  --green-soft: #eaf7ee;
+  --amber: #a15c00;
+  --amber-soft: #fff5df;
+  --red: #b42318;
+  --red-soft: #fff1f0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.hero {
+  background: var(--header);
+  color: white;
+  padding: 28px 32px;
+  border-bottom: 4px solid var(--critical);
+}
+.hero-inner, .page, .footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.system-name {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.project-line, .generated-line {
+  margin: 3px 0;
+  color: #d6dde8;
+}
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+.page { padding: 28px 24px 40px; }
+.section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(20, 30, 45, 0.05);
+}
+h2 { margin: 0 0 14px; font-size: 20px; letter-spacing: 0; }
+h3 { margin: 0 0 8px; font-size: 16px; }
+.label {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+}
+.critical-card {
+  border-color: #f0b4ae;
+  background: var(--critical-soft);
+}
+.badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.badge-critical, .badge-contradicts { background: var(--red-soft); color: var(--red); border: 1px solid #f0b4ae; }
+.badge-supports { background: var(--green-soft); color: var(--green); border: 1px solid #a9ddb8; }
+.badge-needs { background: var(--amber-soft); color: var(--amber); border: 1px solid #f3cd89; }
+.badge-review { background: #eef2f7; color: #465266; border: 1px solid #d8dee8; }
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+.required { margin: 10px 0 0; color: #334155; }
+.ai-narrative {
+  margin: 12px 0 4px;
+  padding: 10px 12px;
+  border-left: 3px solid #2563eb;
+  background: #f4f7fc;
+  color: #1f2a3d;
+  font-style: italic;
+  border-radius: 4px;
+}
+.ai-label {
+  display: block;
+  margin: 4px 0 0;
+  color: #647084;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+}
+table { width: 100%; border-collapse: collapse; }
+th, td {
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+  padding: 9px 10px;
+}
+th {
+  background: #f8fafc;
+  font-size: 13px;
+  color: #465266;
+}
+.field-name {
+  width: 28%;
+  font-weight: 700;
+  color: #2f3a4c;
+}
+.muted { color: var(--muted); font-size: 13px; }
+.questions li { margin-bottom: 18px; }
+.response-line {
+  margin-top: 8px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  min-height: 24px;
+}
+.audit-table { font-size: 13px; }
+.audit-table td:nth-child(1) { width: 30%; }
+.audit-table td:nth-child(2) { width: 20%; }
+.hash {
+  overflow-wrap: anywhere;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 13px;
+}
+footer {
+  padding: 22px 24px 34px;
+  color: var(--muted);
+  font-size: 12px;
+}
+@media (max-width: 760px) {
+  .grid { grid-template-columns: 1fr; }
+  .status-row { display: block; }
+  .badge { margin-top: 10px; }
+  .page { padding: 18px 12px; }
+  .section { padding: 16px; }
+}
+@media print {
+  body, .hero, .section, th, .card, .critical-card, .badge {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+  .hero { border-bottom: 1px solid black; }
+  .section, .card, .badge { border-color: #999 !important; }
+  a { color: black; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner status-row">
+    <div>
+      <h1 class="system-name">Carbon Market Due Diligence v1</h1>
+      <p class="project-line">Project: project_test_vcs_001 — Test VCS Project — Generic Demo, Indonesia</p>
+      <p class="generated-line">Generated: 29 June 2026 at 04:46 UTC</p>
+    </div>
+    <span class="badge badge-review">UNKNOWN</span>
+  </div>
+</header>
+<main class="page">
+<section class="section">
+  <h2>Critical Signals</h2>
+  <div class="grid">
+    <article class="card critical-card">
+  <span class="badge badge-critical">High</span>
+  <h3>GEN_ADD_001 — Additionality not demonstrated</h3>
+  <p>No additionality approach was identified. All carbon projects must demonstrate that emission reductions would not have occurred without the carbon finance incentive.</p>
+  
+  
+  <p class="required"><strong>Required documents:</strong> PDD additionality section or validation report confirming additionality assessment</p>
+</article><article class="card critical-card">
+  <span class="badge badge-critical">High</span>
+  <h3>GEN_VAL_001 — No validator identified</h3>
+  <p>No third-party validator (DOE) was identified in the project documents. Validation by an accredited body is required for credit issuance.</p>
+  
+  
+  <p class="required"><strong>Required documents:</strong> Validation report or registration certificate naming the validating DOE</p>
+</article><article class="card critical-card">
+  <span class="badge badge-critical">Medium</span>
+  <h3>GEN_CRED_001 — Crediting period not defined</h3>
+  <p>No crediting period start or end date was found. The crediting period defines the timeframe for which emission reductions can be claimed.</p>
+  
+  
+  <p class="required"><strong>Required documents:</strong> PDD or registration document confirming crediting period</p>
+</article>
+  </div>
+</section>
+<section class="section">
+  <h2>Project Identity</h2>
+  <span class="label">[PROJECT IDENTITY — registry record + confirmed facts]</span>
+  <table>
+    <tbody>
+      <tr><td class="field-name">Project ID</td><td>project_test_vcs_001</td></tr><tr><td class="field-name">Project Title</td><td>Test VCS Project — Generic Demo</td></tr><tr><td class="field-name">Host Country</td><td>Indonesia</td></tr><tr><td class="field-name">Methodology</td><td>VM0044 ver. 1.1</td></tr><tr><td class="field-name">Methodology Type</td><td>generic</td></tr><tr><td class="field-name">Status</td><td>unknown</td></tr><tr><td class="field-name">Document Count</td><td>0</td></tr><tr><td class="field-name">Facts Count</td><td>0</td></tr><tr><td class="field-name">Findings Count</td><td>5</td></tr><tr><td class="field-name">Created At</td><td>2026-06-28T17:07:07.675694+00:00</td></tr><tr><td class="field-name">Data Source</td><td>Carbon DD v1 project registry</td></tr>
+    </tbody>
+  </table>
+  <div class="muted">
+    <p><strong>Limitations</strong></p>
+    <ul><li>Project identity derived from registry record and confirmed facts.</li><li>Primary document verification not yet complete.</li></ul>
+  </div>
+</section>
+<section class="section">
+  <h2>Evidence Cards</h2>
+  <span class="label">[EVIDENCE CHAIN — manually curated, pending human review]</span>
+  <div class="grid">
+    
+  </div>
+</section>
+<section class="section">
+  <h2>Reviewer Questions</h2>
+  <span class="label">[REVIEWER QUESTIONS — human judgment required]</span>
+  <ol class="questions">
+    <li><strong>What was the stated reason for deregistration in March 2022, and was it voluntary or regulatory?</strong>
+  <div class="response-line">Reviewer response:</div>
+</li><li><strong>Are the second monitoring period credits (374,589 CERs, 2013-2020) recoverable under any CDM wind-down or Article 6 transition pathway?</strong>
+  <div class="response-line">Reviewer response:</div>
+</li><li><strong>Does the Colombia host party Letter of Approval remain valid following deregistration, and is it relevant to any transition claim?</strong>
+  <div class="response-line">Reviewer response:</div>
+</li><li><strong>What is the relationship between the 1,257,195 voluntary cancellations and the CP2 balance of 374,589 CERs — do cancellations exceed issuance?</strong>
+  <div class="response-line">Reviewer response:</div>
+</li><li><strong>Is there a verification report for the second monitoring period (2016-2020) and if so, what did it conclude?</strong>
+  <div class="response-line">Reviewer response:</div>
+</li>
+  </ol>
+</section>
+<section class="section">
+  <h2>Evidence Gaps</h2>
+  <span class="label">[GAPS — not yet resolved]</span>
+  <ul>
+    <li>
+  <strong>Finding:</strong> GEN_ADD_001<br>
+  <strong>Documents needed:</strong> PDD additionality section or validation report confirming additionality assessment
+  
+</li><li>
+  <strong>Finding:</strong> GEN_VAL_001<br>
+  <strong>Documents needed:</strong> Validation report or registration certificate naming the validating DOE
+  
+</li><li>
+  <strong>Finding:</strong> GEN_CRED_001<br>
+  <strong>Documents needed:</strong> PDD or registration document confirming crediting period
+  
+</li>
+  </ul>
+</section>
+<section class="section">
+  <h2>Audit Trail</h2>
+  <span class="label">[AUDIT TRAIL — most recent pipeline run]</span>
+  <table class="audit-table">
+    <thead><tr><th>Step</th><th>Events</th><th>Timestamp</th></tr></thead>
+    <tbody><tr><td>Document ingestion</td><td>0 documents</td><td></td></tr><tr><td>Chunk extraction</td><td>0 chunks</td><td></td></tr><tr><td>Citation creation</td><td>0 citations</td><td></td></tr><tr><td>Fact curation</td><td>0 facts</td><td></td></tr><tr><td>Evidence cards</td><td>0 cards</td><td></td></tr><tr><td>Conflict detection</td><td>0 conflicts</td><td></td></tr><tr><td>Findings flagged</td><td>0 findings</td><td></td></tr><tr><td>Memo generated</td><td>0</td><td></td></tr><tr><td>Case snapshot</td><td>0</td><td></td></tr></tbody>
+  </table>
+  <p class="muted">Full audit log: 7 events recorded across all pipeline runs. Content hash: 69097d91592da08c...</p>
+</section>
+<section class="section">
+  <h2>Case Memory</h2>
+  <span class="label">[CASE MEMORY — hash-verified snapshot]</span>
+  <p><strong>content_hash:</strong> <span class="hash">69097d91592da08c49495b4d1f3681e93c45feef784deee5b7428a5725a9f326</span></p>
+  <p><strong>event_count:</strong> 6</p>
+  <p><strong>snapshot_timestamp:</strong> 2026-06-28T17:07:14.258190+00:00</p>
+</section>
+</main>
+<footer>
+  <div class="footer-inner">
+    <p>This memo is system-generated from structured registry data and manually curated evidence. It does not constitute a legal determination, investment advice, or eligibility certification. All findings require human review and verification against primary documents. The system records what is known, what is missing, and what requires judgment — it does not make the judgment.</p>
+  </div>
+</footer>
+</body>
+</html>

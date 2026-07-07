@@ -1,0 +1,15 @@
+{
+  "document_id": "doc-project0001-2cf0da1d",
+  "document_type": "validation_report",
+  "file_type": "pdf",
+  "page_count": 16,
+  "parse_status": "success",
+  "parse_warnings": [],
+  "parsed_at": "2026-06-29T05:45:34.383406+00:00",
+  "parser_name": "pdfplumber",
+  "parser_version": "1.0",
+  "project_id": "project0001",
+  "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\Validation Report revision 1.pdf",
+  "source_url": "",
+  "title": "Validation Report Revision 1"
+}

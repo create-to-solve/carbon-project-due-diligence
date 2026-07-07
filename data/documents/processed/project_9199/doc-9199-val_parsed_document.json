@@ -1,0 +1,15 @@
+{
+  "document_id": "doc-9199-val",
+  "document_type": "validation_report",
+  "file_type": "pdf",
+  "page_count": 98,
+  "parse_status": "success",
+  "parse_warnings": [],
+  "parsed_at": "2026-06-29T04:46:11.034035+00:00",
+  "parser_name": "pdfplumber",
+  "parser_version": "1.0",
+  "project_id": "project_9199",
+  "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project_9199\\validation_report_9199.pdf",
+  "source_url": "https://cdm.unfccc.int/UserManagement/FileStorage/9JUF31R8YCAHX7DIEWNZ6SPL2KMQ5G",
+  "title": "Validation Report for CDM Project 9199"
+}

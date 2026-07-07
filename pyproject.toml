@@ -1,0 +1,14 @@
+[project]
+name = "carbon-dd-v1"
+version = "0.1.0"
+description = "Standalone carbon project due diligence vertical slice"
+requires-python = ">=3.10"
+dependencies = [
+  "pdfplumber>=0.10.0",
+  "streamlit>=1.40.0",
+  "openai>=1.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+

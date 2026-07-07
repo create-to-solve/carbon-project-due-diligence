@@ -1,0 +1,3002 @@
+[
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Project No. CDM.Val0018",
+      "label": "project_number",
+      "page_number": 1,
+      "unit": null,
+      "value": "CDM.Val0018"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-735d3385",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-001",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Date: August 12, 2004",
+      "label": "validation_date",
+      "page_number": 1,
+      "unit": null,
+      "value": "August 12, 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-f134bddd",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-001",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "revised 8th March 2005",
+      "label": "validation_revision_date",
+      "page_number": 1,
+      "unit": null,
+      "value": "March 8, 2005"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-5c5f2243",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-001",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "SGS United Kingdom Ltd",
+      "label": "validator_name",
+      "page_number": 1,
+      "unit": null,
+      "value": "SGS United Kingdom Ltd"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-6a591635",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-002",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Project 0001 : Project for GHG emission reduction by thermal oxidation of HFC 23 in Gujarat, India.",
+      "label": "project_title",
+      "page_number": 2,
+      "unit": null,
+      "value": "Project 0001 : Project for GHG emission reduction by thermal oxidation of HFC 23 in Gujarat, India."
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-aeeae608",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-002",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "a project to be implemented by Gujarat Fluorochemicals Ltd",
+      "label": "project_implementer",
+      "page_number": 2,
+      "unit": null,
+      "value": "Gujarat Fluorochemicals Ltd"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-67532737",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-002",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "The validation, undertaken by SGS",
+      "label": "validator",
+      "page_number": 2,
+      "unit": null,
+      "value": "SGS"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-72593f0a",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-002",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Approved by: SGS Climate Change Programme",
+      "label": "validation_approval",
+      "page_number": 2,
+      "unit": null,
+      "value": "SGS Climate Change Programme"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-33b3b214",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-002",
+      "claim_topic": "registration",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Date of first issue: April 8, 2004",
+      "label": "validation_date",
+      "page_number": 2,
+      "unit": null,
+      "value": "April 8, 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-a9b4cea4",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-002",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "follows the approved methodology",
+      "label": "baseline_methodology",
+      "page_number": 2,
+      "unit": null,
+      "value": "AM0001 ver. 2"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-d361192b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-002",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "GFL site in India",
+      "label": "host_country",
+      "page_number": 2,
+      "unit": null,
+      "value": "India"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-d45c75a9",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-002",
+      "claim_topic": "registration",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "The project will hence be recommended by SGS for registration with the UNFCCC.",
+      "label": "project_registration_recommendation",
+      "page_number": 2,
+      "unit": null,
+      "value": "recommended by SGS for registration with the UNFCCC"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-62e1da87",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-005",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "project to be implemented by Gujarat Fluorochemicals Ltd (GFL)",
+      "label": "project_proponent",
+      "page_number": 5,
+      "unit": null,
+      "value": "Gujarat Fluorochemicals Ltd (GFL)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-c8abd5eb",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-005",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "project follows the approved methodology (AM0001)",
+      "label": "baseline_methodology",
+      "page_number": 5,
+      "unit": null,
+      "value": "AM0001"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-0d10d423",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-005",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "John Miles acted as Team Leader",
+      "label": "validation_team_leader",
+      "page_number": 5,
+      "unit": null,
+      "value": "John Miles"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-c2f67dbf",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-005",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "subjected to a Technical Review by Gareth Phillips",
+      "label": "technical_reviewer",
+      "page_number": 5,
+      "unit": null,
+      "value": "Gareth Phillips"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-bdb2b511",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-006",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Project No: CDM.Val0018",
+      "label": "project_id",
+      "page_number": 6,
+      "unit": null,
+      "value": "CDM.Val0018"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-f7acb05f",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-006",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Consultancy for the project was provided by Ineos Fluor, the technology sponsors, and Price Waterhouse Coopers (PWC)",
+      "label": "consultancy_provided_by",
+      "page_number": 6,
+      "unit": null,
+      "value": "Ineos Fluor and Price Waterhouse Coopers (PWC)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-8c8d2a1e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-006",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "There is no official requirement for an Environmental Impact Assessment, however GFL have undertaken one voluntarily.",
+      "label": "environmental_impact_assessment",
+      "page_number": 6,
+      "unit": null,
+      "value": "voluntarily undertaken"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-c0abe6cd",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-007",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "letter dated 30th December, 2004 confirming",
+      "label": "host_party_approval_date",
+      "page_number": 7,
+      "unit": null,
+      "value": "30th December, 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-1b80239d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-007",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "data used to determine the baseline emissions had been verified",
+      "label": "baseline_emissions_verification",
+      "page_number": 7,
+      "unit": null,
+      "value": "verified during the site visit"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-4fd43dd4",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-007",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "The project involves the installation of a thermal oxidation unit",
+      "label": "project_description",
+      "page_number": 7,
+      "unit": null,
+      "value": "installation of a thermal oxidation unit at the HCFC22 plant"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-42d828b4",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-010",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "The site visit to the GFL site in Gujarat took place during December 2003",
+      "label": "site_visit_date",
+      "page_number": 10,
+      "unit": null,
+      "value": "December 2003"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-b0fc92de",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-010",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "It was performed by the validators John Miles and Shivananda Shetty of SGS",
+      "label": "validators",
+      "page_number": 10,
+      "unit": null,
+      "value": "John Miles and Shivananda Shetty of SGS"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-70368ca8",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-011",
+      "claim_topic": "project_identity",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "re-issued the PDD on 8th March 2004",
+      "label": "project_design_modification_date",
+      "page_number": 11,
+      "unit": null,
+      "value": "8th March 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-6f169554",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-011",
+      "claim_topic": "project_identity",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "final version of the PDD to include all project participants was issued on 23rd June, 2004",
+      "label": "final_pdd_issue_date",
+      "page_number": 11,
+      "unit": null,
+      "value": "23rd June, 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-37780dff",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-012",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Approved Methodology (AM0001)",
+      "label": "methodology_reference",
+      "page_number": 12,
+      "unit": null,
+      "value": "AM0001"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-1ec6c15b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-012",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "technology employed in the project is similar to that deployed by Ineos Fluor",
+      "label": "technology_comparison",
+      "page_number": 12,
+      "unit": null,
+      "value": "similar to that deployed by Ineos Fluor in their plant at Runcorn UK"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-85f71017",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-012",
+      "claim_topic": "crediting_period",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Both project duration and crediting time are clearly described in the PDD",
+      "label": "project_duration_crediting_time",
+      "page_number": 12,
+      "unit": null,
+      "value": "clearly described in the PDD"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-956c282b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-013",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "cut-off ratio, which should be set at 2.9%",
+      "label": "chloroform_cut_off_ratio",
+      "page_number": 13,
+      "unit": "%",
+      "value": "2.9"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-f41b18f8",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-013",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "emissions reductions due to the project will be in excess of 3 million tonnes CO e per year",
+      "label": "emission_reductions_estimate",
+      "page_number": 13,
+      "unit": "tonnes CO2e per year",
+      "value": "3 million"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-e976448d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-013",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "frequency of recording for parameters to be measured or calculated in connection with the project activity is specified in the PDD and ranges from monthly to yearly",
+      "label": "monitoring_frequency",
+      "page_number": 13,
+      "unit": null,
+      "value": "monthly to yearly"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-5e0b436a",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-014",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Certificate of No Objection by the Gujarat Pollution Control Board was provided dated 15 March 2004",
+      "label": "eia_approval_date",
+      "page_number": 14,
+      "unit": null,
+      "value": "15 March 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-265f31fb",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-014",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "meetings held at their Vadodara office on 13th June 2003",
+      "label": "local_stakeholder_meeting_date",
+      "page_number": 14,
+      "unit": null,
+      "value": "13th June 2003"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-d682f524",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-015",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "There are no regulations in India restricting emissions of HFC23",
+      "label": "host_country_regulations",
+      "page_number": 15,
+      "unit": null,
+      "value": "There are no regulations in India restricting emissions of HFC23"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-67b0c79e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-015",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "30-40 new employment opportunities will be created",
+      "label": "employment_opportunities",
+      "page_number": 15,
+      "unit": null,
+      "value": "30-40 new employment opportunities"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-ba3000b7",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-015",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "project meets all relevant UNFCCC requirements for the CDM",
+      "label": "validation_opinion",
+      "page_number": 15,
+      "unit": null,
+      "value": "project meets all relevant UNFCCC requirements for the CDM"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-2419fda0",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-015",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "recommended by SGS for registration with the UNFCCC",
+      "label": "validator_recommendation",
+      "page_number": 15,
+      "unit": null,
+      "value": "recommended by SGS for registration with the UNFCCC"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-f098c83e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-016",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "prepared by Price Waterhouse Coopers",
+      "label": "project_design_document_preparation",
+      "page_number": 16,
+      "unit": null,
+      "value": "Price Waterhouse Coopers"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-9c55f0ae",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-016",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Host Country Letter of Approval dated 5 January 2004",
+      "label": "host_country_letter_of_approval_date",
+      "page_number": 16,
+      "unit": null,
+      "value": "5 January 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-771ddaf0",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-016",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "No Objection Certificate dated 15 March 2004",
+      "label": "no_objection_certificate_date",
+      "page_number": 16,
+      "unit": null,
+      "value": "15 March 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-65ee0fdb",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-2cf0da1d-page-016",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-2cf0da1d",
+      "evidence_quote": "Methodology AM0001, Incineration of HFC23 Waste streams, dated 26 September 2003",
+      "label": "methodology_document_date",
+      "page_number": 16,
+      "unit": null,
+      "value": "26 September 2003"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-432d2e89",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Project for GHG Emission Reduction by Thermal Oxidation of HFC 23",
+      "label": "project_title",
+      "page_number": 1,
+      "unit": null,
+      "value": "Project for GHG Emission Reduction by Thermal Oxidation of HFC 23"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-e15a1898",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "HCFC 22 PLANT of GUJARAT FLUOROCHEMICALS LIMITED (GFL)",
+      "label": "project_location",
+      "page_number": 1,
+      "unit": null,
+      "value": "HCFC 22 PLANT of GUJARAT FLUOROCHEMICALS LIMITED (GFL)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-3fcaa955",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-001",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "November 14, 2003",
+      "label": "document_preparation_date",
+      "page_number": 1,
+      "unit": null,
+      "value": "November 14, 2003"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-486aa4c2",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-001",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Prepared by PricewaterhouseCoopers (P) Ltd.",
+      "label": "document_preparer",
+      "page_number": 1,
+      "unit": null,
+      "value": "PricewaterhouseCoopers (P) Ltd."
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-984fc85f",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-001",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Updated on 23 June 2004",
+      "label": "document_revision_date",
+      "page_number": 1,
+      "unit": null,
+      "value": "23 June 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-e1fef30b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-004",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "GUJARAT FLUOROCHEMICALS LIMITED",
+      "label": "project_owner",
+      "page_number": 4,
+      "unit": null,
+      "value": "Gujarat Fluorochemicals Limited"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-db32e6d9",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-004",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Prepared by PWC",
+      "label": "document_prepared_by",
+      "page_number": 4,
+      "unit": null,
+      "value": "PWC"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-33f3e900",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-010",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Gujarat, India",
+      "label": "project_location",
+      "page_number": 10,
+      "unit": null,
+      "value": "Gujarat, India"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-f31d00ab",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-010",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Contribute to the global initiatives towards mitigation of climate change through a reduction in GHG emissions",
+      "label": "project_objective",
+      "page_number": 10,
+      "unit": null,
+      "value": "Contribute to the global initiatives towards mitigation of climate change through a reduction in GHG emissions"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-2d7ce274",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-010",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "instantaneous design capacity to handle the entire emission of HFC 23",
+      "label": "project_capacity",
+      "page_number": 10,
+      "unit": null,
+      "value": "instantaneous design capacity to handle the entire emission of HFC 23"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-349d7b0e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-013",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Gujarat Fluorochemicals Limited (GFL) or its associate companies will be the promoter",
+      "label": "project_promoter",
+      "page_number": 13,
+      "unit": null,
+      "value": "Gujarat Fluorochemicals Limited (GFL)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-0c71ef0d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-013",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Republic of India, the host country, is a party to the Kyoto Protocol and has acceded to the Kyoto Protocol in 2002.",
+      "label": "host_country_kyoto_protocol_accession",
+      "page_number": 13,
+      "unit": null,
+      "value": "2002"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-fdee0bee",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-013",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Japan ratified the Kyoto Protocol on 4 June 2002",
+      "label": "japan_kyoto_protocol_ratification",
+      "page_number": 13,
+      "unit": null,
+      "value": "4 June 2002"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-0b8fcafe",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-013",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The United Kingdom ratified the Kyoto Protocol on 31 May 2002.",
+      "label": "uk_kyoto_protocol_ratification",
+      "page_number": 13,
+      "unit": null,
+      "value": "31 May 2002"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-166ec690",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-013",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The Netherlands ratified the Kyoto Protocol on 31 May 2002",
+      "label": "netherlands_kyoto_protocol_ratification",
+      "page_number": 13,
+      "unit": null,
+      "value": "31 May 2002"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-658c7682",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-016",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Gujarat / District Panchmahals, Taluka Ghoghamba",
+      "label": "project_location",
+      "page_number": 16,
+      "unit": null,
+      "value": "Gujarat, District Panchmahals, Taluka Ghoghamba, Ranjitnagar"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-9feed397",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-016",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Survey No. 16 / 3, 26, 27 Ranjitnagar",
+      "label": "project_address",
+      "page_number": 16,
+      "unit": null,
+      "value": "Survey No. 16 / 3, 26, 27, Ranjitnagar, Taluka Ghoghamba, District Panchmahals, Gujarat, India"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-155411e0",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-016",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Nearest airport and railway station is Vadodara (60 km)",
+      "label": "nearest_airport_railway",
+      "page_number": 16,
+      "unit": "km",
+      "value": "Vadodara (60 km)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-fb62ab3b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-016",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Latitude Between 220 25\u2019 and 220 35\u2019",
+      "label": "latitude_range",
+      "page_number": 16,
+      "unit": null,
+      "value": "Between 220 25\u2019 and 220 35\u2019"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-d0ae06dc",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-016",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Longitude Between 730 30\u2019 and 730 45\u2019",
+      "label": "longitude_range",
+      "page_number": 16,
+      "unit": null,
+      "value": "Between 730 30\u2019 and 730 45\u2019"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-97020baa",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-016",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The project is principally categorized in: Category 11",
+      "label": "project_category",
+      "page_number": 16,
+      "unit": null,
+      "value": "Category 11: Fugitive emissions from production and consumption of halocarbons and sulphur hexafluoride"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-58a0dfc4",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-016",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The methodology AM 0001, applied to this project, has its category 11.",
+      "label": "methodology_category",
+      "page_number": 16,
+      "unit": null,
+      "value": "Category 11"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-867608d5",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-022",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "A combustion efficiency of more than 99.999% with regard to destruction / oxidation of HFC 23",
+      "label": "combustion_efficiency",
+      "page_number": 22,
+      "unit": "%",
+      "value": "more than 99.999%"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-0e1d5081",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-025",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Project for GHG Emission Reduction by Thermal Oxidation of HFC 23",
+      "label": "project_title",
+      "page_number": 25,
+      "unit": null,
+      "value": "Project for GHG emission reduction by thermal oxidation of HFC 23 in Gujarat, India."
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-5bd5bcf7",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-025",
+      "claim_topic": "additionality",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "At present, no public funding is envisaged.",
+      "label": "public_funding_status",
+      "page_number": 25,
+      "unit": null,
+      "value": "no public funding is envisaged"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-19a284cf",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-028",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Project for GHG Emission Reduction by Thermal Oxidation of HFC 23",
+      "label": "project_title",
+      "page_number": 28,
+      "unit": null,
+      "value": "Project for GHG emission reduction by thermal oxidation of HFC 23 in Gujarat, India"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-d6ffd55e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-028",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The approved GWP value for HFC 23 is 11,700 tonnes CO2 / tonne HFC 23",
+      "label": "gwp_value_hfc23",
+      "page_number": 28,
+      "unit": "tonnes CO2 / tonne HFC 23",
+      "value": "11,700"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-9bc29427",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-031",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "GUJARAT FLUOROCHEMICALS LIMITED",
+      "label": "project_operator",
+      "page_number": 31,
+      "unit": null,
+      "value": "Gujarat Fluorochemicals Limited"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-3814fc35",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-031",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "approved methodology",
+      "label": "baseline_methodology",
+      "page_number": 31,
+      "unit": null,
+      "value": "AM0001 ver. 2"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-d534ebc3",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-031",
+      "claim_topic": "emission_reductions",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "no additional or extra credit is earned by increasing the generation of HFC 23 beyond the cut-off level",
+      "label": "cut_off_rate",
+      "page_number": 31,
+      "unit": null,
+      "value": "no additional or extra credit is earned by increasing the generation of HFC 23 beyond the cut-off level"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-811872f9",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-031",
+      "claim_topic": "monitoring",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Actual emissions can be checked by the concerned entity during the time of inspection / verification",
+      "label": "monitoring_verification_plan",
+      "page_number": 31,
+      "unit": null,
+      "value": "Actual emissions can be checked by the concerned entity during the time of inspection / verification"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-ea2e1723",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-031",
+      "claim_topic": "baseline_methodology",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The facility to decompose the HFC 23, which starts from the C 209 vent",
+      "label": "project_boundary",
+      "page_number": 31,
+      "unit": null,
+      "value": "The facility to decompose the HFC 23, which starts from the C 209 vent (in the HCFC 22 plant)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-ec020649",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-034",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The Monitoring methodology for thermal oxidation (decomposition) of HFC 23 in a non-",
+      "label": "monitoring_methodology_title",
+      "page_number": 34,
+      "unit": null,
+      "value": "The Monitoring methodology for thermal oxidation (decomposition) of HFC 23 in a non-Annex I Party where regulations do not restrict HFC 23 emissions."
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-c266c462",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-034",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The monitoring methodology is same as \u2018Approved Monitoring Methodology AM 0001\u2019",
+      "label": "monitoring_methodology_reference",
+      "page_number": 34,
+      "unit": null,
+      "value": "Approved Monitoring Methodology AM 0001"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-c970dbdc",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-034",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The monitoring methodology is based on direct and continuous measurement",
+      "label": "monitoring_methodology_basis",
+      "page_number": 34,
+      "unit": null,
+      "value": "direct and continuous measurement of the actual amount of HFC 23 destroyed and of the energy and chemicals used in the destruction process"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-82582c09",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-034",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "two (2) mass flow meters, in series but read simultaneously, each of which is calibrated periodically",
+      "label": "monitoring_instruments",
+      "page_number": 34,
+      "unit": null,
+      "value": "two (2) mass flow meters, in series but read simultaneously, each of which is calibrated periodically"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-465e2cf2",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-034",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The periodicity of re-calibration with help of zero check shall be weekly.",
+      "label": "monitoring_calibration_periodicity",
+      "page_number": 34,
+      "unit": null,
+      "value": "weekly"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-6354464e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-034",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Purity of HFC 23 waste stream is checked daily by sampling",
+      "label": "monitoring_purity_check_frequency",
+      "page_number": 34,
+      "unit": null,
+      "value": "daily"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-312b515e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-034",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "the GC shall be calibrated once weekly using a secondary standard",
+      "label": "monitoring_gc_calibration_frequency",
+      "page_number": 34,
+      "unit": null,
+      "value": "once weekly"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-61672098",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-037",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Solids (CaF2 and CaCl2) ... are used as landfill for safe disposal",
+      "label": "solid_waste_disposal_method",
+      "page_number": 37,
+      "unit": null,
+      "value": "landfill for safe disposal"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-e171e2cc",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-037",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "dioxins will be less than 0.1 ng / NM3 of flue gas",
+      "label": "flue_gas_dioxin_limit",
+      "page_number": 37,
+      "unit": "ng / NM3",
+      "value": "0.1 ng / NM3"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-3b68e67e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-037",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "This monitoring methodology AM 0001 can be used for the project activities that thermally oxidise (incinerate) HFC 23 waste",
+      "label": "methodology_applicability",
+      "page_number": 37,
+      "unit": null,
+      "value": "AM 0001 can be used for the project activities that thermally oxidise (incinerate) HFC 23 waste"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-efb3d2b5",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-040",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "10 years",
+      "label": "data_archiving_duration",
+      "page_number": 40,
+      "unit": "years",
+      "value": "10 years"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-22f46f90",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-040",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Every 6 months",
+      "label": "data_recording_frequency",
+      "page_number": 40,
+      "unit": "months",
+      "value": "Every 6 months"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-8e3d3d9d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-040",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Paper & Electronic Copy",
+      "label": "data_archiving_method",
+      "page_number": 40,
+      "unit": null,
+      "value": "Paper & Electronic Copy"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-18b89a1b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-040",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Revision 3",
+      "label": "document_revision",
+      "page_number": 40,
+      "unit": null,
+      "value": "Revision 3"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-3401e545",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-040",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Updated on 23 June 2004",
+      "label": "document_update_date",
+      "page_number": 40,
+      "unit": null,
+      "value": "23 June 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-e77c0e56",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-043",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Monthly",
+      "label": "data_recording_frequency",
+      "page_number": 43,
+      "unit": null,
+      "value": "Monthly"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-40d3df7d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-043",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Paper & Electronic",
+      "label": "data_archiving_method",
+      "page_number": 43,
+      "unit": null,
+      "value": "Paper & Electronic"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-ad946256",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-047",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "PricewaterhouseCoopers have assisted the Project Promoters",
+      "label": "monitoring_methodology_determiner",
+      "page_number": 47,
+      "unit": null,
+      "value": "PricewaterhouseCoopers"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-086540e4",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-047",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Name: Dr. P. Ram Babu",
+      "label": "contact_person_name",
+      "page_number": 47,
+      "unit": null,
+      "value": "Dr. P. Ram Babu"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-5dfb400d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-047",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Title: Associate Director",
+      "label": "contact_person_title",
+      "page_number": 47,
+      "unit": null,
+      "value": "Associate Director"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-5e1ddcf0",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-047",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Department: Sustainability Business Solutions",
+      "label": "contact_person_department",
+      "page_number": 47,
+      "unit": null,
+      "value": "Sustainability Business Solutions"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-fb12509b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-047",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Address: PricewaterhouseCoopers Private Ltd.",
+      "label": "contact_person_address",
+      "page_number": 47,
+      "unit": null,
+      "value": "PricewaterhouseCoopers Private Ltd., Dubash House, 15 J.N. Heredia Marg, Ballard Estate, Mumbai 400 038"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-40671d4c",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-047",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Telephone: + 91 (22) 2261 8209",
+      "label": "contact_person_telephone",
+      "page_number": 47,
+      "unit": null,
+      "value": "+ 91 (22) 2261 8209, + 91 (22) 2265 2306, + 91 (22) 2265 2307"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-f41d0f85",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-047",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Fax: + 91 (22) 2261 3819",
+      "label": "contact_person_fax",
+      "page_number": 47,
+      "unit": null,
+      "value": "+ 91 (22) 2261 3819"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-dac086f0",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-047",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "E-Mail: Ram.babu@in.pwc.com",
+      "label": "contact_person_email",
+      "page_number": 47,
+      "unit": null,
+      "value": "Ram.babu@in.pwc.com"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-6cfa2f91",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-050",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The value of GWP is equal to 11,700",
+      "label": "global_warming_potential_hfc23",
+      "page_number": 50,
+      "unit": null,
+      "value": "11,700"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-482cbb05",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-050",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Emission reductions due to project activity. E 3,393,000",
+      "label": "emission_reductions_2003",
+      "page_number": 50,
+      "unit": "MT CO2",
+      "value": "3,393,000"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-740a1175",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-056",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "the proposed system requires about 60 M3/day of water",
+      "label": "water_usage",
+      "page_number": 56,
+      "unit": "M3/day",
+      "value": "60"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-e615b9d7",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-056",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "nearly 45m3/day of water would be recycled",
+      "label": "water_recycled",
+      "page_number": 56,
+      "unit": "m3/day",
+      "value": "45"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-5f714f89",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-056",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "only 15 m3/day of water shall be drawn from external sources",
+      "label": "external_water_drawn",
+      "page_number": 56,
+      "unit": "m3/day",
+      "value": "15"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-181cf0f5",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-056",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "nearly 30 to 40 new jobs are likely to be created",
+      "label": "new_jobs_created",
+      "page_number": 56,
+      "unit": null,
+      "value": "30 to 40"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-494e7814",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-056",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "nearly 90% of these new jobs would involve unskilled labour",
+      "label": "local_employment_percentage",
+      "page_number": 56,
+      "unit": "%",
+      "value": "90"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-d09f21a6",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-056",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "additional revenue on account of transfer of CERs",
+      "label": "cer_revenue_impact",
+      "page_number": 56,
+      "unit": null,
+      "value": "positive"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-92acffdd",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-059",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Organization: Ineos Fluor Holdings Limited",
+      "label": "project_participant_organization",
+      "page_number": 59,
+      "unit": null,
+      "value": "Ineos Fluor Holdings Limited"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-2fe2406b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-059",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Country: United Kingdom",
+      "label": "project_participant_country",
+      "page_number": 59,
+      "unit": null,
+      "value": "United Kingdom"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-bc30b009",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-059",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Salutation: Dr. Last Name: Lindley",
+      "label": "project_participant_representative",
+      "page_number": 59,
+      "unit": null,
+      "value": "Dr. Andrew A Lindley"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-62f00ec9",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-059",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Organization: Rabobank International",
+      "label": "project_participant_organization",
+      "page_number": 59,
+      "unit": null,
+      "value": "Rabobank International"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-c06e605d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-059",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Country: The Netherlands",
+      "label": "project_participant_country",
+      "page_number": 59,
+      "unit": null,
+      "value": "The Netherlands"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-dc114550",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-074",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Map of Gujarat and Panchmahals",
+      "label": "project_location",
+      "page_number": 74,
+      "unit": null,
+      "value": "Gujarat and Panchmahals"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-f983599e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-074",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Revision 3 Prepared by PWC",
+      "label": "document_revision",
+      "page_number": 74,
+      "unit": null,
+      "value": "3"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-ca5a952b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-083",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "GFL has expressed its strong commitment to the sustainable development activities by committing a total fund of Rs. 7 Crores (Euro 1.375 Million)",
+      "label": "commitment_to_sustainable_development_fund",
+      "page_number": 83,
+      "unit": null,
+      "value": "Rs. 7 Crores (Euro 1.375 Million)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-57966065",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-086",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Around 30 \u2013 40 new employees would need to be recruited",
+      "label": "new_employees_required",
+      "page_number": 86,
+      "unit": "employees",
+      "value": "30 \u2013 40"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-62d7ebca",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-086",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The system operated as zero emission standard",
+      "label": "emission_standard",
+      "page_number": 86,
+      "unit": null,
+      "value": "zero emission standard"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-733419be",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-089",
+      "claim_topic": "other",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "Approximately 30 \u2013 40 persons would be employed",
+      "label": "project_employment",
+      "page_number": 89,
+      "unit": "persons",
+      "value": "30 \u2013 40 persons"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-9e915faf",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-089",
+      "claim_topic": "other",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "80% - 90% of this requirement to be in the unskilled category",
+      "label": "employment_skill_level",
+      "page_number": 89,
+      "unit": "percentage",
+      "value": "80% - 90% unskilled"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-755bc46a",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-8997cc20-page-089",
+      "claim_topic": "other",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-8997cc20",
+      "evidence_quote": "The system operated as zero emission standard",
+      "label": "occupational_health_safety_standard",
+      "page_number": 89,
+      "unit": null,
+      "value": "zero emission standard"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-8c4c0351",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-001",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Name of the designated operational SGS United Kingdom Ltd.",
+      "label": "validator",
+      "page_number": 1,
+      "unit": null,
+      "value": "SGS United Kingdom Ltd."
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-e5a91dc7",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Title of the proposed CDM project Project for GHG emission reduction by thermal",
+      "label": "project_title",
+      "page_number": 1,
+      "unit": null,
+      "value": "Project for GHG emission reduction by thermal oxidation of HFC 23 in Gujarat, India."
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-f5afb80b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Project participants (Name(s)) (cid:131) Cooperatieve Centrale Raiffeisen Boerenleenbank",
+      "label": "project_participants",
+      "page_number": 1,
+      "unit": null,
+      "value": "Cooperatieve Centrale Raiffeisen Boerenleenbank B.A. (Rabobank), Netherlands; Gujarat Fluorochemicals Limited, Gujarat, India; Ineos Fluor Limited, United Kingdom; Sumitomo Corporation, Japan"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-f935a551",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Sector in which project activity falls Fugitive emissions from production and consumption",
+      "label": "sector",
+      "page_number": 1,
+      "unit": null,
+      "value": "Fugitive emissions from production and consumption of halocarbons and sulphur hexafluoride"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-bbe9a2b4",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Is the proposed project activity a small-scale No",
+      "label": "small_scale_activity",
+      "page_number": 1,
+      "unit": null,
+      "value": "No"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-34837993",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-001",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Host Party: (cid:31) India",
+      "label": "host_party_approval",
+      "page_number": 1,
+      "unit": null,
+      "value": "India"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-fcf6dbf0",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-001",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Other Parties involved: (cid:31) Japan",
+      "label": "other_parties_involved",
+      "page_number": 1,
+      "unit": null,
+      "value": "Japan, Netherlands, United Kingdom of Great Britain and Northern Ireland"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-dce7ab21",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-003",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "validation by SGS of the CDM Project",
+      "label": "validator",
+      "page_number": 3,
+      "unit": null,
+      "value": "SGS"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-b18f913f",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-003",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "GHG Emission Reduction by Thermal Oxidation of HFC23 at the HCFC Plant of Gujarat Fluorochemicals Ltd",
+      "label": "project_identity",
+      "page_number": 3,
+      "unit": null,
+      "value": "GHG Emission Reduction by Thermal Oxidation of HFC23 at the HCFC Plant of Gujarat Fluorochemicals Ltd (GFL)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-082b9c72",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-003",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "project follows the approved methodology (AM0001)",
+      "label": "baseline_methodology",
+      "page_number": 3,
+      "unit": null,
+      "value": "AM0001"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-6fa27b6f",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-005",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "The validation was performed as a desk review in combination with a site visit",
+      "label": "validation_method",
+      "page_number": 5,
+      "unit": null,
+      "value": "desk review in combination with a site visit"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-e4f173c9",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-005",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "validation protocol was based on the template of the IETA / World Bank Validation and Verification Manual",
+      "label": "validation_protocol_template",
+      "page_number": 5,
+      "unit": null,
+      "value": "IETA / World Bank Validation and Verification Manual"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-8c299ddd",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-006",
+      "claim_topic": "host_party_approval",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "host country approval dated 9th November, 2004",
+      "label": "host_country_approval_date",
+      "page_number": 6,
+      "unit": null,
+      "value": "9th November, 2004"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-656cab33",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-006",
+      "claim_topic": "host_party_approval",
+      "confidence": 0.8,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "host country approval dated 5th Janua",
+      "label": "previous_host_country_approval_date",
+      "page_number": 6,
+      "unit": null,
+      "value": "5th January"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-4eccb1ab",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-007",
+      "claim_topic": "additionality",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Strategic Business Plan (prepared prior to knowledge of CDM) upto 2010",
+      "label": "strategic_business_plan_submission",
+      "page_number": 7,
+      "unit": null,
+      "value": "Strategic Business Plan (prepared prior to knowledge of CDM) upto 2010"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-7b83605d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-007",
+      "claim_topic": "emission_reductions",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "would not claim any CERs relating to HCFC22 production in excess",
+      "label": "cer_claim_limitation",
+      "page_number": 7,
+      "unit": null,
+      "value": "would not claim any CERs relating to HCFC22 production in excess of its Strategic Business Plan, or actual HCFC22 production, whichever is lower"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-290f85d3",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-007",
+      "claim_topic": "other",
+      "confidence": 0.8,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "detailed information on Environment Impact of the proposed project activity",
+      "label": "environmental_impact_information_submission",
+      "page_number": 7,
+      "unit": null,
+      "value": "detailed information on Environment Impact of the proposed project activity"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-11ad682d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-007",
+      "claim_topic": "registration",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "SGS published the project documents on its website from 2003/12/01 until 2003/12/31",
+      "label": "public_availability_of_pdd",
+      "page_number": 7,
+      "unit": null,
+      "value": "SGS published the project documents on its website from 2003/12/01 until 2003/12/31"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-803ce9e1",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-007",
+      "claim_topic": "registration",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "public comments were invited through the UNFCCC website",
+      "label": "public_comments_invitation",
+      "page_number": 7,
+      "unit": null,
+      "value": "public comments were invited through the UNFCCC website"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-91d5424e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-007",
+      "claim_topic": "registration",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "No comments were received within the 30 day stakeholder consultation period",
+      "label": "stakeholder_comments_received",
+      "page_number": 7,
+      "unit": null,
+      "value": "No comments were received within the 30 day stakeholder consultation period"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-87985e44",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-009",
+      "claim_topic": "monitoring",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "subject to environmental legislation and control by the Gujarat Pollution Control Board",
+      "label": "monitoring_plan_environmental_impacts",
+      "page_number": 9,
+      "unit": null,
+      "value": "subject to environmental legislation and control by the Gujarat Pollution Control Board"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-80321ed7",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-009",
+      "claim_topic": "monitoring",
+      "confidence": 0.8,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "GFL has agreed to identify such indicators and means of monitoring them, before the first verification",
+      "label": "sustainable_development_indicators",
+      "page_number": 9,
+      "unit": null,
+      "value": "GFL has agreed to identify such indicators and means of monitoring them, before the first verification"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-f82df4b4",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-009",
+      "claim_topic": "emission_reductions",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "The calculation methods applied to the determination of GHG emissions are explained in detail in the PDD",
+      "label": "calculation_methods_ghg_emissions",
+      "page_number": 9,
+      "unit": null,
+      "value": "explained in detail in the PDD"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-433edcc4",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-009",
+      "claim_topic": "emission_reductions",
+      "confidence": 0.9,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "The calculation of emissions reductions is based primarily on the measurement of HFC23 generated during the production of HCFC22",
+      "label": "emissions_reductions_measurement",
+      "page_number": 9,
+      "unit": null,
+      "value": "based primarily on the measurement of HFC23 generated during the production of HCFC22"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-348f6bef",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-010",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Validation Opinion Number 102154/01/05",
+      "label": "validation_opinion_number",
+      "page_number": 10,
+      "unit": null,
+      "value": "102154/01/05"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-b46182bd",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-010",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "SGS has performed a validation",
+      "label": "validator_name",
+      "page_number": 10,
+      "unit": null,
+      "value": "SGS"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-793ce28c",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-010",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "SGS has received confirmation by the host Party",
+      "label": "host_party_approval",
+      "page_number": 10,
+      "unit": null,
+      "value": "confirmed"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-a82ea051",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-010",
+      "claim_topic": "registration",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "The project will hence be recommended by SGS for registration",
+      "label": "project_recommendation",
+      "page_number": 10,
+      "unit": null,
+      "value": "recommended for registration"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-cd0ebac2",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-010",
+      "claim_topic": "additionality",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Emission reductions attributable to the project are hence additional",
+      "label": "emission_reductions_additionality",
+      "page_number": 10,
+      "unit": null,
+      "value": "additional"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-1e757e07",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-project0001-d1766153-page-010",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-project0001-d1766153",
+      "evidence_quote": "Revised Validation Opinion Date 6th January 2005",
+      "label": "revised_validation_opinion_date",
+      "page_number": 10,
+      "unit": null,
+      "value": "6th January 2005"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project0001",
+    "proposal_id": "prop-fced0605",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  }
+]

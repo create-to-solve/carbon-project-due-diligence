@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carbon Market Due Diligence — project_9199 Review Pack</title>
+<style>
+:root {
+  --ink: #18212f;
+  --muted: #647084;
+  --line: #d8dee8;
+  --panel: #ffffff;
+  --page: #f4f6f8;
+  --header: #111827;
+  --critical: #b42318;
+  --critical-soft: #fff1f0;
+  --green: #16803c;
+  --green-soft: #eaf7ee;
+  --amber: #a15c00;
+  --amber-soft: #fff5df;
+  --red: #b42318;
+  --red-soft: #fff1f0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.hero {
+  background: var(--header);
+  color: white;
+  padding: 28px 32px;
+  border-bottom: 4px solid var(--critical);
+}
+.hero-inner, .page, .footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.system-name {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.project-line, .generated-line {
+  margin: 3px 0;
+  color: #d6dde8;
+}
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+.page { padding: 28px 24px 40px; }
+.section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(20, 30, 45, 0.05);
+}
+h2 { margin: 0 0 14px; font-size: 20px; letter-spacing: 0; }
+h3 { margin: 0 0 8px; font-size: 16px; }
+.label {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+}
+.critical-card {
+  border-color: #f0b4ae;
+  background: var(--critical-soft);
+}
+.badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.badge-critical, .badge-contradicts { background: var(--red-soft); color: var(--red); border: 1px solid #f0b4ae; }
+.badge-supports { background: var(--green-soft); color: var(--green); border: 1px solid #a9ddb8; }
+.badge-needs { background: var(--amber-soft); color: var(--amber); border: 1px solid #f3cd89; }
+.badge-review { background: #eef2f7; color: #465266; border: 1px solid #d8dee8; }
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+.required { margin: 10px 0 0; color: #334155; }
+.ai-narrative {
+  margin: 12px 0 4px;
+  padding: 10px 12px;
+  border-left: 3px solid #2563eb;
+  background: #f4f7fc;
+  color: #1f2a3d;
+  font-style: italic;
+  border-radius: 4px;
+}
+.ai-label {
+  display: block;
+  margin: 4px 0 0;
+  color: #647084;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+}
+table { width: 100%; border-collapse: collapse; }
+th, td {
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+  padding: 9px 10px;
+}
+th {
+  background: #f8fafc;
+  font-size: 13px;
+  color: #465266;
+}
+.field-name {
+  width: 28%;
+  font-weight: 700;
+  color: #2f3a4c;
+}
+.muted { color: var(--muted); font-size: 13px; }
+.questions li { margin-bottom: 18px; }
+.response-line {
+  margin-top: 8px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  min-height: 24px;
+}
+.audit-table { font-size: 13px; }
+.audit-table td:nth-child(1) { width: 30%; }
+.audit-table td:nth-child(2) { width: 20%; }
+.hash {
+  overflow-wrap: anywhere;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 13px;
+}
+footer {
+  padding: 22px 24px 34px;
+  color: var(--muted);
+  font-size: 12px;
+}
+@media (max-width: 760px) {
+  .grid { grid-template-columns: 1fr; }
+  .status-row { display: block; }
+  .badge { margin-top: 10px; }
+  .page { padding: 18px 12px; }
+  .section { padding: 16px; }
+}
+@media print {
+  body, .hero, .section, th, .card, .critical-card, .badge {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+  .hero { border-bottom: 1px solid black; }
+  .section, .card, .badge { border-color: #999 !important; }
+  a { color: black; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner status-row">
+    <div>
+      <h1 class="system-name">Carbon Market Due Diligence v1</h1>
+      <p class="project-line">Project: 9199 — Forestry Restoration, Colombia</p>
+      <p class="generated-line">Generated: 07 July 2026 at 12:59 UTC</p>
+    </div>
+    <span class="badge badge-critical">DEREGISTERED</span>
+  </div>
+</header>
+<main class="page">
+<section class="section">
+  <h2>Critical Signals</h2>
+  <div class="grid">
+    <article class="card critical-card">
+  <span class="badge badge-critical">Critical</span>
+  <h3>AR_DEREG_001 — Project deregistered</h3>
+  <p>Deregistered 10 March 2022. Credits issued under this project require verification of post-deregistration status.</p>
+  <div class="ai-narrative"><p>The critical finding of deregistration for the CDM Project for Forestry Restoration in the Eastern Plains of Colombia indicates that the project was officially removed from the registry on March 10, 2022. This raises significant concerns about the validity of any carbon credits issued under this project, as their status needs to be verified post-deregistration. Currently, there is a lack of evidence, such as a deregistration notice or voluntary cancellation records, to confirm the project&#x27;s current standing and the legitimacy of its credits. The absence of these documents leaves uncertainty regarding whether the credits can still be considered valid or if they have been nullified. A reviewer should prioritize obtaining the deregistration notice and any records of voluntary cancellation to ascertain the project&#x27;s compliance status and the implications for the issued credits.</p><span class="ai-label">AI-drafted analysis — grounded in confirmed evidence, requires human review</span></div>
+  
+  <p class="required"><strong>Required documents:</strong> deregistration notice, voluntary cancellation records</p>
+</article><article class="card critical-card">
+  <span class="badge badge-critical">Critical</span>
+  <h3>AR_ISS_GAP_001 — Second period credits unissued at deregistration</h3>
+  <p>374,589 CERs from monitoring period 2016-2020 remain at awaiting_issuance_request status at time of deregistration. Recovery pathway is uncertain.</p>
+  <div class="ai-narrative"><p>The finding highlights a critical issue for the CDM Forestry Restoration Project in Colombia, as the credits for the second monitoring period from 2013-2020 remain unissued following the project&#x27;s deregistration on March 10, 2022. The evidence confirms that while the first monitoring period successfully issued 908,264 CERs, the second period&#x27;s credits, totaling 374,589 CERs, are still pending issuance. This situation is compounded by the lack of completed verification and issuance-pathway documentation, creating uncertainty about the recovery of these credits. The deregistration is a significant event that necessitates a thorough examination of the project&#x27;s status and the potential pathways for credit recovery. A reviewer should focus on obtaining the missing verification report and any documentation related to the issuance pathway and credit serial status to clarify the project&#x27;s current standing and future prospects.</p><span class="ai-label">AI-drafted analysis — grounded in confirmed evidence, requires human review</span></div>
+  <p><strong>Note on cancellations:</strong> Voluntary cancellations recorded against this project total 1,257,195 CERs — exceeding the second period issuance balance of 374,589 CERs by 882,606 CERs. The relationship between these figures requires verification against registry serial records.</p>
+  <p class="required"><strong>Required documents:</strong> second monitoring report, verification report period 2, deregistration notice</p>
+</article>
+  </div>
+</section>
+<section class="section">
+  <h2>Project Identity</h2>
+  <span class="label">[STRUCTURED DATA — UNFCCC Registry]</span>
+  <table>
+    <tbody>
+      <tr><td class="field-name">Project ID</td><td>9199</td></tr><tr><td class="field-name">Project Title</td><td>CDM Project for Forestry Restoration in Productive and Biological Corridors in the Eastern Plains of Colombia</td></tr><tr><td class="field-name">Host Country</td><td>Colombia</td></tr><tr><td class="field-name">Sectoral Scope</td><td>14 - Afforestation and reforestation</td></tr><tr><td class="field-name">Methodology</td><td>AR-AM0004 ver. 4</td></tr><tr><td class="field-name">Baseline Methodology</td><td>AR-AM0004 ver. 4</td></tr><tr><td class="field-name">Activity Scale</td><td>Large</td></tr><tr><td class="field-name">Validator (DOE)</td><td>DNV-CUK</td></tr><tr><td class="field-name">Verifier (DOE)</td><td>AENOR</td></tr><tr><td class="field-name">Registration Date</td><td>2013-03-01</td></tr><tr><td class="field-name">Deregistration Date</td><td>2022-03-10</td></tr><tr><td class="field-name">Crediting Period Start</td><td>2005-06-02</td></tr><tr><td class="field-name">Crediting Period End</td><td>2025-06-01</td></tr><tr><td class="field-name">Annual Emission Reductions Claimed (tCO₂e)</td><td>256,109</td></tr><tr><td class="field-name">First Period Issuance (CERs)</td><td>908,264</td></tr><tr><td class="field-name">Second Period Issuance (CERs)</td><td>374,589</td></tr><tr><td class="field-name">Second Period Status</td><td>Awaiting issuance request</td></tr><tr><td class="field-name">Host Party Approval</td><td>Yes</td></tr><tr><td class="field-name">Host Party Approval Document</td><td>Colombia Letter of Approval</td></tr><tr><td class="field-name">Voluntary Cancellations (CERs)</td><td>1,257,195</td></tr><tr><td class="field-name">Cancellations Exceed Second Period Balance (CERs)</td><td>882,606</td></tr><tr><td class="field-name">Additionality Approach</td><td>Barrier analysis</td></tr><tr><td class="field-name">Permanence Risk Addressed</td><td>Yes</td></tr><tr><td class="field-name">Monitoring Period End</td><td>2020-10-01</td></tr><tr><td class="field-name">Data Source</td><td>UNFCCC CDM Registry</td></tr><tr><td class="field-name">Registry URL</td><td><a href="https://cdm.unfccc.int/Projects/DB/DNV-CUK1356495554.91/view">https://cdm.unfccc.int/Projects/DB/DNV-CUK1356495554.91/view</a></td></tr>
+    </tbody>
+  </table>
+  <div class="muted">
+    <p><strong>Limitations</strong></p>
+    <ul><li>Derived from public UNFCCC CDM registry page.</li><li>Not independently verified against primary documents.</li><li>Voluntary cancellation figure from analytical dataset, not confirmed against registry serial records.</li></ul>
+  </div>
+</section>
+<section class="section">
+  <h2>Evidence Cards</h2>
+  <span class="label">[EVIDENCE CHAIN — manually curated, pending human review]</span>
+  <div class="grid">
+    <article class="card">
+  <p><strong>Project 9199 applies AR-AM0004 ver. 4 as the baseline methodology.</strong></p>
+  <p><strong>Claim topic:</strong> baseline_methodology</p>
+  <div class="meta-row">
+    <span class="badge badge-supports">supports</span>
+    <span class="badge badge-review">system_curated_pending_human_review</span>
+  </div>
+  <p class="muted"><strong>Reviewer note:</strong> Supports methodology application; not independently human-reviewed.</p>
+</article><article class="card">
+  <p><strong>Project 9199 demonstrates additionality through barrier analysis.</strong></p>
+  <p><strong>Claim topic:</strong> additionality_demonstration</p>
+  <div class="meta-row">
+    <span class="badge badge-supports">supports</span>
+    <span class="badge badge-review">system_curated_pending_human_review</span>
+  </div>
+  <p class="muted"><strong>Reviewer note:</strong> Supports additionality screening; not independently human-reviewed.</p>
+</article><article class="card">
+  <p><strong>Second monitoring period credits unissued at deregistration.</strong></p>
+  <p><strong>Claim topic:</strong> issuance_completeness</p>
+  <div class="meta-row">
+    <span class="badge badge-contradicts">contradicts</span>
+    <span class="badge badge-review">system_curated_pending_human_review</span>
+  </div>
+  <p class="muted"><strong>Reviewer note:</strong> Project appeared viable but deregistered before second-period issuance completion.</p>
+</article><article class="card">
+  <p><strong>Deregistration is a material project-status event.</strong></p>
+  <p><strong>Claim topic:</strong> project_status</p>
+  <div class="meta-row">
+    <span class="badge badge-contradicts">contradicts</span>
+    <span class="badge badge-review">system_curated_pending_human_review</span>
+  </div>
+  <p class="muted"><strong>Reviewer note:</strong> Deregistration on 2022-03-10 while second period was awaiting issuance.</p>
+</article><article class="card">
+  <p><strong>Permanence risk treatment is present in the curated project facts.</strong></p>
+  <p><strong>Claim topic:</strong> permanence_risk</p>
+  <div class="meta-row">
+    <span class="badge badge-supports">supports</span>
+    <span class="badge badge-review">system_curated_pending_human_review</span>
+  </div>
+  <p class="muted"><strong>Reviewer note:</strong> Supports permanence screening; not independently human-reviewed.</p>
+</article><article class="card">
+  <p><strong>Second period monitoring coverage needs more evidence because verification and issuance were not completed.</strong></p>
+  <p><strong>Claim topic:</strong> monitoring_coverage_period_2</p>
+  <div class="meta-row">
+    <span class="badge badge-needs">needs_more_evidence</span>
+    <span class="badge badge-review">system_curated_pending_human_review</span>
+  </div>
+  <p class="muted"><strong>Reviewer note:</strong> Second period monitoring report exists but verification and issuance were not completed.</p>
+</article>
+  </div>
+</section>
+<section class="section">
+  <h2>Reviewer Questions</h2>
+  <span class="label">[REVIEWER QUESTIONS — human judgment required]</span>
+  <ol class="questions">
+    <li><strong>What was the stated reason for deregistration in March 2022, and was it voluntary or regulatory?</strong>
+  <div class="response-line">Reviewer response:</div>
+</li><li><strong>Are the second monitoring period credits (374,589 CERs, 2013-2020) recoverable under any CDM wind-down or Article 6 transition pathway?</strong>
+  <div class="response-line">Reviewer response:</div>
+</li><li><strong>Does the Colombia host party Letter of Approval remain valid following deregistration, and is it relevant to any transition claim?</strong>
+  <div class="response-line">Reviewer response:</div>
+</li><li><strong>What is the relationship between the 1,257,195 voluntary cancellations and the CP2 balance of 374,589 CERs — do cancellations exceed issuance?</strong>
+  <div class="response-line">Reviewer response:</div>
+</li><li><strong>Is there a verification report for the second monitoring period (2016-2020) and if so, what did it conclude?</strong>
+  <div class="response-line">Reviewer response:</div>
+</li>
+  </ol>
+</section>
+<section class="section">
+  <h2>Evidence Gaps</h2>
+  <span class="label">[GAPS — not yet resolved]</span>
+  <ul>
+    <li>
+  <strong>Finding:</strong> AR_DEREG_001<br>
+  <strong>Documents needed:</strong> deregistration notice, voluntary cancellation records
+  
+</li><li>
+  <strong>Finding:</strong> AR_ISS_GAP_001<br>
+  <strong>Documents needed:</strong> second monitoring report, verification report period 2, deregistration notice
+  <p class='muted'>Note: voluntary cancellations (1,257,195 CERs) exceed second period balance (374,589 CERs). Serial record verification required.</p>
+</li>
+  </ul>
+</section>
+<section class="section">
+  <h2>Audit Trail</h2>
+  <span class="label">[AUDIT TRAIL — most recent pipeline run]</span>
+  <table class="audit-table">
+    <thead><tr><th>Step</th><th>Events</th><th>Timestamp</th></tr></thead>
+    <tbody><tr><td>Document ingestion</td><td>2 documents</td><td>2026-06-29T06:14:12.919209+00:00</td></tr><tr><td>Chunk extraction</td><td>162 chunks</td><td>2026-06-29T06:14:12.919739+00:00</td></tr><tr><td>Citation creation</td><td>162 citations</td><td>2026-06-29T06:14:12.920351+00:00</td></tr><tr><td>Fact curation</td><td>10 facts</td><td>2026-06-29T06:14:12.924235+00:00</td></tr><tr><td>Evidence cards</td><td>6 cards</td><td>2026-06-29T06:14:12.925090+00:00</td></tr><tr><td>Conflict detection</td><td>1 conflicts</td><td>2026-06-29T06:14:12.928069+00:00</td></tr><tr><td>Findings flagged</td><td>2 findings</td><td>2026-06-29T06:14:12.929263+00:00</td></tr><tr><td>Memo generated</td><td>1</td><td>2026-06-29T06:14:12.945018+00:00</td></tr><tr><td>Case snapshot</td><td>1</td><td>2026-06-29T06:14:12.970291+00:00</td></tr></tbody>
+  </table>
+  <p class="muted">Full audit log: 317 events recorded across all pipeline runs. Content hash: 3ce9f858f73dd75e...</p>
+</section>
+<section class="section">
+  <h2>Case Memory</h2>
+  <span class="label">[CASE MEMORY — hash-verified snapshot]</span>
+  <p><strong>content_hash:</strong> <span class="hash">3ce9f858f73dd75e8ab2b0122db884990d605a521369dd324930ea7609f8aa00</span></p>
+  <p><strong>event_count:</strong> 297</p>
+  <p><strong>snapshot_timestamp:</strong> 2026-06-29T06:14:12.966518+00:00</p>
+</section>
+</main>
+<footer>
+  <div class="footer-inner">
+    <p>This memo is system-generated from structured registry data and manually curated evidence. It does not constitute a legal determination, investment advice, or eligibility certification. All findings require human review and verification against primary documents. The system records what is known, what is missing, and what requires judgment — it does not make the judgment.</p>
+  </div>
+</footer>
+</body>
+</html>

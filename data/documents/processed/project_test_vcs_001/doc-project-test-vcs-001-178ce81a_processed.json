@@ -1,0 +1,44 @@
+{
+  "chunks": [
+    {
+      "chunk_id": "doc-project-test-vcs-001-178ce81a-chunk-001",
+      "document_id": "doc-project-test-vcs-001-178ce81a",
+      "heading": "VCS Methodology Reference",
+      "line_end": 6,
+      "line_start": 3,
+      "page_number": null,
+      "paragraph_number": 1,
+      "parse_status": "success",
+      "parser_name": "text_heuristic",
+      "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project_test_vcs_001\\vcs_methodology_placeholder.txt",
+      "text": "Document title: VCS Methodology Reference\nProject ID: test_vcs_001\nDate: 2026-06-29\nNote: Placeholder for tester demo."
+    }
+  ],
+  "citations": [
+    {
+      "chunk_id": "doc-project-test-vcs-001-178ce81a-chunk-001",
+      "citation_id": "cit-doc-project-test-vcs-001-178ce81a-001",
+      "document_id": "doc-project-test-vcs-001-178ce81a",
+      "excerpt": "Document title: VCS Methodology Reference Project ID: test_vcs_001 Date: 2026-06-29 Note: Placeholder for tester demo.",
+      "page_number": null,
+      "paragraph_number": 1,
+      "section_heading": "VCS Methodology Reference",
+      "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project_test_vcs_001\\vcs_methodology_placeholder.txt"
+    }
+  ],
+  "document": {
+    "document_id": "doc-project-test-vcs-001-178ce81a",
+    "document_type": "unknown",
+    "file_type": "txt",
+    "page_count": 0,
+    "parse_status": "success",
+    "parse_warnings": [],
+    "parsed_at": "2026-06-29T04:55:09.580056+00:00",
+    "parser_name": "text_heuristic",
+    "parser_version": "1.0",
+    "project_id": "project_test_vcs_001",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project_test_vcs_001\\vcs_methodology_placeholder.txt",
+    "source_url": "",
+    "title": "Vcs Methodology Placeholder"
+  }
+}

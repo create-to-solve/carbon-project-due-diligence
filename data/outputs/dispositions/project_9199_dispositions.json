@@ -1,0 +1,30 @@
+[
+  {
+    "actor": "human",
+    "disposition": "Accept",
+    "finding_id": "finding-ar-dereg-001",
+    "note": "I think the assessment is correct",
+    "saved_at": "2026-06-28T14:52:35.617287+00:00"
+  },
+  {
+    "actor": "human",
+    "disposition": "Needs verification",
+    "finding_id": "finding-ar-iss-gap-001",
+    "note": "",
+    "saved_at": "2026-06-28T14:52:42.331640+00:00"
+  },
+  {
+    "actor": "human",
+    "disposition": "Needs verification",
+    "finding_id": "finding-ar-iss-gap-001",
+    "note": "The available evidence indicates that CERs were issued for the first monitoring period, while no CER issuance has been identified for the second monitoring period (2013\u20132020). However, the evidence does not establish whether the absence of issuance resulted from project deregistration, incomplete verification, procedural delays, or other administrative factors. Before concluding that the credits are unrecoverable or at risk, the reviewer should confirm whether a verification report exists, whether an issuance request was submitted, and whether CDM rules permit issuance following deregistration under the project's specific circumstances.",
+    "saved_at": "2026-06-29T07:46:09.343167+00:00"
+  },
+  {
+    "actor": "human",
+    "disposition": "Accept",
+    "finding_id": "finding-ar-dereg-001",
+    "note": "Project deregistration on 2022-03-10 is a material status event and supports a critical flag. However, the finding should be narrowed to credits whose issuance, transfer, cancellation, or claim status is unclear after deregistration. Existing issued CERs should not be treated as invalid or requiring re-verification without further evidence. The key missing documents are the deregistration notice and registry/serial-number evidence confirming whether any credits remained pending, were issued, transferred, cancelled, or otherwise affected after deregistration.",
+    "saved_at": "2026-06-29T07:49:10.724536+00:00"
+  }
+]

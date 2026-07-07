@@ -1,0 +1,10 @@
+{
+  "case_hash": "3ce9f858f73dd75e8ab2b0122db884990d605a521369dd324930ea7609f8aa00",
+  "critical_count": 2,
+  "document_count": 2,
+  "facts_count": 10,
+  "findings_count": 2,
+  "last_run_at": "2026-06-29T06:14:12.972605+00:00",
+  "memo_path": "data\\outputs\\memos\\project_9199_memo.md",
+  "project_id": "project_9199"
+}

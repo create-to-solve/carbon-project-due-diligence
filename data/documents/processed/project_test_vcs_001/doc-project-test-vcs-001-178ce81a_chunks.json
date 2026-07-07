@@ -1,0 +1,15 @@
+[
+  {
+    "chunk_id": "doc-project-test-vcs-001-178ce81a-chunk-001",
+    "document_id": "doc-project-test-vcs-001-178ce81a",
+    "heading": "VCS Methodology Reference",
+    "line_end": 6,
+    "line_start": 3,
+    "page_number": null,
+    "paragraph_number": 1,
+    "parse_status": "success",
+    "parser_name": "text_heuristic",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project_test_vcs_001\\vcs_methodology_placeholder.txt",
+    "text": "Document title: VCS Methodology Reference\nProject ID: test_vcs_001\nDate: 2026-06-29\nNote: Placeholder for tester demo."
+  }
+]

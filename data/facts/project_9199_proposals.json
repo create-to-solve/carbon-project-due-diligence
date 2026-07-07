@@ -1,0 +1,1942 @@
+[
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Title of the project activity Biological Corridors in the Eastern Plains of Colombia",
+      "label": "project_title",
+      "page_number": 1,
+      "unit": null,
+      "value": "CDM Project for Forestry Restoration in Productive and Biological Corridors in the Eastern Plains of Colombia"
+    },
+    "audit_note": "human_rejected",
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-88183ef2",
+    "reviewed_at": "2026-06-29T08:09:55.951956+00:00",
+    "reviewer_action": "reject",
+    "status": "reject"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "UNFCCC reference number of the project 9199",
+      "label": "project_reference_number",
+      "page_number": 1,
+      "unit": null,
+      "value": "9199"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-22e359cb",
+    "reviewed_at": "2026-06-29T08:10:26.504763+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Version number of this monitoring report Version 01.0",
+      "label": "monitoring_report_version",
+      "page_number": 1,
+      "unit": null,
+      "value": "01.0"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-e78cd1c9",
+    "reviewed_at": "2026-06-29T08:10:33.660602+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Completion date of this monitoring 30/04/2021",
+      "label": "monitoring_report_completion_date",
+      "page_number": 1,
+      "unit": null,
+      "value": "30/04/2021"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-a67badc4",
+    "reviewed_at": "2026-06-29T08:10:39.532750+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Monitoring period number Second monitoring period",
+      "label": "monitoring_period_number",
+      "page_number": 1,
+      "unit": null,
+      "value": "Second monitoring period"
+    },
+    "audit_note": null,
+    "human_edit": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Monitoring period number Second monitoring period",
+      "label": "monitoring_period_number",
+      "page_number": 1,
+      "unit": null,
+      "value": "Second monitoring period (not the whole period)"
+    },
+    "project_id": "project_9199",
+    "proposal_id": "prop-068911a6",
+    "reviewed_at": "2026-06-29T08:11:10.374289+00:00",
+    "reviewer_action": "edit",
+    "status": "edit"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Duration of this monitoring period 17/02/2016 \u2013 01/10/2020",
+      "label": "monitoring_period_duration",
+      "page_number": 1,
+      "unit": null,
+      "value": "17/02/2016 \u2013 01/10/2020"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-996e1f42",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Project participants Bosques de la Primavera S.A.",
+      "label": "project_participants",
+      "page_number": 1,
+      "unit": null,
+      "value": "Bosques de la Primavera S.A."
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-aed9d7a8",
+    "reviewed_at": "2026-06-29T08:11:29.358398+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Host Party Colombia",
+      "label": "host_party",
+      "page_number": 1,
+      "unit": null,
+      "value": "Colombia"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-fcc2af6d",
+    "reviewed_at": "2026-06-29T08:11:44.167017+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "applied methodologies and standardized agricultural use, ARAM0004, Version 04",
+      "label": "applied_methodologies",
+      "page_number": 1,
+      "unit": null,
+      "value": "ARAM0004, Version 04"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-2cacfc93",
+    "reviewed_at": "2026-06-29T08:12:52.646095+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Sectoral scopes Afforestation and Reforestation (14)",
+      "label": "sectoral_scopes",
+      "page_number": 1,
+      "unit": null,
+      "value": "Afforestation and Reforestation (14)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-3c7bc547",
+    "reviewed_at": "2026-06-29T08:13:01.411651+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Amount of GHG emission reductions or from 1 January 2013 until 31 December 2020 0 4,485,617 tCO2eq 0",
+      "label": "ghg_reductions_achieved",
+      "page_number": 1,
+      "unit": "tCO2eq",
+      "value": "4,485,617"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-5c560b1c",
+    "reviewed_at": "2026-06-29T08:13:09.282939+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "net anthropogenic GHG removals 3,234,131 tCO2eq. estimated ex ante for this monitoring period",
+      "label": "ghg_reductions_estimated_ex_ante",
+      "page_number": 1,
+      "unit": "tCO2eq",
+      "value": "3,234,131"
+    },
+    "audit_note": null,
+    "human_edit": {
+      "chunk_id": "doc-9199-mon2-page-001",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "net anthropogenic GHG removals 3,234,131 tCO2eq. estimated ex ante for this monitoring period",
+      "label": "ghg_reductions_estimated_ex_ante",
+      "page_number": 1,
+      "unit": "tCO2eq",
+      "value": "3,234,131 (this number needs further confirmation)"
+    },
+    "project_id": "project_9199",
+    "proposal_id": "prop-95013aa7",
+    "reviewed_at": "2026-06-29T08:13:40.270308+00:00",
+    "reviewer_action": "edit",
+    "status": "edit"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-003",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Total removals estimations of atmospheric carbon by the project implementation are 4,485,617.2tCO eq",
+      "label": "total_removals_estimations",
+      "page_number": 3,
+      "unit": "tCO2eq",
+      "value": "4485617.2"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-26c2401b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-011",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "carbon contents in base line are assumed to be zero C = 0",
+      "label": "baseline_carbon_content",
+      "page_number": 11,
+      "unit": "C",
+      "value": "0"
+    },
+    "audit_note": "human_rejected",
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-974d07b7",
+    "reviewed_at": "2026-07-07T09:50:14.834415+00:00",
+    "reviewer_action": "reject",
+    "status": "reject"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-011",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Leakeage by activity displacement were shown to be zero. L.K = 0",
+      "label": "leakage_activity_displacement",
+      "page_number": 11,
+      "unit": null,
+      "value": "0"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-6a969565",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-011",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "The total values of reduced emissions are estimated to be 4,485,617.2 tCO2eq",
+      "label": "total_emission_reductions",
+      "page_number": 11,
+      "unit": "tCO2eq",
+      "value": "4485617.2"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-80e36dfe",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-011",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Region/ State/ Province\nDepartment of Vichada",
+      "label": "project_location_region",
+      "page_number": 11,
+      "unit": null,
+      "value": "Department of Vichada"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-07e9348a",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-011",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "City/ Town/ Community\nLa Primavera Municipality",
+      "label": "project_location_city",
+      "page_number": 11,
+      "unit": null,
+      "value": "La Primavera Municipality"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-2f36c763",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-018",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Guidance on the application of the definition of project boundary",
+      "label": "methodological_tools_used",
+      "page_number": 18,
+      "unit": null,
+      "value": "Guidance on the application of the definition of project boundary to A/R CDM project activities, Version 01"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-0de934f7",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-018",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Guidance on accounting GHG Emissions in A/R CDM Project Activities",
+      "label": "methodological_tools_used",
+      "page_number": 18,
+      "unit": null,
+      "value": "Guidance on accounting GHG Emissions in A/R CDM Project Activities"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-7c2cd864",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-018",
+      "claim_topic": "additionality",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Tool for the demonstration and assessment of additionality",
+      "label": "methodological_tools_used",
+      "page_number": 18,
+      "unit": null,
+      "value": "Tool for the demonstration and assessment of additionality in A/R CDM project activities, Version 02"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-1a981ed5",
+    "reviewed_at": "2026-07-07T09:47:35.608858+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-018",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Calculation of the number of sample plots for measurements",
+      "label": "methodological_tools_used",
+      "page_number": 18,
+      "unit": null,
+      "value": "Calculation of the number of sample plots for measurements within A/R CDM project activities, Version 02.1"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-2ae6ba0f",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-018",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Anthropogenic GHG Removals by Sinks. Version 02",
+      "label": "methodological_tools_used",
+      "page_number": 18,
+      "unit": null,
+      "value": "Anthropogenic GHG Removals by Sinks. Version 02"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-05e6a4c8",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-018",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Estimation of carbon stocks and change in carbon stocks of trees and shrubs",
+      "label": "methodological_tools_used",
+      "page_number": 18,
+      "unit": null,
+      "value": "Estimation of carbon stocks and change in carbon stocks of trees and shrubs in A/R. CDM project activities. AR-TOOL14. Version 04.2"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-da471c81",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-018",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Estimation of carbon stocks and change in carbon stocks in dead wood and litter",
+      "label": "methodological_tools_used",
+      "page_number": 18,
+      "unit": null,
+      "value": "Estimation of carbon stocks and change in carbon stocks in dead wood and litter in A/R CDM project activities"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-2c773826",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-018",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Tool for estimation of change in soil organic carbon stocks",
+      "label": "methodological_tools_used",
+      "page_number": 18,
+      "unit": null,
+      "value": "Tool for estimation of change in soil organic carbon stocks due to the implementation of A/R CDM project activities"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-8d8db552",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-018",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Demonstrating appropriateness of volume equations for estimation of aboveground tree biomass",
+      "label": "methodological_tools_used",
+      "page_number": 18,
+      "unit": null,
+      "value": "Demonstrating appropriateness of volume equations for estimation of aboveground tree biomass in AR CDM project activities (version 01.0.1)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-74ecae40",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-022",
+      "claim_topic": "monitoring",
+      "confidence": 0.9,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Nearly 400 thousand labor wages have been generated",
+      "label": "labor_wages_generated",
+      "page_number": 22,
+      "unit": "wages",
+      "value": "400000"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-19e7d833",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-022",
+      "claim_topic": "monitoring",
+      "confidence": 0.9,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "a total of 1,740 jobs during the current monitoring period",
+      "label": "jobs_created",
+      "page_number": 22,
+      "unit": "jobs",
+      "value": "1740"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-fdee89b9",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-024",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "baseline may be accounted as zero for those lands",
+      "label": "baseline_methodology_reference",
+      "page_number": 24,
+      "unit": null,
+      "value": "AR-AM0004 ver. 4"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-93313ba6",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-024",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "soil organic carbon component is fundamental",
+      "label": "soil_organic_carbon_component",
+      "page_number": 24,
+      "unit": null,
+      "value": "fundamental in the accounting for the project"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-323e1c9f",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-037",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Value(s) applied) 0.55",
+      "label": "basic_wood_density_p_caribaea_oocarpa",
+      "page_number": 37,
+      "unit": "t d.m. m-3",
+      "value": "0.55"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-c9676ecf",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-037",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Value(s) applied) Pino sp 0.46 (<50 t.ha de biomasa a\u00e9rea)",
+      "label": "root_shoot_ratio_pino_sp",
+      "page_number": 37,
+      "unit": "dimensionless",
+      "value": "0.46"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-742e40b3",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-037",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Eucalipto sp 0.45 (<50 t.ha de biomasa a\u00e9rea)",
+      "label": "root_shoot_ratio_eucalipto_sp",
+      "page_number": 37,
+      "unit": "dimensionless",
+      "value": "0.45"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-13a2a93a",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-037",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "A. mangium 0.20 (<125 t.ha de biomasa a\u00e9rea",
+      "label": "root_shoot_ratio_a_mangium",
+      "page_number": 37,
+      "unit": "dimensionless",
+      "value": "0.20"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-cc14c12e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-039",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "See eq. 59 of the methodology AR-AM0004 v.04.",
+      "label": "baseline_methodology",
+      "page_number": 39,
+      "unit": null,
+      "value": "AR-AM0004 v.04"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-1ef99c80",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-039",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Value(s) applied) 0.10",
+      "label": "data_parameter_bdr_value",
+      "page_number": 39,
+      "unit": null,
+      "value": "0.10"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-fd046298",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-039",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Value(s) applied) 231.7 t d.m. ha-1",
+      "label": "data_parameter_bforest_value",
+      "page_number": 39,
+      "unit": "t d.m. ha-1",
+      "value": "231.7"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-04bdf358",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-041",
+      "claim_topic": "baseline_methodology",
+      "confidence": 0.9,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "an average value of 16% is adequate for tropical forest plantations",
+      "label": "conservative_default_factor_carbon_stock_litter",
+      "page_number": 41,
+      "unit": "percentage",
+      "value": "16%"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-0f46a9d3",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-041",
+      "claim_topic": "baseline_methodology",
+      "confidence": 0.9,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Value(s) applied) 0.7",
+      "label": "relative_stock_change_factor_baseline_land_use",
+      "page_number": 41,
+      "unit": "dimensionless",
+      "value": "0.7"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-253c938e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-041",
+      "claim_topic": "baseline_methodology",
+      "confidence": 0.9,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Value(s) applied) 1",
+      "label": "relative_stock_change_factor_baseline_land_use_stratum_i",
+      "page_number": 41,
+      "unit": "dimensionless",
+      "value": "1"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-bd102cce",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-043",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Value(s) of monitored 29,019 ha",
+      "label": "total_project_area",
+      "page_number": 43,
+      "unit": "ha",
+      "value": "29,019"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-42350d50",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-043",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Total 22,005.367",
+      "label": "area_under_control_established_up_to_2015",
+      "page_number": 43,
+      "unit": "ha",
+      "value": "22,005.367"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-1251a8bc",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Monitoring equipment Remote sensing and geographic information system (GIS).",
+      "label": "monitoring_equipment",
+      "page_number": 45,
+      "unit": null,
+      "value": "Remote sensing and geographic information system (GIS)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-8219da53",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "The land verification with Global Position System (GPS). GARMIN ETREX 30.",
+      "label": "monitoring_equipment_gps",
+      "page_number": 45,
+      "unit": null,
+      "value": "GARMIN ETREX 30"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-1a149de0",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Measuring/reading/recording Yearly and verified for the monitoring period.",
+      "label": "monitoring_frequency",
+      "page_number": 45,
+      "unit": null,
+      "value": "Yearly"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-bcd20d6e",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "verification is done with satellite images and geographic information processes.",
+      "label": "qa_qc_procedures",
+      "page_number": 45,
+      "unit": null,
+      "value": "Verification with satellite images and geographic information processes"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-08915c94",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Purpose of data: Calculation of project emissions or actual net GHG removals by sinks",
+      "label": "purpose_of_data",
+      "page_number": 45,
+      "unit": null,
+      "value": "Calculation of project emissions or actual net GHG removals by sinks"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-fc3ce4e3",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Value(s) of monitored 0.05 ha for the commercial stand",
+      "label": "sample_plot_area_commercial_stand",
+      "page_number": 45,
+      "unit": "ha",
+      "value": "0.05"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-a9440b7a",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "0.001 ha in the sample for natural regeneration.",
+      "label": "sample_plot_area_natural_regeneration",
+      "page_number": 45,
+      "unit": "ha",
+      "value": "0.001"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-8e5dda10",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Monitoring equipment Metric tape of 30 m.",
+      "label": "monitoring_equipment_metric_tape",
+      "page_number": 45,
+      "unit": null,
+      "value": "Metric tape of 30 m"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-02f7dfc2",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Measuring/reading/recording 5 years",
+      "label": "monitoring_frequency_sample_plot",
+      "page_number": 45,
+      "unit": null,
+      "value": "5 years"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-854afd30",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "The sampling protocol was applied, the training of field staff was developed.",
+      "label": "qa_qc_procedures_sample_plot",
+      "page_number": 45,
+      "unit": null,
+      "value": "Sampling protocol and training of field staff"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-8c81b7bd",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-045",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Purpose of data: Calculation of the changes in carbon stocks.",
+      "label": "purpose_of_data_sample_plot",
+      "page_number": 45,
+      "unit": null,
+      "value": "Calculation of the changes in carbon stocks"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-bfb95e60",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-047",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Monitoring equipment Diametric tape and Caliper",
+      "label": "monitoring_equipment",
+      "page_number": 47,
+      "unit": null,
+      "value": "Diametric tape and Caliper"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-2f627008",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-047",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Measuring/reading/recording Each monitoring",
+      "label": "monitoring_frequency",
+      "page_number": 47,
+      "unit": null,
+      "value": "Each monitoring"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-ed72098d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-047",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "QA/QC procedures: Data cross checking is done",
+      "label": "qa_qc_procedures",
+      "page_number": 47,
+      "unit": null,
+      "value": "Data cross checking is done in the sample plots"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-1d3f20b5",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-047",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "Staff was trained in the correct way to measure",
+      "label": "monitoring_staff_training",
+      "page_number": 47,
+      "unit": null,
+      "value": "Staff was trained in the correct way to measure"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-930cbfea",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-047",
+      "claim_topic": "monitoring",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "An audit process was held",
+      "label": "audit_process",
+      "page_number": 47,
+      "unit": null,
+      "value": "An audit process was held"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-145fd36a",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-060",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "loss of living biomass (E ) is 0",
+      "label": "biomass_loss",
+      "page_number": 60,
+      "unit": null,
+      "value": "0"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-07b61344",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-060",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "no burns were developed for soil preparation",
+      "label": "burning_for_soil_preparation",
+      "page_number": 60,
+      "unit": null,
+      "value": "not developed"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-cb64a93d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-060",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "emissions within the project boundary are GHG = 0",
+      "label": "ghg_emissions_within_project_boundary",
+      "page_number": 60,
+      "unit": null,
+      "value": "0"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-bceb5ef7",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-062",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "AR-AM0004 methodology lost its validity on November 12, 2012, and AR-ACM0003 replaced it",
+      "label": "baseline_methodology_replacement",
+      "page_number": 62,
+      "unit": null,
+      "value": "AR-ACM0003"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-aeed2320",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-062",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "AR-AM0004 methodology lost its validity on November 12, 2012",
+      "label": "baseline_methodology_validity_end",
+      "page_number": 62,
+      "unit": null,
+      "value": "2012-11-12"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-f7faf315",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-mon2-page-062",
+      "claim_topic": "registration",
+      "confidence": 1.0,
+      "document_id": "doc-9199-mon2",
+      "evidence_quote": "projects based on the AR-AM0004 methodology could be submitted for registration until January 18, 2013",
+      "label": "registration_submission_deadline",
+      "page_number": 62,
+      "unit": null,
+      "value": "2013-01-18"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-173003af",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-007",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "DNV Climate Change Services AS (DNV) to perform a validation",
+      "label": "validator_name",
+      "page_number": 7,
+      "unit": null,
+      "value": "DNV Climate Change Services AS"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-02eb05c5",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-007",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "CDM Project for Forestry Restoration in Productive and Biological Corridors",
+      "label": "project_identity",
+      "page_number": 7,
+      "unit": null,
+      "value": "CDM Project for Forestry Restoration in Productive and Biological Corridors in the Eastern Plains of Colombia"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-e1ec3a01",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-007",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "approved baseline and monitoring methodology AR-AM0004 (version 04)",
+      "label": "baseline_methodology",
+      "page_number": 7,
+      "unit": null,
+      "value": "AR-AM0004 (version 04)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-b7119126",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-014",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "DET NORSKE VERITAS Report No: 2012- 9450",
+      "label": "validator_name",
+      "page_number": 14,
+      "unit": null,
+      "value": "DET NORSKE VERITAS"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-2f58e1e2",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-020",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "Methodology AR-AM0004 version 04",
+      "label": "baseline_methodology",
+      "page_number": 20,
+      "unit": null,
+      "value": "AR-AM0004 version 04"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-53f159f4",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-020",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "DNV can attest that compliance",
+      "label": "validator",
+      "page_number": 20,
+      "unit": null,
+      "value": "DNV"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-9baba69b",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-027",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "According to AR-AM0004 (version 04)\u201fs applicability conditions",
+      "label": "baseline_methodology",
+      "page_number": 27,
+      "unit": null,
+      "value": "AR-AM0004 ver. 4"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-991311ca",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-027",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "emissions within the project boundary are not to be taken into account; GHG = 0",
+      "label": "emissions_within_project_boundary",
+      "page_number": 27,
+      "unit": null,
+      "value": "0"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-fb4ce651",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-027",
+      "claim_topic": "emission_reductions",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "project proponents claim that there will be no leakage",
+      "label": "leakage_emissions",
+      "page_number": 27,
+      "unit": null,
+      "value": "zero"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-aea291de",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-030",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "The start date of the project activity is that of 2 June 2005",
+      "label": "project_start_date",
+      "page_number": 30,
+      "unit": null,
+      "value": "2005-06-02"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-54e6abc8",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-030",
+      "claim_topic": "additionality",
+      "confidence": 0.9,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "project is considered additional as lands are reforested",
+      "label": "project_additionality",
+      "page_number": 30,
+      "unit": null,
+      "value": "lands are reforested which otherwise would have remained grazing lands"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-85bd743d",
+    "reviewed_at": "2026-07-07T09:48:41.029398+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-033",
+      "claim_topic": "additionality",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "The project participants used the barrier analysis",
+      "label": "additionality_approach",
+      "page_number": 33,
+      "unit": null,
+      "value": "barrier_analysis"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-24bd6130",
+    "reviewed_at": "2026-07-07T09:48:57.165701+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-033",
+      "claim_topic": "additionality",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "The social condition barrier was sustained based on the difficult conditions",
+      "label": "social_condition_barrier",
+      "page_number": 33,
+      "unit": null,
+      "value": "difficult conditions of public order"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-e216eccd",
+    "reviewed_at": "2026-07-07T09:49:06.062035+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-033",
+      "claim_topic": "additionality",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "Technological/Infrastructure barriers",
+      "label": "technological_infrastructure_barrier",
+      "page_number": 33,
+      "unit": null,
+      "value": "Technological/Infrastructure barriers"
+    },
+    "audit_note": "human_rejected",
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-9edada1b",
+    "reviewed_at": "2026-07-07T09:49:38.591613+00:00",
+    "reviewer_action": "reject",
+    "status": "reject"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-033",
+      "claim_topic": "additionality",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "The strong support from the national government institutions",
+      "label": "government_support",
+      "page_number": 33,
+      "unit": null,
+      "value": "strong support from the national government institutions"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-ab567a45",
+    "reviewed_at": "2026-07-07T09:49:54.122931+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-036",
+      "claim_topic": "monitoring",
+      "confidence": 0.9,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "monitoring plan in its entirety was found to be included",
+      "label": "monitoring_plan_inclusion",
+      "page_number": 36,
+      "unit": null,
+      "value": "included within the project PDD"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-044dadc6",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-036",
+      "claim_topic": "monitoring",
+      "confidence": 0.9,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "sampling design while onsite and found to be in compliance",
+      "label": "sampling_design_compliance",
+      "page_number": 36,
+      "unit": null,
+      "value": "compliance with methodological requirements"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-2b7b6a2a",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-036",
+      "claim_topic": "monitoring",
+      "confidence": 0.9,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "monitoring plan is feasible within the project design",
+      "label": "monitoring_plan_feasibility",
+      "page_number": 36,
+      "unit": null,
+      "value": "feasible within the project design"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-7a9cda30",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-036",
+      "claim_topic": "monitoring",
+      "confidence": 0.9,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "project proponents have developed and will also follow Standard Operating Procedures",
+      "label": "standard_operating_procedures",
+      "page_number": 36,
+      "unit": null,
+      "value": "developed for carbon monitoring"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-45fd1e62",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-036",
+      "claim_topic": "monitoring",
+      "confidence": 0.9,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "monitoring frequency of the parameters is in line with the methodology",
+      "label": "monitoring_frequency",
+      "page_number": 36,
+      "unit": null,
+      "value": "in line with the methodology"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-e9628014",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-036",
+      "claim_topic": "monitoring",
+      "confidence": 0.9,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "pre-fixed verification frequency of every 5 years",
+      "label": "verification_frequency",
+      "page_number": 36,
+      "unit": "years",
+      "value": "every 5 years"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-a0efc311",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-043",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "Clearly identifiable title of the project activity",
+      "label": "project_title",
+      "page_number": 43,
+      "unit": null,
+      "value": "CDM Project for Forestry Restoration in Productive and Biological Corridors in the Eastern Plains of Colombia"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-1d8fb056",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-043",
+      "claim_topic": "validator",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "Assessment by DNV",
+      "label": "validator_name",
+      "page_number": 43,
+      "unit": null,
+      "value": "DNV-CUK"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-fdfd97db",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-046",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "All the private/public project participants have been authorized by Colombia\u201fs DNA",
+      "label": "host_party_approval",
+      "page_number": 46,
+      "unit": null,
+      "value": "true"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-a92a7586",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-050",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "The baseline scenario is in fact one of the baselines described in the methodology",
+      "label": "baseline_methodology",
+      "page_number": 50,
+      "unit": null,
+      "value": "degraded lands, either abandoned or subjected to pre-project grazing activity or agricultural crop activity, with vegetation having area, crown cover and tree high values below the thresholds used in the national definition of forest, and the lands are still degrading or remaining in a low carbon steady state."
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-824dff0d",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-053",
+      "claim_topic": "baseline_methodology",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "The baseline scenario is that of degrading lands, either abandoned or subjected to pre-project grazing activity or agricultural crop activity",
+      "label": "baseline_scenario",
+      "page_number": 53,
+      "unit": null,
+      "value": "degrading lands, either abandoned or subjected to pre-project grazing activity or agricultural crop activity"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-aeedaaa5",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-056",
+      "claim_topic": "additionality",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "a barrier analysis.",
+      "label": "additionality_approach",
+      "page_number": 56,
+      "unit": null,
+      "value": "barrier analysis"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-262eb4ef",
+    "reviewed_at": "2026-07-07T09:49:58.253214+00:00",
+    "reviewer_action": "confirm",
+    "status": "confirm"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-056",
+      "claim_topic": "project_identity",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "The first tree was planted was 2 June 2005.",
+      "label": "project_start_date",
+      "page_number": 56,
+      "unit": null,
+      "value": "2 June 2005"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-314dbb45",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-063",
+      "claim_topic": "other",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "No EIA is required by the host country",
+      "label": "environmental_impact_assessment_required",
+      "page_number": 63,
+      "unit": null,
+      "value": "No"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-d2f7ba93",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-069",
+      "claim_topic": "host_party_approval",
+      "confidence": 1.0,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "10 May 2012: Letter of approval from Colombian DNA",
+      "label": "host_party_approval_document",
+      "page_number": 69,
+      "unit": null,
+      "value": "Colombia Letter of Approval"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-c8bc9e7f",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  },
+  {
+    "ai_extracted": {
+      "chunk_id": "doc-9199-val-page-076",
+      "claim_topic": "baseline_methodology",
+      "confidence": 0.9,
+      "document_id": "doc-9199-val",
+      "evidence_quote": "Combined tool to identify the baseline scenario and demonstrate additionality in AR CDM project activities\u201f (version 1)",
+      "label": "baseline_methodology",
+      "page_number": 76,
+      "unit": null,
+      "value": "Combined tool to identify the baseline scenario and demonstrate additionality in AR CDM project activities (version 1)"
+    },
+    "audit_note": null,
+    "human_edit": null,
+    "project_id": "project_9199",
+    "proposal_id": "prop-1be0420f",
+    "reviewed_at": null,
+    "reviewer_action": null,
+    "status": "pending"
+  }
+]

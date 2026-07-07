@@ -1,0 +1,922 @@
+[
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-001",
+    "citation_id": "cit-doc-project0001-8997cc20-001",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 CDM PROJECT DESIGN DOCUMENT (PDD) PROJECT FOR GHG EMISSION REDUCTION BY THERMAL OXIDATION OF HFC 23 at",
+    "page_number": 1,
+    "paragraph_number": 1,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-002",
+    "citation_id": "cit-doc-project0001-8997cc20-002",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 CONTENTS Page No. A. General description o project activity A.1 Title of the project activity 8 A.2 De",
+    "page_number": 2,
+    "paragraph_number": 2,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-003",
+    "citation_id": "cit-doc-project0001-8997cc20-003",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 CONTENTS (CONTD.) Page No. B.6 Details of baseline development 31-32 B.6.1 Date of completing the fina",
+    "page_number": 3,
+    "paragraph_number": 3,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-004",
+    "citation_id": "cit-doc-project0001-8997cc20-004",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 CONTENTS (CONTD.) Page No. D.6 Quality control (QC) and quality assurance (QA) procedures are being 44",
+    "page_number": 4,
+    "paragraph_number": 4,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-005",
+    "citation_id": "cit-doc-project0001-8997cc20-005",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 CONTENTS (CONTD.) Page No. G. Stakeholders comments G.1 Brief description of the process on how commen",
+    "page_number": 5,
+    "paragraph_number": 5,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-006",
+    "citation_id": "cit-doc-project0001-8997cc20-006",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Abbreviations: Q Quantity of HCFC production HCFC 22 Q Quantity of HFC 23 fed to thermal oxidiser HFC ",
+    "page_number": 6,
+    "paragraph_number": 6,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-007",
+    "citation_id": "cit-doc-project0001-8997cc20-007",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 F Factor defining MT of CO2 emission on transporting 1 MT of solid waste Solid Waste F Factor defining",
+    "page_number": 7,
+    "paragraph_number": 7,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-008",
+    "citation_id": "cit-doc-project0001-8997cc20-008",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 A. GENERAL DESCRIPTION OF PROJECT ACTIVITY A.1 Title of the project activity Project for GHG emission ",
+    "page_number": 8,
+    "paragraph_number": 8,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-009",
+    "citation_id": "cit-doc-project0001-8997cc20-009",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 A.2.4 Process technology for thermal oxidation of HFC 23 is not available indigenously. Though there a",
+    "page_number": 9,
+    "paragraph_number": 9,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-010",
+    "citation_id": "cit-doc-project0001-8997cc20-010",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 \u00b7 Neutralisation & settling / precipitation to the extent required \u00b7 Water treatment plant to provide ",
+    "page_number": 10,
+    "paragraph_number": 10,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-011",
+    "citation_id": "cit-doc-project0001-8997cc20-011",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 \u00b7 Implementing the project activity, comprising of the development design, engineering, procurement, f",
+    "page_number": 11,
+    "paragraph_number": 11,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-012",
+    "citation_id": "cit-doc-project0001-8997cc20-012",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Contact information: Ineos Fluor Limited PO Box 13, The Heath Runcorn Cheshire WA7 4QF United Kingdom ",
+    "page_number": 12,
+    "paragraph_number": 12,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-013",
+    "citation_id": "cit-doc-project0001-8997cc20-013",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Name of contact Person: Mr. Arato Ogawa Title and Section: Assistant General Manager, Inorganic Chemic",
+    "page_number": 13,
+    "paragraph_number": 13,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-014",
+    "citation_id": "cit-doc-project0001-8997cc20-014",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 (a) Process used The main facility for the production utilizes following reaction: \u00b7 CaF2 + H2SO4 \u00e0 Ca",
+    "page_number": 14,
+    "paragraph_number": 14,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-015",
+    "citation_id": "cit-doc-project0001-8997cc20-015",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Two projects to improve the availability of Anhydrous HF were conceived and initiated prior to any inv",
+    "page_number": 15,
+    "paragraph_number": 15,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-016",
+    "citation_id": "cit-doc-project0001-8997cc20-016",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 A.4.1.2 Region / State / Province etc. Gujarat / District Panchmahals, Taluka Ghoghamba A.4.1.3 City /",
+    "page_number": 16,
+    "paragraph_number": 16,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-017",
+    "citation_id": "cit-doc-project0001-8997cc20-017",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 As explained earlier, HFC 23 is inevitably generated as a by-product from the production facility for ",
+    "page_number": 17,
+    "paragraph_number": 17,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-018",
+    "citation_id": "cit-doc-project0001-8997cc20-018",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 process licensors and plant suppliers, more than 99.999% of feed HFC 23 (along with HCFC 22, reference",
+    "page_number": 18,
+    "paragraph_number": 18,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-019",
+    "citation_id": "cit-doc-project0001-8997cc20-019",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 The burner is the most important component of the thermal oxidation furnace. This burner has a special",
+    "page_number": 19,
+    "paragraph_number": 19,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-020",
+    "citation_id": "cit-doc-project0001-8997cc20-020",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 (c) Caustic scrubbing system The caustic scrubbing system is installed to control emission of unabsorb",
+    "page_number": 20,
+    "paragraph_number": 20,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-021",
+    "citation_id": "cit-doc-project0001-8997cc20-021",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 The thermal oxidation system would have an \u2018Effluent Treatment Cum Water Recovery\u2019 system, where filtr",
+    "page_number": 21,
+    "paragraph_number": 21,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-022",
+    "citation_id": "cit-doc-project0001-8997cc20-022",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 a. Acid effluent from cooling system of Components HF and HCl the thermal oxidiser chamber to the neut",
+    "page_number": 22,
+    "paragraph_number": 22,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-023",
+    "citation_id": "cit-doc-project0001-8997cc20-023",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 The burning mixture expands into the chamber, which causes a pressure drop at the centre of the chambe",
+    "page_number": 23,
+    "paragraph_number": 23,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-024",
+    "citation_id": "cit-doc-project0001-8997cc20-024",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Considering that there is no regulation on emission of HFC 23 in India, it would be correct to adopt t",
+    "page_number": 24,
+    "paragraph_number": 24,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-025",
+    "citation_id": "cit-doc-project0001-8997cc20-025",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Process water, cooling water, Effluent Treatment cum Water Recovery plant, Solid waste treatment and c",
+    "page_number": 25,
+    "paragraph_number": 25,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-026",
+    "citation_id": "cit-doc-project0001-8997cc20-026",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 B. BASELINE METHODOLOGY B.1 Title and reference of the methodology applied to the project activity App",
+    "page_number": 26,
+    "paragraph_number": 26,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-027",
+    "citation_id": "cit-doc-project0001-8997cc20-027",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 B.2.3 Furthermore, applicable conditions are so designed that all government regulations and controls ",
+    "page_number": 27,
+    "paragraph_number": 27,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-028",
+    "citation_id": "cit-doc-project0001-8997cc20-028",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 B.3.4 The GHG emission reduction, E , achieved by the Project Activity for a given year is equal to R ",
+    "page_number": 28,
+    "paragraph_number": 28,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-029",
+    "citation_id": "cit-doc-project0001-8997cc20-029",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Though the fraction of HFC 23 not destroyed is typically very small (0.001% as per guaranteed combusti",
+    "page_number": 29,
+    "paragraph_number": 29,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-030",
+    "citation_id": "cit-doc-project0001-8997cc20-030",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 a) GHG (CO2 and N2O) emissions associated with the production of purchased electric power and steam. b",
+    "page_number": 30,
+    "paragraph_number": 30,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-031",
+    "citation_id": "cit-doc-project0001-8997cc20-031",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Further the project takes into account the fact due to some mal-operation or problem with the HCFC 22 ",
+    "page_number": 31,
+    "paragraph_number": 31,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-032",
+    "citation_id": "cit-doc-project0001-8997cc20-032",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 PricewaterhouseCoopers have assisted the Project Promoters in developing the Project Design Document a",
+    "page_number": 32,
+    "paragraph_number": 32,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-033",
+    "citation_id": "cit-doc-project0001-8997cc20-033",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 C DURATION OF PROJECT ACTIVITY / CREDITING PERIOD C.1 Duration of the project activity C.1.1 Starting ",
+    "page_number": 33,
+    "paragraph_number": 33,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-034",
+    "citation_id": "cit-doc-project0001-8997cc20-034",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 D MONITORING METHODOLOGY AND PLAN D.1 Name and reference of approved methodology applied to the projec",
+    "page_number": 34,
+    "paragraph_number": 34,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-035",
+    "citation_id": "cit-doc-project0001-8997cc20-035",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 E = Q x GWP if Q < % Cut-off x Q production B HFC 23 HFC 23 HFC23 HCFC 22 E = % Cut-off x Q x GWP wher",
+    "page_number": 35,
+    "paragraph_number": 35,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-036",
+    "citation_id": "cit-doc-project0001-8997cc20-036",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 \u00b7 CO2 emission due to production of that quantity of caustic soda that is consumed by the system. This",
+    "page_number": 36,
+    "paragraph_number": 36,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-037",
+    "citation_id": "cit-doc-project0001-8997cc20-037",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 D.1.7 Other products / effluents from thermal oxidation system a. Solid Solids (CaF2 and CaCl2) obtain",
+    "page_number": 37,
+    "paragraph_number": 37,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-038",
+    "citation_id": "cit-doc-project0001-8997cc20-038",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 D.2.5 The following indirect CO2 emissions are not considered, as these are very insignificant and not",
+    "page_number": 38,
+    "paragraph_number": 38,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-039",
+    "citation_id": "cit-doc-project0001-8997cc20-039",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 D.3 Data to be collected in order to monitor emissions from the project activity, and how this data wi",
+    "page_number": 39,
+    "paragraph_number": 39,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-040",
+    "citation_id": "cit-doc-project0001-8997cc20-040",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 D.3 Data to be collected in order to monitor emissions from the project activity, and how this data wi",
+    "page_number": 40,
+    "paragraph_number": 40,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-041",
+    "citation_id": "cit-doc-project0001-8997cc20-041",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 D.4 Potential sources of emissions which are significant and reasonably attributable to the project ac",
+    "page_number": 41,
+    "paragraph_number": 41,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-042",
+    "citation_id": "cit-doc-project0001-8997cc20-042",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 D.4 Potential sources of emissions which are significant and reasonably attributable to the project ac",
+    "page_number": 42,
+    "paragraph_number": 42,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-043",
+    "citation_id": "cit-doc-project0001-8997cc20-043",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 D.5 Relevant data necessary for determining the baseline of anthropogenic emissions by sources of GHG ",
+    "page_number": 43,
+    "paragraph_number": 43,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-044",
+    "citation_id": "cit-doc-project0001-8997cc20-044",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 D.6 Quality control (QC) and quality assurance (QA) procedures are being undertaken for data monitored",
+    "page_number": 44,
+    "paragraph_number": 44,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-045",
+    "citation_id": "cit-doc-project0001-8997cc20-045",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Note2: The Electric Power Meter and the Steam Meter would have the facility of recording the monthly r",
+    "page_number": 45,
+    "paragraph_number": 45,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-046",
+    "citation_id": "cit-doc-project0001-8997cc20-046",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Data Uncertainty Level of data Are QA / QC Procedures planned for these data? Outline explanation why ",
+    "page_number": 46,
+    "paragraph_number": 46,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-047",
+    "citation_id": "cit-doc-project0001-8997cc20-047",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 D.7 Name of person / entity determining the monitoring methodology PricewaterhouseCoopers have assiste",
+    "page_number": 47,
+    "paragraph_number": 47,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-048",
+    "citation_id": "cit-doc-project0001-8997cc20-048",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 E CALCULATION OF GHG EMISSION BY SOURCES E.1 Description of formulae used to estimate anthropogenic em",
+    "page_number": 48,
+    "paragraph_number": 48,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-049",
+    "citation_id": "cit-doc-project0001-8997cc20-049",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 b. Equivalent of Steam used by the Thermal Oxidation System Equation 6 = Q X F (CO2 generated per MT o",
+    "page_number": 49,
+    "paragraph_number": 49,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-050",
+    "citation_id": "cit-doc-project0001-8997cc20-050",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 EP = Q x F x 11,700 Q X (44/70) . Q X (44 x C / M ) + Q HFC 23_ HFC 23 NO + HFC 23 + Fuel Fuel Fuel Po",
+    "page_number": 50,
+    "paragraph_number": 50,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-051",
+    "citation_id": "cit-doc-project0001-8997cc20-051",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Increase in emission from project activity, E 1075 P E = E - E 3,391,925 R B P From above calculations",
+    "page_number": 51,
+    "paragraph_number": 51,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-052",
+    "citation_id": "cit-doc-project0001-8997cc20-052",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 F ENVIRONMENTAL IMPACTS F.1 Documentation on analysis of the environmental aspects, including transbou",
+    "page_number": 52,
+    "paragraph_number": 52,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-053",
+    "citation_id": "cit-doc-project0001-8997cc20-053",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Concentration2 (g/m3) Percentage increase in 0.3 % Unknown, but unlikely - local air quality3 to be gr",
+    "page_number": 53,
+    "paragraph_number": 53,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-054",
+    "citation_id": "cit-doc-project0001-8997cc20-054",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 G STAKEHOLDERS COMMENTS G.1 Brief description of the process on how comments by local stakeholders hav",
+    "page_number": 54,
+    "paragraph_number": 54,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-055",
+    "citation_id": "cit-doc-project0001-8997cc20-055",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 G.2 Summary of comments received Comments were received from Sarpanches of Villages Ranjitnagar, Nathk",
+    "page_number": 55,
+    "paragraph_number": 55,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-056",
+    "citation_id": "cit-doc-project0001-8997cc20-056",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 G.3 Report on how due account was taken of any comments received GFL clarified to the Sarpanches: a) t",
+    "page_number": 56,
+    "paragraph_number": 56,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-057",
+    "citation_id": "cit-doc-project0001-8997cc20-057",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 In the discussion with Mr. Raj Kumar Singh, General Secretary of AITUC which represents the work force",
+    "page_number": 57,
+    "paragraph_number": 57,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-058",
+    "citation_id": "cit-doc-project0001-8997cc20-058",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 1 Information on participants in the project activity A. Gujarat Fluorochemicals Limited Organis",
+    "page_number": 58,
+    "paragraph_number": 58,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-059",
+    "citation_id": "cit-doc-project0001-8997cc20-059",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 B. Ineos Fluor Holdings Limited, United Kingdom Organization: Ineos Fluor Holdings Limited; subsidiary",
+    "page_number": 59,
+    "paragraph_number": 59,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-060",
+    "citation_id": "cit-doc-project0001-8997cc20-060",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Title: Head of Carbon Procurement Dept. Salutation: Ms. Last Name: Caroline Middle Name: van First Nam",
+    "page_number": 60,
+    "paragraph_number": 60,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-061",
+    "citation_id": "cit-doc-project0001-8997cc20-061",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 1. THE INOX GROUP 1.1 History and Background The Group was set up in 1923 by Mr. Siddhomal Jain as a t",
+    "page_number": 61,
+    "paragraph_number": 61,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-062",
+    "citation_id": "cit-doc-project0001-8997cc20-062",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 \u00a7 Industrial Gases \u00a7 Speciality gases \u00a7 Cryogenic tanks and vacuum insulated tanks \u00a7 Welded cylinders ",
+    "page_number": 62,
+    "paragraph_number": 62,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-063",
+    "citation_id": "cit-doc-project0001-8997cc20-063",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 1.3.1 Mr Pavan Kumar Jain Mr Pavan Kumar Jain, aged 50, is a Chemical Engineer from IIT, New Delhi wit",
+    "page_number": 63,
+    "paragraph_number": 63,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-064",
+    "citation_id": "cit-doc-project0001-8997cc20-064",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Figure \u2013 Group Financial Overview Group Revenues Group Cash profits 4,500 CAGR of 3,970 800 CAGR of 76",
+    "page_number": 64,
+    "paragraph_number": 64,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-065",
+    "citation_id": "cit-doc-project0001-8997cc20-065",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 public. At present, the promoters (the Jain family) and Air Products have 50% stake each in the compan",
+    "page_number": 65,
+    "paragraph_number": 65,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-066",
+    "citation_id": "cit-doc-project0001-8997cc20-066",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 2 INFORMATION REGARDING PUBLIC FUNDING The project is proposed to be financed by the project spo",
+    "page_number": 66,
+    "paragraph_number": 66,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-067",
+    "citation_id": "cit-doc-project0001-8997cc20-067",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 3 NEW BASELINE METHODOLOGY Approved baseline methodology AM 0001 is being used in this PDD. Henc",
+    "page_number": 67,
+    "paragraph_number": 67,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-068",
+    "citation_id": "cit-doc-project0001-8997cc20-068",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX \u2013 4 NEW MONITORING METHODOLOGY 1. Proposed New Monitoring Methodology Approved baseline methodol",
+    "page_number": 68,
+    "paragraph_number": 68,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-069",
+    "citation_id": "cit-doc-project0001-8997cc20-069",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX \u2013 5 TABLE: BASELINE DATA (Please provide a table containing the key elements used to determine t",
+    "page_number": 69,
+    "paragraph_number": 69,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-070",
+    "citation_id": "cit-doc-project0001-8997cc20-070",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Baseline Calculation The reduction claimed by GFL in GHG emissions is subject to a cut-off ratio, desi",
+    "page_number": 70,
+    "paragraph_number": 70,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-071",
+    "citation_id": "cit-doc-project0001-8997cc20-071",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 GWPs (100-year time horizon) in the SAR and Tar of the IPCC Gas Chemical Formula TAR SAR TAR / SAR Car",
+    "page_number": 71,
+    "paragraph_number": 71,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-072",
+    "citation_id": "cit-doc-project0001-8997cc20-072",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 H-Galden 1040x CHF2OCF2OC2F4OCHF2 1,800 HG-10 CHF2OCF2OCHF2 2,700 HG-01 CHF2OCF2CF2OCHF2 1,500 SAR: IP",
+    "page_number": 72,
+    "paragraph_number": 72,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-073",
+    "citation_id": "cit-doc-project0001-8997cc20-073",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 6 Details of Main Business of Gujarat Fluorochemicals Limited (GFL) Gujarat Fluorochemicals Limi",
+    "page_number": 73,
+    "paragraph_number": 73,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-074",
+    "citation_id": "cit-doc-project0001-8997cc20-074",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 7 LOCATION MAP of GUJARAT FLUOCHEMICALS LIMITED Map of Gujarat and Panchmahals Panchmahals The i",
+    "page_number": 74,
+    "paragraph_number": 74,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-075",
+    "citation_id": "cit-doc-project0001-8997cc20-075",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Ranjitnagar Map of District Panchmahals and Ranjitnagar Map of Ranjitnagar and Plant Site GFL Plant Si",
+    "page_number": 75,
+    "paragraph_number": 75,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-076",
+    "citation_id": "cit-doc-project0001-8997cc20-076",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Photograph of GFL\u2019s HCFC 22 Plant at Ranjitnagar, Gujarat The information contained herein belongs exc",
+    "page_number": 76,
+    "paragraph_number": 76,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-077",
+    "citation_id": "cit-doc-project0001-8997cc20-077",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 8 BLOCK FLOW DIAGRAM \u2013 HCFC 22 PLANT Fluorspar Sulphuric HF Plant Acid HF Chloroform R 22 + R 23",
+    "page_number": 77,
+    "paragraph_number": 77,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-078",
+    "citation_id": "cit-doc-project0001-8997cc20-078",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 9 DIAGRAM SHOWING SOURCE OF HFC 23 EMISSION HFC 23 emission HFC 23 C C209 2 Column vent 0 Typica",
+    "page_number": 78,
+    "paragraph_number": 78,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-079",
+    "citation_id": "cit-doc-project0001-8997cc20-079",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 10 BLOCK DIAGRAM FOR PROPOSED SCHEME FOR THERMAL OXIDATION Steam CO2 / Air HFC 23 to Stack Therm",
+    "page_number": 79,
+    "paragraph_number": 79,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-080",
+    "citation_id": "cit-doc-project0001-8997cc20-080",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 11 INPUT \u2013 OUTPUT DIAGRAM FOR THERMAL OXIDATION SYSTEM Flue Gas to Atmosphere HFC 23 Fuel (LPG) ",
+    "page_number": 80,
+    "paragraph_number": 80,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-081",
+    "citation_id": "cit-doc-project0001-8997cc20-081",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 12 Project\u2019s contribution to Sustainable Development The Project Activity contributes to the sus",
+    "page_number": 81,
+    "paragraph_number": 81,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-082",
+    "citation_id": "cit-doc-project0001-8997cc20-082",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 d) The sponsors, in light of the water scarcity in the region have in the past contributed to construc",
+    "page_number": 82,
+    "paragraph_number": 82,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-083",
+    "citation_id": "cit-doc-project0001-8997cc20-083",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 The average rural main employment rate at 31% for the district is lower than the average for Gujarat, ",
+    "page_number": 83,
+    "paragraph_number": 83,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-084",
+    "citation_id": "cit-doc-project0001-8997cc20-084",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 e) The exposure to, together with an increased income potential in construction, operation and mainten",
+    "page_number": 84,
+    "paragraph_number": 84,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-085",
+    "citation_id": "cit-doc-project0001-8997cc20-085",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 ANNEX 13 Minutes of Meeting of Stakeholders Consultation MINUTES OF MEETING GUJARAT FLUOROCHEMICALS LI",
+    "page_number": 85,
+    "paragraph_number": 85,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-086",
+    "citation_id": "cit-doc-project0001-8997cc20-086",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Question / Concern / Suggestion Clarification (i) Though the regulations in India permit The company w",
+    "page_number": 86,
+    "paragraph_number": 86,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-087",
+    "citation_id": "cit-doc-project0001-8997cc20-087",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Sd/- SG Patel The information contained herein belongs exclusively to GFL and GFL reserves the right t",
+    "page_number": 87,
+    "paragraph_number": 87,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-088",
+    "citation_id": "cit-doc-project0001-8997cc20-088",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 MINUTES OF MEETING GUJARAT FLUOROCHEMICALS LIMITED PROPOSED R23 INCINERATION PROJECT GFL\u2019S VADODARA OF",
+    "page_number": 88,
+    "paragraph_number": 88,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-089",
+    "citation_id": "cit-doc-project0001-8997cc20-089",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Question / Concern / Suggestion Clarification (i) Are there any specific regulations Our incinerator t",
+    "page_number": 89,
+    "paragraph_number": 89,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-090",
+    "citation_id": "cit-doc-project0001-8997cc20-090",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 MINUTES OF MEETING GUJARAT FLUOROCHEMICALS LIMITED PROPOSED R23 INCINERATION PROJECT GFL\u2019S RANJITNAGAR",
+    "page_number": 90,
+    "paragraph_number": 90,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-091",
+    "citation_id": "cit-doc-project0001-8997cc20-091",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 He then asked the invitees if they had, on behalf of the community, any questions or concerns in this ",
+    "page_number": 91,
+    "paragraph_number": 91,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  },
+  {
+    "chunk_id": "doc-project0001-8997cc20-page-092",
+    "citation_id": "cit-doc-project0001-8997cc20-092",
+    "document_id": "doc-project0001-8997cc20",
+    "excerpt": "GUJARAT FLUOROCHEMICALS LIMITED Project for GHG Emission Reduction by Thermal Oxidation of HFC 23 Sd/- Sd/- Mr Mahendrasingh Solanki Mr Dipsingh Rathwa Sd/- Sd/- Mr Vitthalbhai Parmar Mr Shaileshbhai ",
+    "page_number": 92,
+    "paragraph_number": 92,
+    "section_heading": "GUJARAT FLUOROCHEMICALS LIMITED",
+    "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\GFLPDD2.pdf"
+  }
+]

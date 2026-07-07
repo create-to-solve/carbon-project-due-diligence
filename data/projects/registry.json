@@ -1,0 +1,57 @@
+[
+  {
+    "created_at": "2026-06-28T00:00:00+00:00",
+    "display_name": "Project 9199 \u2014 Forestry Restoration, Colombia",
+    "document_count": 2,
+    "facts_count": 10,
+    "findings_count": 2,
+    "host_country": "Colombia",
+    "methodology": "AR-AM0004 ver. 4",
+    "methodology_type": "cdm_ar",
+    "project_id": "project_9199",
+    "reviewer_questions": [
+      "Q1: What was the stated reason for deregistration in March 2022, and was it voluntary or regulatory?",
+      "Q2: Are the second monitoring period credits (374,589 CERs, 2013-2020) recoverable under any CDM wind-down or Article 6 transition pathway?",
+      "Q3: Does the Colombia host party Letter of Approval remain valid following deregistration, and is it relevant to any transition claim?",
+      "Q4: What is the relationship between the 1,257,195 voluntary cancellations and the CP2 balance of 374,589 CERs \u2014 do cancellations exceed issuance?",
+      "Q5: Is there a verification report for the second monitoring period (2016-2020) and if so, what did it conclude?"
+    ],
+    "status": "deregistered"
+  },
+  {
+    "created_at": "2026-06-28T17:07:07.675694+00:00",
+    "display_name": "Test VCS Project \u2014 Generic Demo",
+    "document_count": 0,
+    "facts_count": 0,
+    "findings_count": 5,
+    "host_country": "Indonesia",
+    "methodology": "VM0044 ver. 1.1",
+    "methodology_type": "generic",
+    "project_id": "project_test_vcs_001",
+    "status": "unknown"
+  },
+  {
+    "created_at": "2026-06-29T05:43:03.973531+00:00",
+    "display_name": "Project 0001 : Project for GHG emission reduction by thermal oxidation of HFC 23 in Gujarat, India.",
+    "document_count": 3,
+    "facts_count": 0,
+    "findings_count": 6,
+    "host_country": "India",
+    "methodology": "AM0001 ver. 2",
+    "methodology_type": "cdm_ar",
+    "project_id": "project0001",
+    "status": "unknown"
+  },
+  {
+    "created_at": "2026-07-07T09:58:28.052015+00:00",
+    "display_name": "Project 0547 : Facilitating Reforestation for Guangxi Watershed Management in Pearl River Basin",
+    "document_count": 1,
+    "facts_count": 0,
+    "findings_count": 6,
+    "host_country": "China",
+    "methodology": "AR-AM0001 ver. 2 - Reforestation of degraded land",
+    "methodology_type": "cdm_ar",
+    "project_id": "project_0547_reforestation_guangxi_watershed",
+    "status": "unknown"
+  }
+]

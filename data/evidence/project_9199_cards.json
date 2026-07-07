@@ -1,0 +1,87 @@
+[
+  {
+    "card_id": "card-1",
+    "claim": "Project 9199 applies AR-AM0004 ver. 4 as the baseline methodology.",
+    "claim_topic": "baseline_methodology",
+    "fact_ids": ["fact-9199-001"],
+    "citation_ids": ["cit-doc-9199-val-001"],
+    "evidence_role": "supports",
+    "review_status": "system_curated_pending_human_review",
+    "reviewer_note": "Supports methodology application; not independently human-reviewed.",
+    "conflicts_with": [],
+    "subject_id": "project-9199",
+    "subject_type": "project",
+    "created_at": "2026-06-28T00:00:00+00:00"
+  },
+  {
+    "card_id": "card-2",
+    "claim": "Project 9199 demonstrates additionality through barrier analysis.",
+    "claim_topic": "additionality_demonstration",
+    "fact_ids": ["fact-9199-002"],
+    "citation_ids": ["cit-doc-9199-val-001"],
+    "evidence_role": "supports",
+    "review_status": "system_curated_pending_human_review",
+    "reviewer_note": "Supports additionality screening; not independently human-reviewed.",
+    "conflicts_with": [],
+    "subject_id": "project-9199",
+    "subject_type": "project",
+    "created_at": "2026-06-28T00:00:00+00:00"
+  },
+  {
+    "card_id": "card-3",
+    "claim": "Second monitoring period credits unissued at deregistration.",
+    "claim_topic": "issuance_completeness",
+    "fact_ids": ["fact-9199-007", "fact-9199-008"],
+    "citation_ids": ["cit-doc-9199-mon2-001"],
+    "evidence_role": "contradicts",
+    "review_status": "system_curated_pending_human_review",
+    "reviewer_note": "Project appeared viable but deregistered before second-period issuance completion.",
+    "conflicts_with": ["card-1"],
+    "subject_id": "project-9199",
+    "subject_type": "project",
+    "created_at": "2026-06-28T00:00:00+00:00"
+  },
+  {
+    "card_id": "card-4",
+    "claim": "Deregistration is a material project-status event.",
+    "claim_topic": "project_status",
+    "fact_ids": ["fact-9199-008"],
+    "citation_ids": ["cit-doc-9199-mon2-001"],
+    "evidence_role": "contradicts",
+    "review_status": "system_curated_pending_human_review",
+    "reviewer_note": "Deregistration on 2022-03-10 while second period was awaiting issuance.",
+    "conflicts_with": [],
+    "subject_id": "project-9199",
+    "subject_type": "project",
+    "created_at": "2026-06-28T00:00:00+00:00"
+  },
+  {
+    "card_id": "card-5",
+    "claim": "Permanence risk treatment is present in the curated project facts.",
+    "claim_topic": "permanence_risk",
+    "fact_ids": ["fact-9199-010"],
+    "citation_ids": ["cit-doc-9199-val-001"],
+    "evidence_role": "supports",
+    "review_status": "system_curated_pending_human_review",
+    "reviewer_note": "Supports permanence screening; not independently human-reviewed.",
+    "conflicts_with": [],
+    "subject_id": "project-9199",
+    "subject_type": "project",
+    "created_at": "2026-06-28T00:00:00+00:00"
+  },
+  {
+    "card_id": "card-6",
+    "claim": "Second period monitoring coverage needs more evidence because verification and issuance were not completed.",
+    "claim_topic": "monitoring_coverage_period_2",
+    "fact_ids": ["fact-9199-006", "fact-9199-007"],
+    "citation_ids": ["cit-doc-9199-mon2-001"],
+    "evidence_role": "needs_more_evidence",
+    "review_status": "system_curated_pending_human_review",
+    "reviewer_note": "Second period monitoring report exists but verification and issuance were not completed.",
+    "conflicts_with": [],
+    "subject_id": "project-9199",
+    "subject_type": "project",
+    "created_at": "2026-06-28T00:00:00+00:00"
+  }
+]
+

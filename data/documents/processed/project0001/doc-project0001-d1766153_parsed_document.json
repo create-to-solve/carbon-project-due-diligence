@@ -1,0 +1,15 @@
+{
+  "document_id": "doc-project0001-d1766153",
+  "document_type": "unknown",
+  "file_type": "pdf",
+  "page_count": 11,
+  "parse_status": "success",
+  "parse_warnings": [],
+  "parsed_at": "2026-06-29T18:55:11.971241+00:00",
+  "parser_name": "pdfplumber",
+  "parser_version": "1.0",
+  "project_id": "project0001",
+  "source_path": "C:\\Users\\ashis\\Python Files Exploration\\carbon-dd-v1\\data\\documents\\raw\\project0001\\F-CDM-GFL revision 1.pdf",
+  "source_url": "",
+  "title": "F Cdm Gfl Revision 1"
+}
