@@ -23,6 +23,35 @@ NO_FINDINGS_QUESTION = (
 
 NO_CITATION_NOTE = "No supporting evidence cited — requires manual review"
 
+PROVISIONAL_NEXT_STEPS = (
+    "[NEXT STEPS]\n"
+    "1. Open the AI Proposals tab and review each AI-extracted candidate fact.\n"
+    "2. Confirm, edit, or reject each proposal — nothing is accepted automatically.\n"
+    "3. Click 'Update facts and rerun pipeline' to write the confirmed facts.\n"
+    "4. Return here and regenerate this memo to produce the full findings assessment."
+)
+
+
+def memo_is_provisional(confirmed_fact_count: int | None) -> bool:
+    """True when the project has zero confirmed facts.
+
+    A memo built in this state must not present rule hits as authoritative
+    'missing evidence' conclusions: the only reason anything looks missing is
+    that no fact has been confirmed yet. Passing ``None`` means "unknown" and
+    preserves the normal (non-provisional) memo for legacy callers.
+    """
+    return confirmed_fact_count is not None and confirmed_fact_count <= 0
+
+
+def provisional_status_section(pending_proposal_count: int) -> str:
+    return (
+        "[STATUS — PROVISIONAL]\n"
+        "STATUS: Provisional — no facts confirmed yet.\n"
+        f"This project has {pending_proposal_count} AI-extracted proposals awaiting human "
+        "confirmation. Findings and evidence assessment cannot be produced until facts are "
+        "confirmed. This memo is a placeholder."
+    )
+
 
 def generic_reviewer_questions(findings: list[Finding]) -> list[str]:
     """Derive one reviewer question per finding when a project has no curated set."""
@@ -60,22 +89,45 @@ def build_memo(
     audit_log: AuditLog,
     narratives: dict[str, str] | None = None,
     reviewer_questions: list[str] | None = None,
+    project_record: dict[str, Any] | None = None,
+    confirmed_fact_count: int | None = None,
+    pending_proposal_count: int = 0,
 ) -> ReviewerMemo:
     audit_events = audit_log.read()
-    questions = (
-        list(reviewer_questions)
-        if reviewer_questions
-        else generic_reviewer_questions(findings)
-    )
-    sections = {
-        "1. Project identity": _project_identity(facts),
-        "2. Material signals": _material_signals(findings),
-        "3. Evidence summary": _evidence_summary(findings, evidence_cards, narratives),
-        "4. Evidence gaps": _evidence_gaps(findings),
-        "5. Reviewer questions": _reviewer_questions(questions),
-        "6. Audit trail summary": _audit_summary(audit_events),
-        "7. Disclaimer": DISCLAIMER_TEXT,
-    }
+    provisional = memo_is_provisional(confirmed_fact_count)
+
+    if provisional:
+        # No confirmed facts: withhold findings, evidence assessment and AI
+        # narratives. Identity still comes from the registry, which is valid
+        # without any confirmed fact.
+        sections = {
+            "1. Project identity": _project_identity(facts, project_record),
+            "2. Status": provisional_status_section(pending_proposal_count),
+            "3. Next steps": PROVISIONAL_NEXT_STEPS,
+            "4. Audit trail summary": _audit_summary(audit_events),
+            "5. Disclaimer": DISCLAIMER_TEXT,
+        }
+        questions: list[str] = []
+        open_findings: list[str] = []
+        evidence_gaps: list[str] = []
+    else:
+        questions = (
+            list(reviewer_questions)
+            if reviewer_questions
+            else generic_reviewer_questions(findings)
+        )
+        sections = {
+            "1. Project identity": _project_identity(facts, project_record),
+            "2. Material signals": _material_signals(findings),
+            "3. Evidence summary": _evidence_summary(findings, evidence_cards, narratives),
+            "4. Evidence gaps": _evidence_gaps(findings),
+            "5. Reviewer questions": _reviewer_questions(questions),
+            "6. Audit trail summary": _audit_summary(audit_events),
+            "7. Disclaimer": DISCLAIMER_TEXT,
+        }
+        open_findings = [finding.flag_code for finding in findings if finding.review_status == "open"]
+        evidence_gaps = [finding.evidence_gap for finding in findings if finding.evidence_gap]
+
     document_ids = sorted(
         {
             event.subject_id
@@ -83,8 +135,6 @@ def build_memo(
             if event.event_type == "document_ingested" and event.subject_type == "document"
         }
     )
-    open_findings = [finding.flag_code for finding in findings if finding.review_status == "open"]
-    evidence_gaps = [finding.evidence_gap for finding in findings if finding.evidence_gap]
     audit_event_ids = [event.event_id for event in audit_events]
     hash_payload = {
         "project_id": project_id,
@@ -94,6 +144,7 @@ def build_memo(
         "evidence_gaps": evidence_gaps,
         "reviewer_questions": questions,
         "audit_event_ids": audit_event_ids,
+        "provisional": provisional,
     }
     content_hash = hashlib.sha256(_canonical_json(hash_payload).encode("utf-8")).hexdigest()
     return ReviewerMemo(
@@ -124,18 +175,34 @@ def memo_to_markdown(memo: ReviewerMemo) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
-def _project_identity(facts: dict[str, Any]) -> str:
-    dereg = facts.get("deregistration_date") or "not recorded"
+def _first_present(*candidates: Any) -> str:
+    """First non-empty candidate, else an honest 'not recorded' rather than None."""
+    for candidate in candidates:
+        if candidate not in (None, ""):
+            return str(candidate)
+    return "not recorded"
+
+
+def _project_identity(
+    facts: dict[str, Any], project_record: dict[str, Any] | None = None
+) -> str:
+    """Identity from the project registry first, falling back to confirmed facts.
+
+    Registry data (title, host country, methodology) is legitimately available
+    without any confirmed fact, so it must never render as 'None'.
+    """
+    record = project_record or {}
     return (
         "[STRUCTURED DATA]\n"
-        f"Project ID: {facts.get('project_id')}\n"
-        f"Title: {facts.get('title')}\n"
-        f"Host country: {facts.get('host_country')}\n"
-        f"Methodology: {facts.get('methodology')}\n"
-        f"Activity scale: {facts.get('activity_scale')}\n"
-        f"Crediting period: {facts.get('crediting_period_start')} to {facts.get('crediting_period_end')}\n"
-        f"Registration date: {facts.get('registration_date')}\n"
-        f"Deregistration date: {dereg}"
+        f"Project ID: {_first_present(facts.get('project_id'), record.get('project_id'))}\n"
+        f"Title: {_first_present(record.get('display_name'), facts.get('title'))}\n"
+        f"Host country: {_first_present(record.get('host_country'), facts.get('host_country'))}\n"
+        f"Methodology: {_first_present(record.get('methodology'), facts.get('methodology'))}\n"
+        f"Activity scale: {_first_present(facts.get('activity_scale'))}\n"
+        f"Crediting period: {_first_present(facts.get('crediting_period_start'))} to "
+        f"{_first_present(facts.get('crediting_period_end'))}\n"
+        f"Registration date: {_first_present(facts.get('registration_date'))}\n"
+        f"Deregistration date: {_first_present(facts.get('deregistration_date'))}"
     )
 
 

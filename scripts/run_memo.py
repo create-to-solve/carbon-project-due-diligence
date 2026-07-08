@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 
@@ -21,12 +22,24 @@ AUDIT_PATH = _DEFAULT_PATHS.audit_log
 MEMO_PATH = _DEFAULT_PATHS.memo
 
 
+def _confirmed_fact_count() -> int:
+    path = _DEFAULT_PATHS.facts_file
+    if not path.exists():
+        return 0
+    try:
+        records = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return 0
+    return len(records) if isinstance(records, list) else 0
+
+
 def main() -> None:
     facts = dict(PROJECT_9199_FACTS)
     cards = load_evidence_cards(str(CARDS_PATH))
     findings = run_all_checks(facts)
     project_record = get_project(DEFAULT_PROJECT_ID, str(_DEFAULT_PATHS.project_registry))
     reviewer_questions = reviewer_questions_for(project_record, findings)
+    confirmed_fact_count = _confirmed_fact_count()
     memo = build_memo(
         facts["project_id"],
         facts,
@@ -34,6 +47,8 @@ def main() -> None:
         findings,
         AuditLog(str(AUDIT_PATH)),
         reviewer_questions=reviewer_questions,
+        project_record=project_record,
+        confirmed_fact_count=confirmed_fact_count,
     )
     MEMO_PATH.parent.mkdir(parents=True, exist_ok=True)
     MEMO_PATH.write_text(memo_to_markdown(memo), encoding="utf-8")

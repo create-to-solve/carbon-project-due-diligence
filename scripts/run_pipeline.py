@@ -99,6 +99,8 @@ def main(project_id: str = DEFAULT_PROJECT_ID) -> None:
     for finding in findings:
         emit_finding_flagged(audit_log, facts.get("project_id", project_id), finding.finding_id, finding.flag_code, finding.severity)
 
+    confirmed_fact_count = len(curated_facts)
+    pending_proposal_count = _pending_proposal_count(paths)
     reviewer_questions = reviewer_questions_for(project_record, findings)
     memo = build_memo(
         facts.get("project_id", project_id),
@@ -107,19 +109,28 @@ def main(project_id: str = DEFAULT_PROJECT_ID) -> None:
         findings,
         audit_log,
         reviewer_questions=reviewer_questions,
+        project_record=project_record,
+        confirmed_fact_count=confirmed_fact_count,
+        pending_proposal_count=pending_proposal_count,
     )
     emit_memo_generated(audit_log, facts.get("project_id", project_id), memo.memo_id, len(findings), len(memo.evidence_gaps))
 
-    narratives = _generate_and_save_narratives(
-        findings=findings,
-        curated_facts=curated_facts,
-        evidence_cards=evidence_cards,
-        chunks=all_chunks,
-        project_context=facts,
-        audit_log=audit_log,
-        project_id=facts.get("project_id", project_id),
-        narratives_path=paths.narratives,
-    )
+    # With zero confirmed facts the findings are provisional, so AI narratives
+    # would assert absence for facts that are merely unconfirmed. Skip them.
+    if confirmed_fact_count == 0:
+        narratives = None
+        print("Narratives: skipped — no confirmed facts (memo is provisional)")
+    else:
+        narratives = _generate_and_save_narratives(
+            findings=findings,
+            curated_facts=curated_facts,
+            evidence_cards=evidence_cards,
+            chunks=all_chunks,
+            project_context=facts,
+            audit_log=audit_log,
+            project_id=facts.get("project_id", project_id),
+            narratives_path=paths.narratives,
+        )
 
     memo = build_memo(
         facts.get("project_id", project_id),
@@ -129,6 +140,9 @@ def main(project_id: str = DEFAULT_PROJECT_ID) -> None:
         audit_log,
         narratives,
         reviewer_questions=reviewer_questions,
+        project_record=project_record,
+        confirmed_fact_count=confirmed_fact_count,
+        pending_proposal_count=pending_proposal_count,
     )
     paths.memo.parent.mkdir(parents=True, exist_ok=True)
     paths.memo.write_text(memo_to_markdown(memo), encoding="utf-8")
@@ -225,6 +239,18 @@ def _merge_curated_facts_into_facts(facts: dict, curated_facts) -> None:
         key = (fact.label or "").strip().lower().replace(" ", "_")
         if key and key not in facts:
             facts[key] = fact.value
+
+
+def _pending_proposal_count(paths: ProjectPaths) -> int:
+    if not paths.proposals_file.exists():
+        return 0
+    try:
+        proposals = json.loads(paths.proposals_file.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return 0
+    if not isinstance(proposals, list):
+        return 0
+    return sum(1 for proposal in proposals if proposal.get("status") == "pending")
 
 
 def _load_facts_safely(path: Path):

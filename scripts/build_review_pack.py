@@ -84,9 +84,20 @@ def main(project_id: str = DEFAULT_PROJECT_ID) -> None:
     cards = _read_json_or_default(paths.evidence_cards_file, [])
     audit_events = _read_jsonl(paths.audit_log)
     snapshot = _read_json_or_default(paths.case_memory, {})
-    narratives = _load_narratives_for(paths.narratives)
-    critical_flags = _critical_flags_for(project_id, facts)
-    reviewer_questions = _reviewer_questions_for(project_id, facts, paths)
+    confirmed_fact_count = _confirmed_fact_count(paths)
+    pending_proposal_count = _pending_proposal_count(paths)
+    provisional = confirmed_fact_count == 0
+
+    if provisional:
+        # Nothing is confirmed, so rule hits and AI narratives would assert that
+        # facts are absent when they are merely unconfirmed. Withhold them.
+        narratives: dict[str, str] = {}
+        critical_flags: list[str] = []
+        reviewer_questions: list[str] = []
+    else:
+        narratives = _load_narratives_for(paths.narratives)
+        critical_flags = _critical_flags_for(project_id, facts)
+        reviewer_questions = _reviewer_questions_for(project_id, facts, paths)
     generated_at = datetime.now(timezone.utc)
 
     html = build_html(
@@ -99,10 +110,13 @@ def main(project_id: str = DEFAULT_PROJECT_ID) -> None:
         critical_flags=critical_flags,
         reviewer_questions=reviewer_questions,
         generated_at=generated_at,
+        provisional=provisional,
+        pending_proposal_count=pending_proposal_count,
     )
     paths.review_pack.parent.mkdir(parents=True, exist_ok=True)
     paths.review_pack.write_text(html, encoding="utf-8")
-    print(f"Review pack: {paths.review_pack.relative_to(ROOT)}")
+    status = "provisional" if provisional else "full"
+    print(f"Review pack ({status}): {paths.review_pack.relative_to(ROOT)}")
 
 
 def _project_identity_facts(project_id: str, paths: ProjectPaths) -> dict[str, Any]:
@@ -164,6 +178,18 @@ def _reviewer_questions_for(project_id: str, facts: dict[str, Any], paths: Proje
     return reviewer_questions_for(project_record, findings)
 
 
+def _confirmed_fact_count(paths: ProjectPaths) -> int:
+    records = _read_json_or_default(paths.facts_file, [])
+    return len(records) if isinstance(records, list) else 0
+
+
+def _pending_proposal_count(paths: ProjectPaths) -> int:
+    records = _read_json_or_default(paths.proposals_file, [])
+    if not isinstance(records, list):
+        return 0
+    return sum(1 for record in records if record.get("status") == "pending")
+
+
 def _read_json_or_default(path: Path, default: Any) -> Any:
     if not Path(path).exists():
         return default
@@ -188,8 +214,28 @@ def build_html(
     project_id: str = DEFAULT_PROJECT_ID,
     critical_flags: list[str] | None = None,
     reviewer_questions: list[str] | None = None,
+    provisional: bool = False,
+    pending_proposal_count: int = 0,
 ) -> str:
     critical_flags = critical_flags if critical_flags is not None else list(DEFAULT_CRITICAL_FLAGS)
+    if provisional:
+        body = [
+            _provisional_notice(pending_proposal_count),
+            _project_identity(project_id, facts),
+            _evidence_cards(cards),
+            _audit_trail(audit_events, snapshot),
+            _case_memory(snapshot),
+        ]
+    else:
+        body = [
+            _critical_signals(critical_flags, narratives or {}),
+            _project_identity(project_id, facts),
+            _evidence_cards(cards),
+            _reviewer_questions(reviewer_questions or []),
+            _evidence_gaps(critical_flags),
+            _audit_trail(audit_events, snapshot),
+            _case_memory(snapshot),
+        ]
     return "\n".join(
         [
             "<!doctype html>",
@@ -203,19 +249,28 @@ def build_html(
             "<body>",
             _header(project_id, facts, generated_at),
             '<main class="page">',
-            _critical_signals(critical_flags, narratives or {}),
-            _project_identity(project_id, facts),
-            _evidence_cards(cards),
-            _reviewer_questions(reviewer_questions or []),
-            _evidence_gaps(critical_flags),
-            _audit_trail(audit_events, snapshot),
-            _case_memory(snapshot),
+            *body,
             "</main>",
             _footer(),
             "</body>",
             "</html>",
         ]
     )
+
+
+def _provisional_notice(pending_proposal_count: int) -> str:
+    return f"""<section class="section">
+  <h2>Status \u2014 Provisional</h2>
+  <span class="label">[STATUS \u2014 PROVISIONAL, no facts confirmed]</span>
+  <article class="card critical-card">
+    <p><strong>STATUS: Provisional \u2014 no facts confirmed yet.</strong></p>
+    <p>This project has {escape(str(pending_proposal_count))} AI-extracted proposals awaiting
+    human confirmation. Findings and evidence assessment cannot be produced until facts are
+    confirmed. This review pack is a placeholder.</p>
+    <p class="required"><strong>Next step:</strong> confirm proposals in the AI Proposals tab,
+    rerun the pipeline, then regenerate this review pack.</p>
+  </article>
+</section>"""
 
 
 def _style() -> str:

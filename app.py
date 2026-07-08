@@ -110,6 +110,28 @@ def _reviewer_questions_for_project(project_id: str, findings) -> list[str]:
     record = get_project(project_id, str(PROJECT_REGISTRY_PATH)) or {}
     return reviewer_questions_for(record, findings)
 
+
+def _project_record_for(project_id: str) -> dict:
+    return get_project(project_id, str(PROJECT_REGISTRY_PATH)) or {}
+
+
+def _memo_facts_for_project(project_id: str) -> dict:
+    """Identity facts for the memo, sourced from the registry (never None)."""
+    if project_id == DEFAULT_PROJECT_ID:
+        return dict(PROJECT_9199_FACTS)
+    record = _project_record_for(project_id)
+    return {
+        "project_id": project_id,
+        "title": record.get("display_name"),
+        "host_country": record.get("host_country"),
+        "methodology": record.get("methodology"),
+    }
+
+
+def _memo_counts(project_id: str, paths: ProjectPaths) -> tuple[int, int]:
+    """(confirmed_fact_count, pending_proposal_count) for provisional detection."""
+    return len(_load_fact_records(project_id)), _count_pending_proposals(paths)
+
 BADGE_COLORS = {
     "Critical": "#b42318",
     "High": "#c2410c",
@@ -1288,15 +1310,36 @@ def _memo_tab(project_id, paths, facts, evidence_cards, findings, audit_events, 
     cols[2].metric("Content hash", metadata["content_hash"][:12] or "—")
     cols[3].metric("Audit events", len(audit_events))
 
+    provisional = _findings_provisional(facts)
+    if provisional:
+        pending = _count_pending_proposals(paths)
+        st.warning(
+            "**Confirm facts first.** A memo generated before facts are confirmed would report "
+            "everything as missing, even facts the AI has already extracted"
+            + (f" ({pending} proposal(s) are pending)" if pending else "")
+            + ". Confirm proposals in the **AI Proposals** tab, then return here."
+        )
+        st.caption(
+            "You can still generate a placeholder memo. It will be clearly labelled "
+            "PROVISIONAL, will contain no findings, no evidence assessment, and no AI narratives."
+        )
+        generate_label = "Generate provisional memo and review pack"
+    else:
+        generate_label = "Generate memo and review pack"
+
     if st.button(
-        "Generate memo and review pack",
-        type="primary",
+        generate_label,
+        type="secondary" if provisional else "primary",
         use_container_width=True,
         key="generate_memo_and_pack",
     ):
         with st.spinner("Generating..."):
             _generate_memo_and_pack(project_id, paths, evidence_cards, findings)
-        st.success("Done. Download below.")
+        st.success(
+            "Provisional memo generated. Download below."
+            if provisional
+            else "Done. Download below."
+        )
         _clear_data_caches()
         memo_text = paths.memo.read_text(encoding="utf-8") if paths.memo.exists() else ""
 
@@ -1322,8 +1365,9 @@ def _memo_tab(project_id, paths, facts, evidence_cards, findings, audit_events, 
     with st.expander("Advanced options"):
         c1, c2 = st.columns(2)
         if c1.button("Regenerate memo only"):
-            narratives = _load_narratives() or None
-            memo_facts = dict(PROJECT_9199_FACTS) if project_id == DEFAULT_PROJECT_ID else {"project_id": project_id}
+            confirmed_fact_count, pending_proposal_count = _memo_counts(project_id, paths)
+            narratives = (_load_narratives() or None) if confirmed_fact_count > 0 else None
+            memo_facts = _memo_facts_for_project(project_id)
             memo = build_memo(
                 memo_facts.get("project_id", project_id),
                 memo_facts,
@@ -1332,11 +1376,14 @@ def _memo_tab(project_id, paths, facts, evidence_cards, findings, audit_events, 
                 AuditLog(str(paths.audit_log)),
                 narratives,
                 reviewer_questions=_reviewer_questions_for_project(project_id, findings),
+                project_record=_project_record_for(project_id),
+                confirmed_fact_count=confirmed_fact_count,
+                pending_proposal_count=pending_proposal_count,
             )
             paths.memo.parent.mkdir(parents=True, exist_ok=True)
             paths.memo.write_text(memo_to_markdown(memo), encoding="utf-8")
             _clear_data_caches()
-            st.success("Memo regenerated.")
+            _queue_flash("success", "Memo regenerated.")
             st.rerun()
         if c2.button("Build review pack only"):
             output = _run_script("scripts/build_review_pack.py", project_id)
@@ -1804,12 +1851,12 @@ def _parse_quality_warning(record: dict) -> str | None:
 
 
 def _generate_memo_and_pack(project_id: str, paths: ProjectPaths, evidence_cards, findings) -> None:
-    if get_api_key() and findings:
+    confirmed_fact_count, pending_proposal_count = _memo_counts(project_id, paths)
+    # Never draft AI narratives asserting absence when nothing is confirmed yet.
+    if get_api_key() and findings and confirmed_fact_count > 0:
         _regenerate_all_narratives(project_id, paths, evidence_cards, findings)
-    narratives = _load_narratives() or None
-    memo_facts = (
-        dict(PROJECT_9199_FACTS) if project_id == DEFAULT_PROJECT_ID else {"project_id": project_id}
-    )
+    narratives = (_load_narratives() or None) if confirmed_fact_count > 0 else None
+    memo_facts = _memo_facts_for_project(project_id)
     memo = build_memo(
         memo_facts.get("project_id", project_id),
         memo_facts,
@@ -1818,6 +1865,9 @@ def _generate_memo_and_pack(project_id: str, paths: ProjectPaths, evidence_cards
         AuditLog(str(paths.audit_log)),
         narratives,
         reviewer_questions=_reviewer_questions_for_project(project_id, findings),
+        project_record=_project_record_for(project_id),
+        confirmed_fact_count=confirmed_fact_count,
+        pending_proposal_count=pending_proposal_count,
     )
     paths.memo.parent.mkdir(parents=True, exist_ok=True)
     paths.memo.write_text(memo_to_markdown(memo), encoding="utf-8")
@@ -1882,7 +1932,10 @@ def _regenerate_memo_with_narratives(project_id, evidence_cards, findings) -> No
         else {}
     )
     narratives = narratives_payload.get("narratives") or None
-    memo_facts = dict(PROJECT_9199_FACTS) if project_id == DEFAULT_PROJECT_ID else {"project_id": project_id}
+    confirmed_fact_count, pending_proposal_count = _memo_counts(project_id, paths)
+    if confirmed_fact_count == 0:
+        narratives = None
+    memo_facts = _memo_facts_for_project(project_id)
     memo = build_memo(
         memo_facts.get("project_id", project_id),
         memo_facts,
@@ -1891,6 +1944,9 @@ def _regenerate_memo_with_narratives(project_id, evidence_cards, findings) -> No
         AuditLog(str(paths.audit_log)),
         narratives,
         reviewer_questions=_reviewer_questions_for_project(project_id, findings),
+        project_record=_project_record_for(project_id),
+        confirmed_fact_count=confirmed_fact_count,
+        pending_proposal_count=pending_proposal_count,
     )
     paths.memo.parent.mkdir(parents=True, exist_ok=True)
     paths.memo.write_text(memo_to_markdown(memo), encoding="utf-8")
