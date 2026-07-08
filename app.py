@@ -129,7 +129,7 @@ DISCLAIMER = (
 def main() -> None:
     st.set_page_config(
         page_title="Carbon Market Due Diligence v1",
-        page_icon="CM",
+        page_icon="🌱",
         layout="wide",
     )
     _inject_css()
@@ -157,6 +157,8 @@ def main() -> None:
     chunk_index = {chunk.chunk_id: chunk for chunk in chunks}
 
     _sidebar(registry, project_record, facts, registry_records, documents, findings, audit_events)
+
+    _render_flashes()
 
     tabs = st.tabs(["Project", "Documents", "AI Proposals", "Facts", "Findings", "Memo", "Audit Trail"])
     with tabs[0]:
@@ -241,54 +243,57 @@ def _inject_css() -> None:
     st.markdown(
         """
         <style>
+        :root {
+          --ink: #18212f; --muted: #647084; --line: #dbe1ea; --panel: #ffffff;
+          --ok: #16803c; --ok-soft: #eaf7ee; --bad: #b42318; --bad-soft: #fdecea;
+          --warn: #a15c00; --warn-soft: #fff6e6; --info: #2563eb; --info-soft: #eef3fe;
+        }
+        /* Typography and rhythm */
+        h1, h2, h3, h4 { color: var(--ink); letter-spacing: -0.01em; }
+        h2 { font-size: 1.5rem; margin: 0.2rem 0 0.6rem; }
+        h3 { font-size: 1.15rem; }
+        /* Pills / badges — one consistent shape everywhere */
         .badge {
-            display: inline-block;
-            border-radius: 999px;
-            padding: 0.15rem 0.55rem;
-            font-size: 0.76rem;
-            font-weight: 700;
-            color: white;
-            vertical-align: middle;
+            display: inline-block; border-radius: 999px; padding: 0.15rem 0.55rem;
+            font-size: 0.74rem; font-weight: 700; color: #fff; vertical-align: middle;
             margin: 0.1rem 0.25rem 0.1rem 0;
         }
-        .badge-muted {
-            background: #eef2f7;
-            color: #465266;
-            border: 1px solid #d8dee8;
+        .pill {
+            display: inline-block; border-radius: 999px; padding: 0.1rem 0.55rem;
+            font-size: 0.72rem; font-weight: 700; vertical-align: middle;
+            border: 1px solid transparent; margin: 0.05rem 0.15rem 0.05rem 0;
         }
+        .pill-ok    { background: var(--ok-soft);   color: var(--ok);   border-color: #a9ddb8; }
+        .pill-bad   { background: var(--bad-soft);  color: var(--bad);  border-color: #f0b4ae; }
+        .pill-warn  { background: var(--warn-soft); color: var(--warn); border-color: #f3cd89; }
+        .pill-muted { background: #eef2f7;          color: #465266;     border-color: var(--line); }
         .source-label {
-            display: inline-block;
-            color: #475569;
-            background: #f1f5f9;
-            border: 1px solid #d8dee8;
-            border-radius: 999px;
-            padding: 0.12rem 0.5rem;
-            font-size: 0.72rem;
-            font-weight: 700;
-            margin-bottom: 0.6rem;
+            display: inline-block; color: #475569; background: #f1f5f9;
+            border: 1px solid var(--line); border-radius: 999px; padding: 0.12rem 0.5rem;
+            font-size: 0.7rem; font-weight: 700; letter-spacing: 0.03em; margin-bottom: 0.6rem;
         }
+        .small-muted { color: var(--muted); font-size: 0.86rem; }
+        .kv { margin: 0.35rem 0 0.15rem; }
+        .kv-label {
+            color: var(--muted); font-size: 0.72rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.04em;
+        }
+        .callout {
+            border-left: 4px solid var(--info); background: var(--info-soft);
+            padding: 0.5rem 0.8rem; border-radius: 6px; margin: 0.5rem 0;
+            color: #1f2a3d; font-size: 0.9rem;
+        }
+        .callout-warn { border-left-color: var(--warn); background: var(--warn-soft); }
         .critical-banner {
-            background: #fff1f0;
-            border: 1px solid #f0b4ae;
-            border-left: 6px solid #b42318;
-            border-radius: 8px;
-            padding: 1rem;
-            margin: 1rem 0;
+            background: #fff1f0; border: 1px solid #f0b4ae; border-left: 6px solid #b42318;
+            border-radius: 8px; padding: 1rem; margin: 1rem 0;
         }
-        .small-muted {
-            color: #647084;
-            font-size: 0.86rem;
-        }
-        mark {
-            background: #fef08a;
-            padding: 0 0.1rem;
-        }
+        mark { background: #fef08a; padding: 0 0.1rem; }
         div[data-testid="stMetric"] {
-            background: #ffffff;
-            border: 1px solid #d8dee8;
-            border-radius: 8px;
-            padding: 0.75rem;
+            background: var(--panel); border: 1px solid var(--line);
+            border-radius: 8px; padding: 0.75rem;
         }
+        div[data-testid="stVerticalBlockBorderWrapper"] { border-radius: 10px; }
         </style>
         """,
         unsafe_allow_html=True,
@@ -328,19 +333,16 @@ def _sidebar(registry, project_record, facts, registry_records, documents, findi
         if st.session_state.get("show_new_project_form"):
             _render_new_project_form()
         status = (project_record or {}).get("status", "unknown")
-        st.markdown(
-            _badge(status.upper(), STATUS_COLORS.get(status, "#475569")),
-            unsafe_allow_html=True,
-        )
         methodology_type = (project_record or {}).get("methodology_type", "cdm_ar")
         rule_set_label = "CDM A/R" if methodology_type == "cdm_ar" else "Generic"
         st.markdown(
-            f"<span class='small-muted'>Rule set: {html.escape(rule_set_label)}</span>",
+            f"{_badge(status.upper(), STATUS_COLORS.get(status, '#475569'))} "
+            f"<span class='pill pill-muted'>Rule set: {html.escape(rule_set_label)}</span>",
             unsafe_allow_html=True,
         )
         st.divider()
 
-        st.subheader("Workflow progress")
+        st.subheader("Workflow")
         _render_workflow_progress(live_counts, findings)
 
         st.divider()
@@ -608,6 +610,10 @@ def _documents_tab(project_id, paths, registry_records, documents, chunks, findi
             )
         st.dataframe(rows, width="stretch", hide_index=True)
         st.caption("Source: data/documents/registry.json")
+        for record in registry_records:
+            quality = _parse_quality_warning(record)
+            if quality:
+                st.warning(f"{record.get('title', '')}: {quality}")
     for record in registry_records:
         document_id = record.get("document_id", "")
         doc_chunks = [chunk for chunk in chunks if chunk.document_id == document_id][:5]
@@ -637,47 +643,71 @@ def _documents_tab(project_id, paths, registry_records, documents, chunks, findi
     )
 
     st.subheader("Add a Document to the Evidence Base")
+    st.markdown(
+        "<span class='small-muted'>Best results with text-based CDM afforestation/reforestation "
+        "PDDs, validation reports, and monitoring reports. Image-only scans may extract poorly.</span>",
+        unsafe_allow_html=True,
+    )
     upload = st.file_uploader("Upload PDF files", type=["pdf"], accept_multiple_files=False)
     if upload is not None:
         destination = paths.raw_documents / upload.name
+        exists = destination.exists()
         st.write(f"Ready to add: {upload.name}")
-        if destination.exists():
+        if exists:
             st.warning(
-                f"A file named {upload.name} is already in the document base for this project. "
-                "Upload again to replace it."
+                f"A file named {upload.name} is already held for this project. Continuing will replace it."
             )
-            if st.button("Replace"):
-                result = _save_ingest_and_rerun(upload, destination, project_id, paths)
-                st.success("Document replaced, ingestion completed, and pipeline rerun.")
-                st.code(result)
+        button_label = "Replace, ingest, and rerun pipeline" if exists else "Save, ingest, and rerun pipeline"
+        if st.button(button_label, type="primary"):
+            ingest_error = None
+            try:
+                with st.spinner(f"Ingesting {upload.name} — parsing pages and re-running the pipeline…"):
+                    records = _save_ingest_and_rerun(upload, destination, project_id, paths)
+            except Exception as exc:  # never show a traceback in the live flow
+                ingest_error = exc
+            if ingest_error is not None:
+                st.error(
+                    "The document could not be ingested. Please check it is a valid, "
+                    "text-based PDF and try again."
+                )
+                st.caption(f"Details: {type(ingest_error).__name__}")
+            else:
+                for record in records:
+                    pages = record.get("page_count", 0) or 0
+                    chunks = record.get("chunk_count", 0) or 0
+                    warns = record.get("parse_warnings", []) or []
+                    _queue_flash(
+                        "success",
+                        f"Added “{record.get('title', '(untitled)')}” — {pages} page(s), "
+                        f"{chunks} chunk(s), parse {record.get('parse_status', '')} "
+                        f"({len(warns)} warning(s)). Review extracted facts in the AI Proposals tab.",
+                    )
+                    quality = _parse_quality_warning(record)
+                    if quality:
+                        _queue_flash("warning", f"{record.get('title', '')}: {quality}")
                 st.rerun()
-        elif st.button("Save, ingest, and rerun pipeline"):
-            result = _save_ingest_and_rerun(upload, destination, project_id, paths)
-            st.success("Document added, ingestion completed, and pipeline rerun.")
-            st.code(result)
-            st.rerun()
 
 
 def _ai_proposals_tab(project_id, paths, proposals, documents, chunks, citations, chunk_index) -> None:
     st.header("AI Proposals")
+    st.markdown(
+        _source_label("[AI-PROPOSED — candidate facts, not yet confirmed]"),
+        unsafe_allow_html=True,
+    )
+    st.caption(
+        "The AI proposes candidate facts from the documents. Nothing becomes a fact "
+        "until you confirm it — bulk-confirm is a convenience, never an auto-accept."
+    )
     counts = {status: sum(1 for proposal in proposals if proposal.get("status") == status) for status in ["pending", "confirm", "edit", "reject"]}
 
-    if counts["pending"] > 0:
-        st.info(
-            "**How to review proposals:**\n"
-            "1. Filter by confidence = 1.0 to see the highest-certainty extractions first\n"
-            "2. Read each proposal's evidence quote to verify it matches the source document\n"
-            "3. Click **Confirm** to accept, **Edit** to correct, or **Reject** to discard\n"
-            "4. When done, click **Update facts and rerun pipeline** at the bottom to generate findings"
-        )
-
     cols = st.columns(5)
-    cols[0].metric("Total proposals", len(proposals))
+    cols[0].metric("Total", len(proposals))
     cols[1].metric("Pending", counts["pending"])
     cols[2].metric("Confirmed", counts["confirm"])
     cols[3].metric("Edited", counts["edit"])
     cols[4].metric("Rejected", counts["reject"])
 
+    # --- Fast path: bulk-confirm high-confidence proposals, prominent at the top ---
     high_confidence_pending = [
         proposal for proposal in proposals
         if proposal.get("status") == "pending"
@@ -685,42 +715,95 @@ def _ai_proposals_tab(project_id, paths, proposals, documents, chunks, citations
     ]
     if high_confidence_pending:
         with st.container(border=True):
-            st.markdown("**High-confidence proposals**")
-            st.write(f"Count: {len(high_confidence_pending)} proposals with confidence = 1.0")
-            if st.button("Confirm all confidence-1.0 proposals"):
+            st.markdown("**Fast review**")
+            st.write(
+                f"{len(high_confidence_pending)} proposal(s) were extracted at confidence = 1.0. "
+                "Confirm them together in one click, then review any lower-confidence ones individually below."
+            )
+            if st.button(
+                f"Confirm all high-confidence proposals (confidence = 1.0) — {len(high_confidence_pending)}",
+                type="primary",
+                use_container_width=True,
+            ):
                 _bulk_confirm_proposals(project_id, paths, high_confidence_pending)
-                st.success(
-                    f"Confirmed {len(high_confidence_pending)} proposals. "
-                    "Click 'Update facts and rerun pipeline' to generate findings."
+                remaining = sum(
+                    1 for p in proposals
+                    if p.get("status") == "pending"
+                    and float((p.get("ai_extracted") or {}).get("confidence") or 0) < 1.0
+                )
+                _queue_flash(
+                    "success",
+                    f"Confirmed {len(high_confidence_pending)} fact(s). "
+                    f"{remaining} lower-confidence proposal(s) remain for individual review. "
+                    "Click 'Update facts and rerun pipeline' below to generate findings.",
                 )
                 _clear_data_caches()
                 st.rerun()
 
+    # --- Extraction, with visible progress ---
     if not documents:
-        st.info(
-            "No proposals yet. Upload documents and run AI extraction to generate "
-            "fact proposals."
-        )
+        st.info("No documents held yet. Upload documents in the Documents tab, then run AI extraction here.")
         st.button("Run AI extraction on all documents", disabled=True)
         return
 
-    if not get_api_key():
-        st.info("Set OPENAI_API_KEY to enable AI extraction")
-        run_disabled = True
-    else:
-        run_disabled = False
-    if st.button("Run AI extraction on all documents", disabled=run_disabled):
-        with st.spinner("Extracting candidate facts from selected document chunks..."):
-            new_count = _run_ai_extraction_for_app(project_id, paths, documents, chunks)
-        st.success(f"AI extraction completed: {new_count} proposals generated.")
-        _clear_data_caches()
-        st.rerun()
+    with st.container(border=True):
+        st.markdown("**Extract candidate facts from held documents**")
+        for document in documents:
+            st.markdown(
+                f"- {html.escape(document.title)} "
+                f"<span class='small-muted'>· {getattr(document, 'page_count', 0) or 0} page(s)</span>",
+                unsafe_allow_html=True,
+            )
+        run_disabled = not get_api_key()
+        if run_disabled:
+            st.info("Set OPENAI_API_KEY to enable AI extraction. Facts can still be added manually in the Facts tab.")
+        if st.button("Run AI extraction on all documents", disabled=run_disabled, type="primary", use_container_width=True):
+            progress = st.progress(0.0, text="Preparing extraction…")
+            per_doc: list[tuple[str, int, int]] = []
+
+            def _on_document(index, total, document, facts):
+                pages = getattr(document, "page_count", 0) or 0
+                topics = {(fact.get("claim_topic") or "other") for fact in facts}
+                per_doc.append((document.title, len(facts), len(topics)))
+                progress.progress(
+                    index / max(total, 1),
+                    text=f"Reading {document.title} — extracting facts from {pages} page(s). This may take up to a minute.",
+                )
+
+            extraction_error = None
+            try:
+                with st.spinner("Extracting candidate facts — this may take up to a minute…"):
+                    new_count = _run_ai_extraction_for_app(
+                        project_id, paths, documents, chunks, on_document=_on_document
+                    )
+            except Exception as exc:  # never surface a traceback in the live flow
+                extraction_error = exc
+
+            if extraction_error is not None:
+                progress.empty()
+                st.error(
+                    "Extraction could not be completed. Please retry — check that the OpenAI key "
+                    "is set and the document has machine-readable text."
+                )
+                st.caption(f"Details: {type(extraction_error).__name__}")
+            elif new_count == 0:
+                progress.empty()
+                _queue_flash(
+                    "info",
+                    "Extraction finished but found no candidate facts. The document may be image-based "
+                    "or have little readable text — you can add facts manually in the Facts tab.",
+                )
+                _clear_data_caches()
+                st.rerun()
+            else:
+                progress.progress(1.0, text="Extraction complete.")
+                for title, n_facts, n_topics in per_doc:
+                    _queue_flash("success", f"Extracted {n_facts} candidate fact(s) across {n_topics} topic(s) from {title}.")
+                _clear_data_caches()
+                st.rerun()
 
     if not proposals:
-        st.info(
-            "No proposals yet. Upload documents and run AI extraction to generate "
-            "fact proposals."
-        )
+        st.info("No proposals yet. Run AI extraction above to generate candidate facts for review.")
         return
 
     topics = sorted({(proposal.get("ai_extracted") or {}).get("claim_topic", "other") for proposal in proposals})
@@ -756,9 +839,11 @@ def _ai_proposals_tab(project_id, paths, proposals, documents, chunks, citations
                 c1, c2, c3 = st.columns(3)
                 if c1.button("Confirm", key=f"confirm-{proposal_id}"):
                     _confirm_proposal(proposal)
+                    _queue_flash("success", f"Confirmed proposal: {fact.get('label', '')}.")
                     st.rerun()
                 if c3.button("Reject", key=f"reject-{proposal_id}"):
                     _reject_proposal(proposal)
+                    _queue_flash("info", f"Rejected proposal: {fact.get('label', '')}.")
                     st.rerun()
                 with c2.expander("Edit"):
                     with st.form(f"edit-form-{proposal_id}"):
@@ -773,16 +858,38 @@ def _ai_proposals_tab(project_id, paths, proposals, documents, chunks, citations
                                 "unit": unit or None,
                             }
                             _edit_proposal(proposal, edited)
+                            _queue_flash("success", f"Saved edit: {label}.")
                             st.rerun()
 
     confirmed_ready = [p for p in proposals if p.get("status") in {"confirm", "edit"}]
-    st.subheader("Confirmed facts ready for pipeline")
-    st.write(f"Count: {len(confirmed_ready)} confirmed + edited proposals")
-    if st.button("Update facts and rerun pipeline", disabled=not confirmed_ready):
-        result = _promote_confirmed_proposals(proposals, project_id, paths)
-        st.success("Facts updated from proposals and pipeline rerun.")
-        st.code(result)
-        st.rerun()
+    st.divider()
+    st.subheader("Commit — turn confirmed proposals into facts")
+    st.write(
+        f"{len(confirmed_ready)} confirmed/edited proposal(s) ready to become facts. "
+        "This writes the facts, reruns the deterministic pipeline, and produces findings."
+    )
+    commit_error = None
+    if st.button(
+        "Update facts and rerun pipeline",
+        type="primary",
+        use_container_width=True,
+        disabled=not confirmed_ready,
+    ):
+        try:
+            _promote_confirmed_proposals(proposals, project_id, paths)
+        except Exception as exc:  # keep the demo calm — no traceback
+            commit_error = exc
+        if commit_error is not None:
+            st.error("Could not update facts and rerun the pipeline. Please retry.")
+            st.caption(f"Details: {type(commit_error).__name__}")
+        else:
+            _queue_flash(
+                "success",
+                f"Committed {len(confirmed_ready)} fact(s) and reran the pipeline. "
+                "Open the Findings tab to see results.",
+            )
+            _clear_data_caches()
+            st.rerun()
 
 
 def _facts_tab(project_id, paths, facts, evidence_cards, documents, chunks, citations, citation_index, chunk_index) -> None:
@@ -1017,24 +1124,27 @@ def _findings_tab(project_id, project_record, findings, evidence_cards, document
     # misleads a reviewer who has proposals naming those very facts. Show a state
     # instead of presenting provisional findings as diligence conclusions.
     if _findings_provisional(facts):
-        if pending_proposals:
-            st.warning(
-                f"No confirmed facts yet. This project has {len(pending_proposals)} "
-                "AI proposal(s) awaiting your review. Findings are generated from "
-                "confirmed facts — confirm proposals in the **AI Proposals** tab first, "
-                "then return here."
+        with st.container(border=True):
+            st.subheader("Findings pending fact confirmation")
+            if pending_proposals:
+                st.markdown(
+                    f"**{len(pending_proposals)} AI proposal(s)** are awaiting your review. "
+                    "Findings are generated from **confirmed** facts, so none are shown yet."
+                )
+                st.markdown(
+                    "**Next step:** open the **AI Proposals** tab, confirm the high-confidence "
+                    "proposals, then click *Update facts and rerun pipeline*."
+                )
+            else:
+                st.markdown(
+                    "No confirmed facts and no pending proposals yet. Upload documents in the "
+                    "**Documents** tab and run AI extraction in **AI Proposals**, then confirm facts."
+                )
+            st.caption(
+                "Findings are withheld until at least one fact is confirmed. Run before "
+                "confirmation, the rules would report every fact as 'missing' — even ones the AI "
+                "has already extracted. This state is intentional, not an error."
             )
-        else:
-            st.info(
-                "No confirmed facts yet, and no AI proposals are pending. Upload documents "
-                "and run AI extraction in the **Documents** and **AI Proposals** tabs, "
-                "confirm the facts, then findings will appear here."
-            )
-        st.caption(
-            "Findings shown before any fact is confirmed would report everything as "
-            "'missing' — even facts the AI has already extracted. They are withheld here "
-            "to avoid a misleading result. Go to the **AI Proposals** tab to review and confirm."
-        )
         return
 
     if not findings:
@@ -1044,36 +1154,20 @@ def _findings_tab(project_id, project_record, findings, evidence_cards, document
         )
         return
     counts = {severity: sum(1 for finding in findings if finding.severity == severity) for severity in ["Critical", "High", "Medium", "Low"]}
-
-    if counts["Critical"] > 0:
-        st.error(
-            f"This project has {counts['Critical']} critical issues that require "
-            "immediate attention before any credit transaction."
-        )
-    elif counts["High"] > 0:
-        st.warning(
-            f"This project has {counts['High']} high-severity issues. "
-            "Review each finding before drawing conclusions."
-        )
-    elif findings:
-        st.info(
-            f"This project has {len(findings)} findings of medium or low severity. "
-            "Review and set dispositions below."
-        )
-    else:
-        st.success(
-            "No findings. Either no facts have been confirmed yet, "
-            "or all checks passed."
-        )
-
-    cols = st.columns(5)
-    cols[0].metric("Total findings", len(findings))
-    for index, severity in enumerate(["Critical", "High", "Medium", "Low"], start=1):
-        cols[index].metric(severity, counts[severity])
     st.markdown(
         _source_label(f"[SYSTEM-GENERATED \u2014 {rule_set_label} rule set \u2014 requires human review]"),
         unsafe_allow_html=True,
     )
+    cols = st.columns(5)
+    cols[0].metric("Total", len(findings))
+    for index, severity in enumerate(["Critical", "High", "Medium", "Low"], start=1):
+        cols[index].metric(severity, counts[severity])
+    if counts["Critical"]:
+        st.error(f"{counts['Critical']} critical finding(s) require attention before any credit transaction.")
+    elif counts["High"]:
+        st.warning(f"{counts['High']} high-severity finding(s) to review.")
+    else:
+        st.info("Review each finding below and set a reviewer disposition.")
 
     cards_by_id = {card.card_id: card for card in evidence_cards}
     held_types = _held_document_types(documents)
@@ -1088,45 +1182,56 @@ def _findings_tab(project_id, project_record, findings, evidence_cards, document
         with st.container(border=True):
             plain_title = _finding_plain_title(finding)
             st.markdown(
-                f"### { _badge(finding.severity, BADGE_COLORS.get(finding.severity, '#475569')) } "
-                f"{html.escape(finding.severity)} \u2014 {html.escape(plain_title)}",
+                f"{_severity_badge(finding.severity)} <b>{html.escape(plain_title)}</b> "
+                f"<span class='small-muted'>&middot; {html.escape(finding.flag_code)}</span>",
                 unsafe_allow_html=True,
             )
-            st.markdown(
-                f"<span class='small-muted'>Flag: {html.escape(finding.flag_code)}</span>",
-                unsafe_allow_html=True,
-            )
-            st.write("**What this means:**")
             st.write(finding.description)
-            st.write(f"**What's missing:** {finding.evidence_gap}")
+            st.markdown(
+                "<div class='kv'><span class='kv-label'>What's missing</span></div>"
+                f"<div>{html.escape(finding.evidence_gap)}</div>",
+                unsafe_allow_html=True,
+            )
             unconfirmed = sum(
                 pending_topic_counts.get(topic, 0)
                 for topic in claim_topics_for_flag(finding.flag_code)
             )
             if unconfirmed:
                 st.markdown(
-                    f"<span class='small-muted'>Note: {unconfirmed} unconfirmed proposal(s) "
-                    "may address this — review in AI Proposals tab.</span>",
+                    f"<div class='callout'>{unconfirmed} unconfirmed proposal(s) may address this "
+                    "&mdash; review in the <b>AI Proposals</b> tab.</div>",
                     unsafe_allow_html=True,
                 )
-            st.write("**Documents needed:**")
+            doc_bits = []
             for required in finding.required_documents:
-                held = expected_document_is_held(required, held_types)
-                status = "HELD (contents not verified)" if held else "NOT HELD"
-                color = "#16803c" if held else "#b42318"
-                st.markdown(f"- {required.replace('_', ' ')} {_badge(status, color)}", unsafe_allow_html=True)
-            st.write("**Supporting evidence cards:**")
-            for card_id in finding.evidence_card_ids:
-                card = cards_by_id.get(card_id)
-                if card:
-                    color = BADGE_COLORS.get(card.evidence_role, "#475569")
-                    st.markdown(f"- `{card.card_id}` {card.claim} {_badge(card.evidence_role, color)}", unsafe_allow_html=True)
+                name = html.escape(required.replace("_", " "))
+                if expected_document_is_held(required, held_types):
+                    doc_bits.append(f"{name} {_pill('HELD', 'ok')} <span class='small-muted'>contents not verified</span>")
+                else:
+                    doc_bits.append(f"{name} {_pill('NOT HELD', 'bad')}")
+            docs_html = "".join(f"<div style='margin:3px 0'>{bit}</div>" for bit in doc_bits)
+            st.markdown(
+                f"<div class='kv'><span class='kv-label'>Documents needed</span></div>{docs_html}",
+                unsafe_allow_html=True,
+            )
+            linked_cards = [cards_by_id.get(card_id) for card_id in finding.evidence_card_ids]
+            linked_cards = [card for card in linked_cards if card]
+            if linked_cards:
+                cards_html = "".join(
+                    f"<div style='margin:3px 0'><span class='small-muted'>{html.escape(card.claim)}</span> "
+                    f"{_badge(card.evidence_role, BADGE_COLORS.get(card.evidence_role, '#475569'))}</div>"
+                    for card in linked_cards
+                )
+                st.markdown(
+                    f"<div class='kv'><span class='kv-label'>Evidence cards</span></div>{cards_html}",
+                    unsafe_allow_html=True,
+                )
 
             if finding.flag_code in narratives:
                 with st.expander("AI analysis"):
                     st.write(narratives[finding.flag_code])
                     st.markdown(
-                        "<span class='small-muted'>[AI-DRAFT \u2014 grounded in confirmed evidence, requires human review]</span>",
+                        "<span class='small-muted'>[AI-DRAFT — grounded in confirmed evidence, requires human review]</span>",
                         unsafe_allow_html=True,
                     )
                     if st.button(
@@ -1135,37 +1240,53 @@ def _findings_tab(project_id, project_record, findings, evidence_cards, document
                         disabled=not api_key_set,
                     ):
                         _regenerate_narrative_for_finding(finding, evidence_cards)
-                        st.success("Narrative regenerated.")
                         _regenerate_memo_with_narratives(project_id, evidence_cards, findings)
-                        st.info("Memo updated with new narratives.")
+                        _queue_flash("success", f"Regenerated AI analysis for {finding.flag_code} and updated the memo.")
                         _clear_data_caches()
                         st.rerun()
-            disposition = st.selectbox(
-                "Reviewer disposition",
-                ["Awaiting review", "Accept", "Needs verification", "Dismiss"],
-                index=["Awaiting review", "Accept", "Needs verification", "Dismiss"].index(latest.get("disposition", "Awaiting review")),
+
+            st.markdown("<div class='kv'><span class='kv-label'>Reviewer decision</span></div>", unsafe_allow_html=True)
+            disposition_options = ["Awaiting review", "Accept", "Needs verification", "Dismiss"]
+            dcol, _spacer = st.columns([1, 2])
+            disposition = dcol.selectbox(
+                "Disposition",
+                disposition_options,
+                index=disposition_options.index(latest.get("disposition", "Awaiting review")),
                 key=f"disp-{finding.finding_id}",
+                label_visibility="collapsed",
             )
-            note = st.text_area("Reviewer note", latest.get("note", ""), key=f"note-{finding.finding_id}")
+            note = st.text_area(
+                "Reviewer note",
+                latest.get("note", ""),
+                key=f"note-{finding.finding_id}",
+                placeholder="Optional note for the record…",
+            )
             if st.button("Save disposition", key=f"save-{finding.finding_id}"):
                 _append_disposition(finding.finding_id, disposition, note, project_id)
-                st.success("Disposition saved.")
+                _queue_flash("success", f"Saved disposition for {finding.flag_code}: {disposition}.")
+                st.rerun()
     st.caption(DISCLAIMER)
 
 
 def _memo_tab(project_id, paths, facts, evidence_cards, findings, audit_events, citation_index, chunk_index) -> None:
-    st.header("Memo")
+    st.header("Reviewer Memo")
+    st.markdown(
+        _source_label("[REVIEWER MEMO — cited, hash-verified, requires human verification]"),
+        unsafe_allow_html=True,
+    )
+    st.caption(
+        "A professional due-diligence memo generated from the confirmed evidence base. "
+        "System-generated and cited — it records what is known, missing, and uncertain; it does not make the judgment."
+    )
     if not paths.memo.exists():
-        st.info(
-            "No memo generated yet. Confirm facts and run the pipeline to generate a memo."
-        )
+        st.info("No memo generated yet. Confirm facts and run the pipeline, then generate the memo below.")
     memo_text = paths.memo.read_text(encoding="utf-8") if paths.memo.exists() else ""
     metadata = _memo_metadata(memo_text, audit_events)
     cols = st.columns(4)
     cols[0].metric("Memo ID", metadata["memo_id"])
-    cols[1].metric("Generated at", metadata["generated_at"])
-    cols[2].metric("Content hash", metadata["content_hash"][:16])
-    cols[3].metric("Event count", len(audit_events))
+    cols[1].metric("Generated", metadata["generated_at"])
+    cols[2].metric("Content hash", metadata["content_hash"][:12] or "—")
+    cols[3].metric("Audit events", len(audit_events))
 
     if st.button(
         "Generate memo and review pack",
@@ -1221,23 +1342,27 @@ def _memo_tab(project_id, paths, facts, evidence_cards, findings, audit_events, 
             output = _run_script("scripts/build_review_pack.py", project_id)
             st.success(output or "Review pack built.")
 
+    st.divider()
     sections = _parse_memo_sections(memo_text)
+    if not sections:
+        st.caption("The memo body will appear here once generated.")
     for title, body in sections:
-        with st.expander(title, expanded=True):
-            first_line, rest = _split_source_line(body)
-            if first_line:
-                st.markdown(_source_label(first_line), unsafe_allow_html=True)
-            st.markdown(rest)
-            if "Evidence summary" in title:
-                for citation_id in _citation_ids_from_text(rest):
-                    citation = citation_index.get(citation_id)
-                    chunk = chunk_index.get(citation.chunk_id) if citation else None
-                    with st.expander(f"Source chunk \u2014 {citation_id}"):
-                        if chunk:
-                            st.caption(f"Page {citation.page_number} | Chunk {chunk.chunk_id}")
-                            st.write(chunk.text)
-                        else:
-                            st.info("Citation chunk is not currently held.")
+        st.markdown(f"#### {html.escape(title)}")
+        first_line, rest = _split_source_line(body)
+        if first_line:
+            st.markdown(_source_label(first_line), unsafe_allow_html=True)
+        st.markdown(rest)
+        if "Evidence summary" in title:
+            for citation_id in _citation_ids_from_text(rest):
+                citation = citation_index.get(citation_id)
+                chunk = chunk_index.get(citation.chunk_id) if citation else None
+                with st.expander(f"Source chunk \u2014 {citation_id}"):
+                    if chunk:
+                        st.caption(f"Page {citation.page_number} | Chunk {chunk.chunk_id}")
+                        st.write(chunk.text)
+                    else:
+                        st.info("Citation chunk is not currently held.")
+        st.divider()
 
 
 def _audit_tab(audit_events) -> None:
@@ -1456,16 +1581,26 @@ def _top_chunk_matches(terms: list[str], chunks: list[DocumentChunk], document_i
     return sorted(matches, key=lambda item: item["score"], reverse=True)
 
 
-def _run_ai_extraction_for_app(project_id: str, paths: ProjectPaths, documents: list[ParsedDocument], chunks: list[DocumentChunk]) -> int:
+def _run_ai_extraction_for_app(
+    project_id: str,
+    paths: ProjectPaths,
+    documents: list[ParsedDocument],
+    chunks: list[DocumentChunk],
+    on_document=None,
+) -> int:
     all_proposals = load_proposals(str(paths.proposals_file))
     new_count = 0
     context = _project_context_dict(project_id)
-    for document in documents:
+    total = len(documents)
+    for index, document in enumerate(documents, start=1):
         doc_chunks = [chunk for chunk in chunks if chunk.document_id == document.document_id]
         facts = extract_facts_from_document(document, doc_chunks, context)
         proposals = build_proposals(facts, project_id)
         all_proposals.extend(proposals)
         new_count += len(proposals)
+        if on_document is not None:
+            # UI progress only — does not affect extraction results.
+            on_document(index, total, document, facts)
     save_proposals(all_proposals, str(paths.proposals_file))
     return new_count
 
@@ -1646,27 +1781,26 @@ def _save_new_fact(payload: dict[str, Any], match: dict[str, Any], citations: li
     paths.facts_file.write_text(json.dumps(records, indent=2, sort_keys=True), encoding="utf-8")
 
 
-def _save_ingest_and_rerun(upload, destination: Path, project_id: str, paths: ProjectPaths) -> str:
+def _save_ingest_and_rerun(upload, destination: Path, project_id: str, paths: ProjectPaths) -> list[dict]:
     paths.raw_documents.mkdir(parents=True, exist_ok=True)
     destination.write_bytes(upload.getbuffer())
     records = ingest_paths([destination], paths.processed_documents, project_id, paths.document_registry)
-    pipeline_result = _run_script("scripts/run_pipeline.py", project_id)
+    _run_script("scripts/run_pipeline.py", project_id)
     _clear_data_caches()
-    parse_lines = []
-    for record in records:
-        warnings = record.get("parse_warnings", [])
-        parse_lines.extend(
-            [
-                f"Document: {record.get('title')}",
-                f"Pages: {record.get('page_count')}",
-                f"Chunks: {record.get('chunk_count')}",
-                f"Warnings: {len(warnings)}",
-            ]
+    return records
+
+
+def _parse_quality_warning(record: dict) -> str | None:
+    """Honest, calm note when a document parsed poorly (likely image-based)."""
+    pages = record.get("page_count", 0) or 0
+    chunks = record.get("chunk_count", 0) or 0
+    empty = max(pages - chunks, 0) if pages else 0
+    if pages and empty and empty / pages > 0.2:
+        return (
+            f"This document appears to be image-based or has limited extractable text "
+            f"({empty} of {pages} pages empty). Fact extraction may be incomplete."
         )
-        if warnings:
-            parse_lines.extend(f"  - {warning}" for warning in warnings)
-    pipeline_result = pipeline_result or "(pipeline output not captured)"
-    return "\n".join(parse_lines) + "\n\n" + pipeline_result
+    return None
 
 
 def _generate_memo_and_pack(project_id: str, paths: ProjectPaths, evidence_cards, findings) -> None:
@@ -1873,6 +2007,30 @@ def _clear_data_caches() -> None:
 
 def _badge(text: str, color: str) -> str:
     return f"<span class='badge' style='background:{color}'>{html.escape(text)}</span>"
+
+
+def _pill(text: str, kind: str) -> str:
+    """A soft, bordered status pill. kind in {ok, bad, warn, muted}."""
+    return f"<span class='pill pill-{kind}'>{html.escape(text)}</span>"
+
+
+def _severity_badge(severity: str) -> str:
+    return _badge(severity, BADGE_COLORS.get(severity, "#475569"))
+
+
+def _queue_flash(kind: str, message: str) -> None:
+    """Queue a message to show at the top of the page after a rerun.
+
+    Streamlit resets the active tab on rerun, so post-action messages are
+    surfaced above the tabs where they remain visible regardless of tab.
+    """
+    st.session_state.setdefault("_flash", []).append((kind, message))
+
+
+def _render_flashes() -> None:
+    for kind, message in st.session_state.pop("_flash", []):
+        renderer = {"success": st.success, "info": st.info, "warning": st.warning, "error": st.error}
+        renderer.get(kind, st.info)(message)
 
 
 def _finding_plain_title(finding) -> str:
